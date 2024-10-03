@@ -1,0 +1,18 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/j_4.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addi $8,$0,10
+Register Write to Reg: 0x08 Val: 0x0000000A
+[inst #2] j 4194316
+[inst #3] addi $8,$8,10
+Register Write to Reg: 0x08 Val: 0x00000014
+[inst #4] j 4194328
+[inst #5] addi $8,$8,10
+Register Write to Reg: 0x08 Val: 0x0000001E
+[inst #6] j 4194340
+[inst #7] addi $8,$8,10
+Register Write to Reg: 0x08 Val: 0x00000028
+[inst #8] j 4194352
+[inst #9] addi $8,$8,10
+Register Write to Reg: 0x08 Val: 0x00000032
+[inst #10] halt 
+

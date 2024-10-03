@@ -1,0 +1,11 @@
+{
+  "vimMode": true,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A3",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 80
+  }
+}

@@ -1,0 +1,76 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/subu_02.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addi $1,$0,-1
+Register Write to Reg: 0x01 Val: 0xFFFFFFFF
+[inst #2] addi $2,$0,-2
+Register Write to Reg: 0x02 Val: 0xFFFFFFFE
+[inst #3] addi $3,$0,-4
+Register Write to Reg: 0x03 Val: 0xFFFFFFFC
+[inst #4] addi $4,$0,-8
+Register Write to Reg: 0x04 Val: 0xFFFFFFF8
+[inst #5] addi $5,$0,-16
+Register Write to Reg: 0x05 Val: 0xFFFFFFF0
+[inst #6] addi $6,$0,-32
+Register Write to Reg: 0x06 Val: 0xFFFFFFE0
+[inst #7] addi $7,$0,-64
+Register Write to Reg: 0x07 Val: 0xFFFFFFC0
+[inst #8] addi $8,$0,-128
+Register Write to Reg: 0x08 Val: 0xFFFFFF80
+[inst #9] addi $9,$0,-256
+Register Write to Reg: 0x09 Val: 0xFFFFFF00
+[inst #10] addi $11,$0,1
+Register Write to Reg: 0x0B Val: 0x00000001
+[inst #11] addi $12,$0,2
+Register Write to Reg: 0x0C Val: 0x00000002
+[inst #12] addi $13,$0,4
+Register Write to Reg: 0x0D Val: 0x00000004
+[inst #13] addi $14,$0,8
+Register Write to Reg: 0x0E Val: 0x00000008
+[inst #14] addi $15,$0,16
+Register Write to Reg: 0x0F Val: 0x00000010
+[inst #15] addi $16,$0,32
+Register Write to Reg: 0x10 Val: 0x00000020
+[inst #16] addi $17,$0,64
+Register Write to Reg: 0x11 Val: 0x00000040
+[inst #17] addi $18,$0,128
+Register Write to Reg: 0x12 Val: 0x00000080
+[inst #18] addi $19,$0,256
+Register Write to Reg: 0x13 Val: 0x00000100
+[inst #19] subu $11,$11,$1
+Register Write to Reg: 0x0B Val: 0x00000002
+[inst #20] subu $12,$12,$2
+Register Write to Reg: 0x0C Val: 0x00000004
+[inst #21] subu $13,$13,$3
+Register Write to Reg: 0x0D Val: 0x00000008
+[inst #22] subu $14,$14,$4
+Register Write to Reg: 0x0E Val: 0x00000010
+[inst #23] subu $15,$15,$5
+Register Write to Reg: 0x0F Val: 0x00000020
+[inst #24] subu $16,$16,$6
+Register Write to Reg: 0x10 Val: 0x00000040
+[inst #25] subu $17,$17,$7
+Register Write to Reg: 0x11 Val: 0x00000080
+[inst #26] subu $18,$18,$8
+Register Write to Reg: 0x12 Val: 0x00000100
+[inst #27] subu $19,$19,$9
+Register Write to Reg: 0x13 Val: 0x00000200
+[inst #28] subu $1,$1,$11
+Register Write to Reg: 0x01 Val: 0xFFFFFFFD
+[inst #29] subu $2,$2,$12
+Register Write to Reg: 0x02 Val: 0xFFFFFFFA
+[inst #30] subu $3,$3,$13
+Register Write to Reg: 0x03 Val: 0xFFFFFFF4
+[inst #31] subu $4,$4,$14
+Register Write to Reg: 0x04 Val: 0xFFFFFFE8
+[inst #32] subu $5,$5,$15
+Register Write to Reg: 0x05 Val: 0xFFFFFFD0
+[inst #33] subu $6,$6,$16
+Register Write to Reg: 0x06 Val: 0xFFFFFFA0
+[inst #34] subu $7,$7,$17
+Register Write to Reg: 0x07 Val: 0xFFFFFF40
+[inst #35] subu $8,$8,$18
+Register Write to Reg: 0x08 Val: 0xFFFFFE80
+[inst #36] subu $9,$9,$19
+Register Write to Reg: 0x09 Val: 0xFFFFFD00
+[inst #37] halt 
+

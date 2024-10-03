@@ -1,0 +1,68 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/srl_2.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] lui $1,32768
+Register Write to Reg: 0x01 Val: 0x80000000
+[inst #2] srl $2,$1,1
+Register Write to Reg: 0x02 Val: 0x40000000
+[inst #3] srl $3,$1,2
+Register Write to Reg: 0x03 Val: 0x20000000
+[inst #4] srl $4,$1,3
+Register Write to Reg: 0x04 Val: 0x10000000
+[inst #5] srl $5,$1,4
+Register Write to Reg: 0x05 Val: 0x08000000
+[inst #6] srl $6,$1,5
+Register Write to Reg: 0x06 Val: 0x04000000
+[inst #7] srl $7,$1,6
+Register Write to Reg: 0x07 Val: 0x02000000
+[inst #8] srl $8,$1,7
+Register Write to Reg: 0x08 Val: 0x01000000
+[inst #9] srl $9,$1,8
+Register Write to Reg: 0x09 Val: 0x00800000
+[inst #10] srl $10,$1,9
+Register Write to Reg: 0x0A Val: 0x00400000
+[inst #11] srl $11,$1,10
+Register Write to Reg: 0x0B Val: 0x00200000
+[inst #12] srl $12,$1,11
+Register Write to Reg: 0x0C Val: 0x00100000
+[inst #13] srl $13,$1,12
+Register Write to Reg: 0x0D Val: 0x00080000
+[inst #14] srl $14,$1,13
+Register Write to Reg: 0x0E Val: 0x00040000
+[inst #15] srl $15,$1,14
+Register Write to Reg: 0x0F Val: 0x00020000
+[inst #16] srl $16,$1,15
+Register Write to Reg: 0x10 Val: 0x00010000
+[inst #17] srl $17,$1,16
+Register Write to Reg: 0x11 Val: 0x00008000
+[inst #18] srl $18,$1,17
+Register Write to Reg: 0x12 Val: 0x00004000
+[inst #19] srl $19,$1,18
+Register Write to Reg: 0x13 Val: 0x00002000
+[inst #20] srl $20,$1,19
+Register Write to Reg: 0x14 Val: 0x00001000
+[inst #21] srl $21,$1,20
+Register Write to Reg: 0x15 Val: 0x00000800
+[inst #22] srl $22,$1,21
+Register Write to Reg: 0x16 Val: 0x00000400
+[inst #23] srl $23,$1,22
+Register Write to Reg: 0x17 Val: 0x00000200
+[inst #24] srl $24,$1,23
+Register Write to Reg: 0x18 Val: 0x00000100
+[inst #25] srl $25,$1,24
+Register Write to Reg: 0x19 Val: 0x00000080
+[inst #26] srl $26,$1,25
+Register Write to Reg: 0x1A Val: 0x00000040
+[inst #27] srl $27,$1,26
+Register Write to Reg: 0x1B Val: 0x00000020
+[inst #28] srl $28,$1,27
+Register Write to Reg: 0x1C Val: 0x00000010
+[inst #29] srl $29,$1,28
+Register Write to Reg: 0x1D Val: 0x00000008
+[inst #30] srl $30,$1,29
+Register Write to Reg: 0x1E Val: 0x00000004
+[inst #31] srl $31,$1,30
+Register Write to Reg: 0x1F Val: 0x00000002
+[inst #32] srl $0,$1,31
+Register Write to Reg: 0x00 Val: 0x00000001
+[inst #33] halt 
+

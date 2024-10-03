@@ -1,0 +1,19 @@
+[inst #1] ori $16,$0,4660
+Register Write to Reg: 0x10 Val: 0x00001234
+[inst #2] j 4194316
+[inst #3] ori $17,$0,4660
+Register Write to Reg: 0x11 Val: 0x00001234
+[inst #4] beq $16,$17,1
+[inst #5] jal 4194348
+Register Write to Reg: 0x1F Val: 0x0040001C
+[inst #6] ori $18,$0,4660
+Register Write to Reg: 0x12 Val: 0x00001234
+[inst #7] jr $31
+[inst #8] ori $19,$0,4660
+Register Write to Reg: 0x13 Val: 0x00001234
+[inst #9] beq $16,$0,4
+[inst #10] ori $20,$0,4660
+Register Write to Reg: 0x14 Val: 0x00001234
+[inst #11] j 4194356
+[inst #12] halt 
+

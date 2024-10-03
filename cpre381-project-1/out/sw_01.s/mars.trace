@@ -1,0 +1,44 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/sw_01.s line 13 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] lui $1,14618
+Register Write to Reg: 0x01 Val: 0x391A0000
+[inst #2] ori $1,$1,64734
+Register Write to Reg: 0x01 Val: 0x391AFCDE
+[inst #3] add $8,$0,$1
+Register Write to Reg: 0x08 Val: 0x391AFCDE
+[inst #4] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #5] sw $8,0($1)
+Memory Write to Addr: 0x10010000 Val: 0x391AFCDE
+[inst #6] lui $1,14618
+Register Write to Reg: 0x01 Val: 0x391A0000
+[inst #7] ori $1,$1,64735
+Register Write to Reg: 0x01 Val: 0x391AFCDF
+[inst #8] add $9,$0,$1
+Register Write to Reg: 0x09 Val: 0x391AFCDF
+[inst #9] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #10] sw $9,4($1)
+Memory Write to Addr: 0x10010004 Val: 0x391AFCDF
+[inst #11] lui $1,14618
+Register Write to Reg: 0x01 Val: 0x391A0000
+[inst #12] ori $1,$1,64736
+Register Write to Reg: 0x01 Val: 0x391AFCE0
+[inst #13] add $10,$0,$1
+Register Write to Reg: 0x0A Val: 0x391AFCE0
+[inst #14] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #15] sw $10,8($1)
+Memory Write to Addr: 0x10010008 Val: 0x391AFCE0
+[inst #16] lui $1,14618
+Register Write to Reg: 0x01 Val: 0x391A0000
+[inst #17] ori $1,$1,64737
+Register Write to Reg: 0x01 Val: 0x391AFCE1
+[inst #18] add $11,$0,$1
+Register Write to Reg: 0x0B Val: 0x391AFCE1
+[inst #19] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #20] sw $11,12($1)
+Memory Write to Addr: 0x1001000C Val: 0x391AFCE1
+[inst #21] halt 
+

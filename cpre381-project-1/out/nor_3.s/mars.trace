@@ -1,0 +1,68 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/nor_3.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] nor $1,$0,$0
+Register Write to Reg: 0x01 Val: 0xFFFFFFFF
+[inst #2] nor $2,$1,$2
+Register Write to Reg: 0x02 Val: 0x00000000
+[inst #3] nor $3,$1,$3
+Register Write to Reg: 0x03 Val: 0x00000000
+[inst #4] nor $4,$1,$4
+Register Write to Reg: 0x04 Val: 0x00000000
+[inst #5] nor $5,$1,$5
+Register Write to Reg: 0x05 Val: 0x00000000
+[inst #6] nor $6,$1,$6
+Register Write to Reg: 0x06 Val: 0x00000000
+[inst #7] nor $7,$1,$7
+Register Write to Reg: 0x07 Val: 0x00000000
+[inst #8] nor $8,$1,$8
+Register Write to Reg: 0x08 Val: 0x00000000
+[inst #9] nor $9,$1,$9
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #10] nor $10,$1,$10
+Register Write to Reg: 0x0A Val: 0x00000000
+[inst #11] nor $11,$1,$11
+Register Write to Reg: 0x0B Val: 0x00000000
+[inst #12] nor $12,$1,$12
+Register Write to Reg: 0x0C Val: 0x00000000
+[inst #13] nor $13,$1,$13
+Register Write to Reg: 0x0D Val: 0x00000000
+[inst #14] nor $14,$1,$14
+Register Write to Reg: 0x0E Val: 0x00000000
+[inst #15] nor $15,$1,$15
+Register Write to Reg: 0x0F Val: 0x00000000
+[inst #16] nor $16,$1,$16
+Register Write to Reg: 0x10 Val: 0x00000000
+[inst #17] nor $17,$1,$17
+Register Write to Reg: 0x11 Val: 0x00000000
+[inst #18] nor $18,$1,$18
+Register Write to Reg: 0x12 Val: 0x00000000
+[inst #19] nor $19,$1,$19
+Register Write to Reg: 0x13 Val: 0x00000000
+[inst #20] nor $20,$1,$20
+Register Write to Reg: 0x14 Val: 0x00000000
+[inst #21] nor $21,$1,$21
+Register Write to Reg: 0x15 Val: 0x00000000
+[inst #22] nor $22,$1,$22
+Register Write to Reg: 0x16 Val: 0x00000000
+[inst #23] nor $23,$1,$23
+Register Write to Reg: 0x17 Val: 0x00000000
+[inst #24] nor $24,$1,$24
+Register Write to Reg: 0x18 Val: 0x00000000
+[inst #25] nor $25,$1,$25
+Register Write to Reg: 0x19 Val: 0x00000000
+[inst #26] nor $26,$1,$26
+Register Write to Reg: 0x1A Val: 0x00000000
+[inst #27] nor $27,$1,$27
+Register Write to Reg: 0x1B Val: 0x00000000
+[inst #28] nor $28,$1,$28
+Register Write to Reg: 0x1C Val: 0x00000000
+[inst #29] nor $29,$1,$29
+Register Write to Reg: 0x1D Val: 0x00000000
+[inst #30] nor $30,$1,$30
+Register Write to Reg: 0x1E Val: 0x00000000
+[inst #31] nor $31,$1,$31
+Register Write to Reg: 0x1F Val: 0x00000000
+[inst #32] nor $1,$1,$1
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #33] halt 
+

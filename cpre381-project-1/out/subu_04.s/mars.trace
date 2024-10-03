@@ -1,0 +1,68 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/subu_04.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] ori $1,$0,1
+Register Write to Reg: 0x01 Val: 0x00000001
+[inst #2] subu $1,$1,$0
+Register Write to Reg: 0x01 Val: 0x00000001
+[inst #3] subu $2,$1,$0
+Register Write to Reg: 0x02 Val: 0x00000001
+[inst #4] subu $3,$1,$0
+Register Write to Reg: 0x03 Val: 0x00000001
+[inst #5] subu $4,$1,$0
+Register Write to Reg: 0x04 Val: 0x00000001
+[inst #6] subu $5,$1,$0
+Register Write to Reg: 0x05 Val: 0x00000001
+[inst #7] subu $6,$1,$0
+Register Write to Reg: 0x06 Val: 0x00000001
+[inst #8] subu $7,$1,$0
+Register Write to Reg: 0x07 Val: 0x00000001
+[inst #9] subu $8,$1,$0
+Register Write to Reg: 0x08 Val: 0x00000001
+[inst #10] subu $9,$1,$0
+Register Write to Reg: 0x09 Val: 0x00000001
+[inst #11] subu $10,$1,$0
+Register Write to Reg: 0x0A Val: 0x00000001
+[inst #12] subu $11,$1,$0
+Register Write to Reg: 0x0B Val: 0x00000001
+[inst #13] subu $12,$1,$0
+Register Write to Reg: 0x0C Val: 0x00000001
+[inst #14] subu $13,$1,$0
+Register Write to Reg: 0x0D Val: 0x00000001
+[inst #15] subu $14,$1,$0
+Register Write to Reg: 0x0E Val: 0x00000001
+[inst #16] subu $15,$1,$0
+Register Write to Reg: 0x0F Val: 0x00000001
+[inst #17] subu $16,$1,$0
+Register Write to Reg: 0x10 Val: 0x00000001
+[inst #18] subu $17,$1,$0
+Register Write to Reg: 0x11 Val: 0x00000001
+[inst #19] subu $18,$1,$0
+Register Write to Reg: 0x12 Val: 0x00000001
+[inst #20] subu $19,$1,$0
+Register Write to Reg: 0x13 Val: 0x00000001
+[inst #21] subu $20,$1,$0
+Register Write to Reg: 0x14 Val: 0x00000001
+[inst #22] subu $21,$1,$0
+Register Write to Reg: 0x15 Val: 0x00000001
+[inst #23] subu $22,$1,$0
+Register Write to Reg: 0x16 Val: 0x00000001
+[inst #24] subu $23,$1,$0
+Register Write to Reg: 0x17 Val: 0x00000001
+[inst #25] subu $24,$1,$0
+Register Write to Reg: 0x18 Val: 0x00000001
+[inst #26] subu $25,$1,$0
+Register Write to Reg: 0x19 Val: 0x00000001
+[inst #27] subu $26,$1,$0
+Register Write to Reg: 0x1A Val: 0x00000001
+[inst #28] subu $27,$1,$0
+Register Write to Reg: 0x1B Val: 0x00000001
+[inst #29] subu $28,$1,$0
+Register Write to Reg: 0x1C Val: 0x00000001
+[inst #30] subu $29,$1,$0
+Register Write to Reg: 0x1D Val: 0x00000001
+[inst #31] subu $30,$1,$0
+Register Write to Reg: 0x1E Val: 0x00000001
+[inst #32] subu $31,$1,$0
+Register Write to Reg: 0x1F Val: 0x00000001
+[inst #33] halt 
+

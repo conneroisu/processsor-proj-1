@@ -1,0 +1,28 @@
+[inst #1] lui $9,4096
+Register Write to Reg: 0x09 Val: 0x10000000
+[inst #2] lui $8,43981
+Register Write to Reg: 0x08 Val: 0xABCD0000
+[inst #3] ori $8,$8,61354
+Register Write to Reg: 0x08 Val: 0xABCDEFAA
+[inst #4] sw $8,0($9)
+Memory Write to Addr: 0x10000000 Val: 0xABCDEFAA
+[inst #5] lui $8,4660
+Register Write to Reg: 0x08 Val: 0x12340000
+[inst #6] ori $8,$8,22136
+Register Write to Reg: 0x08 Val: 0x12345678
+[inst #7] sw $8,4($9)
+Memory Write to Addr: 0x10000004 Val: 0x12345678
+[inst #8] lui $8,43981
+Register Write to Reg: 0x08 Val: 0xABCD0000
+[inst #9] ori $8,$8,61354
+Register Write to Reg: 0x08 Val: 0xABCDEFAA
+[inst #10] sw $8,8($9)
+Memory Write to Addr: 0x10000008 Val: 0xABCDEFAA
+[inst #11] lui $8,4660
+Register Write to Reg: 0x08 Val: 0x12340000
+[inst #12] ori $8,$8,22136
+Register Write to Reg: 0x08 Val: 0x12345678
+[inst #13] sw $8,12($9)
+Memory Write to Addr: 0x1000000C Val: 0x12345678
+[inst #14] halt 
+

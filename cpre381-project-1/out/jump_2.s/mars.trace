@@ -1,0 +1,7 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/jump_2.s line 7 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] j 4194384
+[inst #2] addi $8,$8,1
+Register Write to Reg: 0x08 Val: 0x00000001
+[inst #3] halt 
+

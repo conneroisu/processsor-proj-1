@@ -1,0 +1,12 @@
+[inst #1] addi $16,$0,5
+Register Write to Reg: 0x10 Val: 0x00000005
+[inst #2] bgtz $16,1
+[inst #3] nop 
+[inst #4] bgtz $16,1
+[inst #5] nop 
+[inst #6] addiu $16,$0,100
+Register Write to Reg: 0x10 Val: 0x00000064
+[inst #7] bgtz $16,1
+[inst #8] nop 
+[inst #9] halt 
+

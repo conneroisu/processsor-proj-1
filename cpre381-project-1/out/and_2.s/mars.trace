@@ -1,0 +1,58 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/and_2.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addi $9,$0,-1
+Register Write to Reg: 0x09 Val: 0xFFFFFFFF
+[inst #2] addi $10,$0,-1
+Register Write to Reg: 0x0A Val: 0xFFFFFFFF
+[inst #3] and $4,$9,$10
+Register Write to Reg: 0x04 Val: 0xFFFFFFFF
+[inst #4] and $9,$0,$0
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #5] and $10,$0,$0
+Register Write to Reg: 0x0A Val: 0x00000000
+[inst #6] lui $1,257
+Register Write to Reg: 0x01 Val: 0x01010000
+[inst #7] ori $1,$1,257
+Register Write to Reg: 0x01 Val: 0x01010101
+[inst #8] add $9,$0,$1
+Register Write to Reg: 0x09 Val: 0x01010101
+[inst #9] lui $1,4369
+Register Write to Reg: 0x01 Val: 0x11110000
+[inst #10] ori $1,$1,4369
+Register Write to Reg: 0x01 Val: 0x11111111
+[inst #11] add $10,$0,$1
+Register Write to Reg: 0x0A Val: 0x11111111
+[inst #12] and $4,$9,$10
+Register Write to Reg: 0x04 Val: 0x01010101
+[inst #13] and $4,$9,$0
+Register Write to Reg: 0x04 Val: 0x00000000
+[inst #14] addi $9,$0,-1
+Register Write to Reg: 0x09 Val: 0xFFFFFFFF
+[inst #15] lui $1,4369
+Register Write to Reg: 0x01 Val: 0x11110000
+[inst #16] ori $1,$1,4369
+Register Write to Reg: 0x01 Val: 0x11111111
+[inst #17] add $10,$0,$1
+Register Write to Reg: 0x0A Val: 0x11111111
+[inst #18] and $4,$9,$10
+Register Write to Reg: 0x04 Val: 0x11111111
+[inst #19] and $4,$9,$0
+Register Write to Reg: 0x04 Val: 0x00000000
+[inst #20] lui $1,257
+Register Write to Reg: 0x01 Val: 0x01010000
+[inst #21] ori $1,$1,257
+Register Write to Reg: 0x01 Val: 0x01010101
+[inst #22] add $9,$0,$1
+Register Write to Reg: 0x09 Val: 0x01010101
+[inst #23] lui $1,293
+Register Write to Reg: 0x01 Val: 0x01250000
+[inst #24] ori $1,$1,1153
+Register Write to Reg: 0x01 Val: 0x01250481
+[inst #25] add $10,$0,$1
+Register Write to Reg: 0x0A Val: 0x01250481
+[inst #26] and $4,$9,$10
+Register Write to Reg: 0x04 Val: 0x01010001
+[inst #27] and $4,$9,$0
+Register Write to Reg: 0x04 Val: 0x00000000
+[inst #28] halt 
+

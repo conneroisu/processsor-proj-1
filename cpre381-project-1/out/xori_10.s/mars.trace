@@ -1,0 +1,6 @@
+[inst #1] addiu $9,$0,-20
+Register Write to Reg: 0x09 Val: 0xFFFFFFEC
+[inst #2] xori $10,$9,80
+Register Write to Reg: 0x0A Val: 0xFFFFFFBC
+[inst #3] halt 
+

@@ -1,0 +1,190 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/addiu_1.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] lui $1,32767
+Register Write to Reg: 0x01 Val: 0x7FFF0000
+[inst #2] ori $1,$1,65535
+Register Write to Reg: 0x01 Val: 0x7FFFFFFF
+[inst #3] addiu $1,$1,1
+Register Write to Reg: 0x01 Val: 0x80000000
+[inst #4] lui $2,32767
+Register Write to Reg: 0x02 Val: 0x7FFF0000
+[inst #5] ori $2,$2,65535
+Register Write to Reg: 0x02 Val: 0x7FFFFFFF
+[inst #6] addiu $2,$2,1
+Register Write to Reg: 0x02 Val: 0x80000000
+[inst #7] lui $3,32767
+Register Write to Reg: 0x03 Val: 0x7FFF0000
+[inst #8] ori $3,$3,65535
+Register Write to Reg: 0x03 Val: 0x7FFFFFFF
+[inst #9] addiu $3,$3,1
+Register Write to Reg: 0x03 Val: 0x80000000
+[inst #10] lui $4,32767
+Register Write to Reg: 0x04 Val: 0x7FFF0000
+[inst #11] ori $4,$4,65535
+Register Write to Reg: 0x04 Val: 0x7FFFFFFF
+[inst #12] addiu $4,$4,1
+Register Write to Reg: 0x04 Val: 0x80000000
+[inst #13] lui $5,32767
+Register Write to Reg: 0x05 Val: 0x7FFF0000
+[inst #14] ori $5,$5,65535
+Register Write to Reg: 0x05 Val: 0x7FFFFFFF
+[inst #15] addiu $5,$5,1
+Register Write to Reg: 0x05 Val: 0x80000000
+[inst #16] lui $6,32767
+Register Write to Reg: 0x06 Val: 0x7FFF0000
+[inst #17] ori $6,$6,65535
+Register Write to Reg: 0x06 Val: 0x7FFFFFFF
+[inst #18] addiu $6,$6,1
+Register Write to Reg: 0x06 Val: 0x80000000
+[inst #19] lui $7,32767
+Register Write to Reg: 0x07 Val: 0x7FFF0000
+[inst #20] ori $7,$7,65535
+Register Write to Reg: 0x07 Val: 0x7FFFFFFF
+[inst #21] addiu $7,$7,1
+Register Write to Reg: 0x07 Val: 0x80000000
+[inst #22] lui $8,32767
+Register Write to Reg: 0x08 Val: 0x7FFF0000
+[inst #23] ori $8,$8,65535
+Register Write to Reg: 0x08 Val: 0x7FFFFFFF
+[inst #24] addiu $8,$8,1
+Register Write to Reg: 0x08 Val: 0x80000000
+[inst #25] lui $9,32767
+Register Write to Reg: 0x09 Val: 0x7FFF0000
+[inst #26] ori $9,$9,65535
+Register Write to Reg: 0x09 Val: 0x7FFFFFFF
+[inst #27] addiu $9,$9,1
+Register Write to Reg: 0x09 Val: 0x80000000
+[inst #28] lui $10,32767
+Register Write to Reg: 0x0A Val: 0x7FFF0000
+[inst #29] ori $10,$10,65535
+Register Write to Reg: 0x0A Val: 0x7FFFFFFF
+[inst #30] addiu $10,$10,1
+Register Write to Reg: 0x0A Val: 0x80000000
+[inst #31] lui $11,32767
+Register Write to Reg: 0x0B Val: 0x7FFF0000
+[inst #32] ori $11,$11,65535
+Register Write to Reg: 0x0B Val: 0x7FFFFFFF
+[inst #33] addiu $11,$11,1
+Register Write to Reg: 0x0B Val: 0x80000000
+[inst #34] lui $12,32767
+Register Write to Reg: 0x0C Val: 0x7FFF0000
+[inst #35] ori $12,$12,65535
+Register Write to Reg: 0x0C Val: 0x7FFFFFFF
+[inst #36] addiu $12,$12,1
+Register Write to Reg: 0x0C Val: 0x80000000
+[inst #37] lui $13,32767
+Register Write to Reg: 0x0D Val: 0x7FFF0000
+[inst #38] ori $13,$13,65535
+Register Write to Reg: 0x0D Val: 0x7FFFFFFF
+[inst #39] addiu $13,$13,1
+Register Write to Reg: 0x0D Val: 0x80000000
+[inst #40] lui $14,32767
+Register Write to Reg: 0x0E Val: 0x7FFF0000
+[inst #41] ori $14,$14,65535
+Register Write to Reg: 0x0E Val: 0x7FFFFFFF
+[inst #42] addiu $14,$14,1
+Register Write to Reg: 0x0E Val: 0x80000000
+[inst #43] lui $15,32767
+Register Write to Reg: 0x0F Val: 0x7FFF0000
+[inst #44] ori $15,$15,65535
+Register Write to Reg: 0x0F Val: 0x7FFFFFFF
+[inst #45] addiu $15,$15,1
+Register Write to Reg: 0x0F Val: 0x80000000
+[inst #46] lui $16,32767
+Register Write to Reg: 0x10 Val: 0x7FFF0000
+[inst #47] ori $16,$16,65535
+Register Write to Reg: 0x10 Val: 0x7FFFFFFF
+[inst #48] addiu $16,$16,1
+Register Write to Reg: 0x10 Val: 0x80000000
+[inst #49] lui $17,32767
+Register Write to Reg: 0x11 Val: 0x7FFF0000
+[inst #50] ori $17,$17,65535
+Register Write to Reg: 0x11 Val: 0x7FFFFFFF
+[inst #51] addiu $17,$17,1
+Register Write to Reg: 0x11 Val: 0x80000000
+[inst #52] lui $18,32767
+Register Write to Reg: 0x12 Val: 0x7FFF0000
+[inst #53] ori $18,$18,65535
+Register Write to Reg: 0x12 Val: 0x7FFFFFFF
+[inst #54] addiu $18,$18,1
+Register Write to Reg: 0x12 Val: 0x80000000
+[inst #55] lui $19,32767
+Register Write to Reg: 0x13 Val: 0x7FFF0000
+[inst #56] ori $19,$19,65535
+Register Write to Reg: 0x13 Val: 0x7FFFFFFF
+[inst #57] addiu $19,$19,1
+Register Write to Reg: 0x13 Val: 0x80000000
+[inst #58] lui $20,32767
+Register Write to Reg: 0x14 Val: 0x7FFF0000
+[inst #59] ori $20,$20,65535
+Register Write to Reg: 0x14 Val: 0x7FFFFFFF
+[inst #60] addiu $20,$20,1
+Register Write to Reg: 0x14 Val: 0x80000000
+[inst #61] lui $21,32767
+Register Write to Reg: 0x15 Val: 0x7FFF0000
+[inst #62] ori $21,$21,65535
+Register Write to Reg: 0x15 Val: 0x7FFFFFFF
+[inst #63] addiu $21,$21,1
+Register Write to Reg: 0x15 Val: 0x80000000
+[inst #64] lui $22,32767
+Register Write to Reg: 0x16 Val: 0x7FFF0000
+[inst #65] ori $22,$22,65535
+Register Write to Reg: 0x16 Val: 0x7FFFFFFF
+[inst #66] addiu $22,$22,1
+Register Write to Reg: 0x16 Val: 0x80000000
+[inst #67] lui $23,32767
+Register Write to Reg: 0x17 Val: 0x7FFF0000
+[inst #68] ori $23,$23,65535
+Register Write to Reg: 0x17 Val: 0x7FFFFFFF
+[inst #69] addiu $23,$23,1
+Register Write to Reg: 0x17 Val: 0x80000000
+[inst #70] lui $24,32767
+Register Write to Reg: 0x18 Val: 0x7FFF0000
+[inst #71] ori $24,$24,65535
+Register Write to Reg: 0x18 Val: 0x7FFFFFFF
+[inst #72] addiu $24,$24,1
+Register Write to Reg: 0x18 Val: 0x80000000
+[inst #73] lui $25,32767
+Register Write to Reg: 0x19 Val: 0x7FFF0000
+[inst #74] ori $25,$25,65535
+Register Write to Reg: 0x19 Val: 0x7FFFFFFF
+[inst #75] addiu $25,$25,1
+Register Write to Reg: 0x19 Val: 0x80000000
+[inst #76] lui $26,32767
+Register Write to Reg: 0x1A Val: 0x7FFF0000
+[inst #77] ori $26,$26,65535
+Register Write to Reg: 0x1A Val: 0x7FFFFFFF
+[inst #78] addiu $26,$26,1
+Register Write to Reg: 0x1A Val: 0x80000000
+[inst #79] lui $27,32767
+Register Write to Reg: 0x1B Val: 0x7FFF0000
+[inst #80] ori $27,$27,65535
+Register Write to Reg: 0x1B Val: 0x7FFFFFFF
+[inst #81] addiu $27,$27,1
+Register Write to Reg: 0x1B Val: 0x80000000
+[inst #82] lui $28,32767
+Register Write to Reg: 0x1C Val: 0x7FFF0000
+[inst #83] ori $28,$28,65535
+Register Write to Reg: 0x1C Val: 0x7FFFFFFF
+[inst #84] addiu $28,$28,1
+Register Write to Reg: 0x1C Val: 0x80000000
+[inst #85] lui $29,32767
+Register Write to Reg: 0x1D Val: 0x7FFF0000
+[inst #86] ori $29,$29,65535
+Register Write to Reg: 0x1D Val: 0x7FFFFFFF
+[inst #87] addiu $29,$29,1
+Register Write to Reg: 0x1D Val: 0x80000000
+[inst #88] lui $30,32767
+Register Write to Reg: 0x1E Val: 0x7FFF0000
+[inst #89] ori $30,$30,65535
+Register Write to Reg: 0x1E Val: 0x7FFFFFFF
+[inst #90] addiu $30,$30,1
+Register Write to Reg: 0x1E Val: 0x80000000
+[inst #91] lui $31,32767
+Register Write to Reg: 0x1F Val: 0x7FFF0000
+[inst #92] ori $31,$31,65535
+Register Write to Reg: 0x1F Val: 0x7FFFFFFF
+[inst #93] addiu $31,$31,1
+Register Write to Reg: 0x1F Val: 0x80000000
+[inst #94] halt 
+

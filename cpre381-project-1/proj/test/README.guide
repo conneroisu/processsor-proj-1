@@ -1,0 +1,7 @@
+
+README (using .guide extension to work around gitignore)
+
+This folder is where *all* the testbenches will be stored, each tb will have its own tb_*.do file that will handle building and running the correct files, the .do and the tb files HAVE to be in the same directory (as far as I know).
+
+This constraint is because the "vsim" command has to reference a library (for us is named 'work' which is generated in the build), and it only looks in the same directory where the command is called.
+

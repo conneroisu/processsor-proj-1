@@ -1,0 +1,9 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/beq_04.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addi $1,$0,7
+Register Write to Reg: 0x01 Val: 0x00000007
+[inst #2] addi $2,$0,7
+Register Write to Reg: 0x02 Val: 0x00000007
+[inst #3] beq $2,$1,0
+[inst #4] halt 
+

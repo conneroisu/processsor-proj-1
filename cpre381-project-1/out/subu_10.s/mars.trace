@@ -1,0 +1,10 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/subu_10.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addi $8,$8,156
+Register Write to Reg: 0x08 Val: 0x0000009C
+[inst #2] addi $10,$10,251
+Register Write to Reg: 0x0A Val: 0x000000FB
+[inst #3] subu $12,$10,$8
+Register Write to Reg: 0x0C Val: 0x0000005F
+[inst #4] halt 
+

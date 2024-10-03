@@ -1,0 +1,88 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/xor_4.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] xori $1,$0,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #2] xori $2,$0,0
+Register Write to Reg: 0x02 Val: 0x00000000
+[inst #3] xori $3,$0,0
+Register Write to Reg: 0x03 Val: 0x00000000
+[inst #4] xori $4,$0,0
+Register Write to Reg: 0x04 Val: 0x00000000
+[inst #5] xori $5,$0,0
+Register Write to Reg: 0x05 Val: 0x00000000
+[inst #6] xori $6,$0,0
+Register Write to Reg: 0x06 Val: 0x00000000
+[inst #7] xori $7,$0,0
+Register Write to Reg: 0x07 Val: 0x00000000
+[inst #8] xori $8,$0,0
+Register Write to Reg: 0x08 Val: 0x00000000
+[inst #9] xori $9,$0,0
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #10] xori $10,$0,0
+Register Write to Reg: 0x0A Val: 0x00000000
+[inst #11] xori $11,$0,0
+Register Write to Reg: 0x0B Val: 0x00000000
+[inst #12] xori $12,$0,0
+Register Write to Reg: 0x0C Val: 0x00000000
+[inst #13] xori $13,$0,0
+Register Write to Reg: 0x0D Val: 0x00000000
+[inst #14] xori $14,$0,0
+Register Write to Reg: 0x0E Val: 0x00000000
+[inst #15] xori $15,$0,0
+Register Write to Reg: 0x0F Val: 0x00000000
+[inst #16] xori $16,$0,0
+Register Write to Reg: 0x10 Val: 0x00000000
+[inst #17] xori $17,$0,0
+Register Write to Reg: 0x11 Val: 0x00000000
+[inst #18] xori $18,$0,0
+Register Write to Reg: 0x12 Val: 0x00000000
+[inst #19] xori $19,$0,0
+Register Write to Reg: 0x13 Val: 0x00000000
+[inst #20] xori $20,$0,0
+Register Write to Reg: 0x14 Val: 0x00000000
+[inst #21] xori $21,$0,0
+Register Write to Reg: 0x15 Val: 0x00000000
+[inst #22] xori $22,$0,0
+Register Write to Reg: 0x16 Val: 0x00000000
+[inst #23] xori $23,$0,0
+Register Write to Reg: 0x17 Val: 0x00000000
+[inst #24] xori $24,$0,0
+Register Write to Reg: 0x18 Val: 0x00000000
+[inst #25] xori $25,$0,0
+Register Write to Reg: 0x19 Val: 0x00000000
+[inst #26] xori $26,$0,0
+Register Write to Reg: 0x1A Val: 0x00000000
+[inst #27] xori $27,$0,0
+Register Write to Reg: 0x1B Val: 0x00000000
+[inst #28] xori $28,$0,0
+Register Write to Reg: 0x1C Val: 0x00000000
+[inst #29] xori $29,$0,0
+Register Write to Reg: 0x1D Val: 0x00000000
+[inst #30] xori $30,$0,0
+Register Write to Reg: 0x1E Val: 0x00000000
+[inst #31] xori $31,$0,0
+Register Write to Reg: 0x1F Val: 0x00000000
+[inst #32] addi $9,$0,15
+Register Write to Reg: 0x09 Val: 0x0000000F
+[inst #33] addi $10,$0,31
+Register Write to Reg: 0x0A Val: 0x0000001F
+[inst #34] xor $16,$9,$10
+Register Write to Reg: 0x10 Val: 0x00000010
+[inst #35] addi $9,$0,-1
+Register Write to Reg: 0x09 Val: 0xFFFFFFFF
+[inst #36] xor $17,$9,$0
+Register Write to Reg: 0x11 Val: 0xFFFFFFFF
+[inst #37] lui $1,-21846
+Register Write to Reg: 0x01 Val: 0xAAAA0000
+[inst #38] ori $1,$1,43690
+Register Write to Reg: 0x01 Val: 0xAAAAAAAA
+[inst #39] add $9,$0,$1
+Register Write to Reg: 0x09 Val: 0xAAAAAAAA
+[inst #40] xor $18,$9,$17
+Register Write to Reg: 0x12 Val: 0x55555555
+[inst #41] xor $19,$9,$18
+Register Write to Reg: 0x13 Val: 0xFFFFFFFF
+[inst #42] xor $20,$19,$17
+Register Write to Reg: 0x14 Val: 0x00000000
+[inst #43] halt 
+

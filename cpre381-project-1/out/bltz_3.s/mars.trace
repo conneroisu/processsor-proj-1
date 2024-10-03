@@ -1,0 +1,9 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/bltz_3.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addiu $8,$0,1
+Register Write to Reg: 0x08 Val: 0x00000001
+[inst #2] bltz $8,1
+[inst #3] addiu $8,$0,100
+Register Write to Reg: 0x08 Val: 0x00000064
+[inst #4] halt 
+

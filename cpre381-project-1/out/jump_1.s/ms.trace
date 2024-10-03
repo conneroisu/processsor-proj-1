@@ -1,0 +1,7 @@
+In clock cycle: 1
+Register Write to Reg: 0x08 Val: 0x00000001
+In clock cycle: 4
+Register Write to Reg: 0x08 Val: 0x000003E9
+In clock cycle: 6
+Register Write to Reg: 0x08 Val: 0x000003F3
+Execution is stopping! Clock Cycle: 8

@@ -1,0 +1,61 @@
+[inst #1] addiu $2,$0,4
+Register Write to Reg: 0x02 Val: 0x00000004
+[inst #2] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #3] ori $4,$1,26
+Register Write to Reg: 0x04 Val: 0x1001001A
+[inst #4] syscall 
+Test 1
+[inst #5] addi $8,$0,100
+Register Write to Reg: 0x08 Val: 0x00000064
+[inst #6] bgtz $8,4
+[inst #7] addiu $2,$0,4
+Register Write to Reg: 0x02 Val: 0x00000004
+[inst #8] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #9] ori $4,$1,0
+Register Write to Reg: 0x04 Val: 0x10010000
+[inst #10] syscall 
+Test Passed
+[inst #11] addiu $2,$0,4
+Register Write to Reg: 0x02 Val: 0x00000004
+[inst #12] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #13] ori $4,$1,34
+Register Write to Reg: 0x04 Val: 0x10010022
+[inst #14] syscall 
+Test 2
+[inst #15] addi $8,$0,-100
+Register Write to Reg: 0x08 Val: 0xFFFFFF9C
+[inst #16] bgtz $8,5
+[inst #17] addiu $2,$0,4
+Register Write to Reg: 0x02 Val: 0x00000004
+[inst #18] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #19] ori $4,$1,0
+Register Write to Reg: 0x04 Val: 0x10010000
+[inst #20] syscall 
+Test Passed
+[inst #21] j 4194420
+[inst #22] addiu $2,$0,4
+Register Write to Reg: 0x02 Val: 0x00000004
+[inst #23] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #24] ori $4,$1,42
+Register Write to Reg: 0x04 Val: 0x1001002A
+[inst #25] syscall 
+Test 3
+[inst #26] addi $8,$0,0
+Register Write to Reg: 0x08 Val: 0x00000000
+[inst #27] bgtz $8,5
+[inst #28] addiu $2,$0,4
+Register Write to Reg: 0x02 Val: 0x00000004
+[inst #29] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #30] ori $4,$1,0
+Register Write to Reg: 0x04 Val: 0x10010000
+[inst #31] syscall 
+Test Passed
+[inst #32] j 4194480
+[inst #33] halt 
+

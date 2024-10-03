@@ -1,0 +1,6 @@
+In clock cycle: 0
+Register Write to Reg: 0x08 Val: 0xFFFFFFFF
+In clock cycle: 1
+Register Write to Reg: 0x08 Val: 0x00000001
+Arithmetic Overflow Detected
+Execution is stopping! Clock Cycle: 2

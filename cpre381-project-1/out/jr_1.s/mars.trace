@@ -1,0 +1,158 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/jr_1.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] beq $0,$0,61
+[inst #2] jal 4194308
+Register Write to Reg: 0x1F Val: 0x004000FC
+[inst #3] addi $1,$31,0
+Register Write to Reg: 0x01 Val: 0x004000FC
+[inst #4] jr $1
+[inst #5] jal 4194316
+Register Write to Reg: 0x1F Val: 0x00400100
+[inst #6] addi $2,$31,0
+Register Write to Reg: 0x02 Val: 0x00400100
+[inst #7] jr $2
+[inst #8] jal 4194324
+Register Write to Reg: 0x1F Val: 0x00400104
+[inst #9] addi $3,$31,0
+Register Write to Reg: 0x03 Val: 0x00400104
+[inst #10] jr $3
+[inst #11] jal 4194332
+Register Write to Reg: 0x1F Val: 0x00400108
+[inst #12] addi $4,$31,0
+Register Write to Reg: 0x04 Val: 0x00400108
+[inst #13] jr $4
+[inst #14] jal 4194340
+Register Write to Reg: 0x1F Val: 0x0040010C
+[inst #15] addi $5,$31,0
+Register Write to Reg: 0x05 Val: 0x0040010C
+[inst #16] jr $5
+[inst #17] jal 4194348
+Register Write to Reg: 0x1F Val: 0x00400110
+[inst #18] addi $6,$31,0
+Register Write to Reg: 0x06 Val: 0x00400110
+[inst #19] jr $6
+[inst #20] jal 4194356
+Register Write to Reg: 0x1F Val: 0x00400114
+[inst #21] addi $7,$31,0
+Register Write to Reg: 0x07 Val: 0x00400114
+[inst #22] jr $7
+[inst #23] jal 4194364
+Register Write to Reg: 0x1F Val: 0x00400118
+[inst #24] addi $8,$31,0
+Register Write to Reg: 0x08 Val: 0x00400118
+[inst #25] jr $8
+[inst #26] jal 4194372
+Register Write to Reg: 0x1F Val: 0x0040011C
+[inst #27] addi $9,$31,0
+Register Write to Reg: 0x09 Val: 0x0040011C
+[inst #28] jr $9
+[inst #29] jal 4194380
+Register Write to Reg: 0x1F Val: 0x00400120
+[inst #30] addi $10,$31,0
+Register Write to Reg: 0x0A Val: 0x00400120
+[inst #31] jr $10
+[inst #32] jal 4194388
+Register Write to Reg: 0x1F Val: 0x00400124
+[inst #33] addi $11,$31,0
+Register Write to Reg: 0x0B Val: 0x00400124
+[inst #34] jr $11
+[inst #35] jal 4194396
+Register Write to Reg: 0x1F Val: 0x00400128
+[inst #36] addi $12,$31,0
+Register Write to Reg: 0x0C Val: 0x00400128
+[inst #37] jr $12
+[inst #38] jal 4194404
+Register Write to Reg: 0x1F Val: 0x0040012C
+[inst #39] addi $13,$31,0
+Register Write to Reg: 0x0D Val: 0x0040012C
+[inst #40] jr $13
+[inst #41] jal 4194412
+Register Write to Reg: 0x1F Val: 0x00400130
+[inst #42] addi $14,$31,0
+Register Write to Reg: 0x0E Val: 0x00400130
+[inst #43] jr $14
+[inst #44] jal 4194420
+Register Write to Reg: 0x1F Val: 0x00400134
+[inst #45] addi $15,$31,0
+Register Write to Reg: 0x0F Val: 0x00400134
+[inst #46] jr $15
+[inst #47] jal 4194428
+Register Write to Reg: 0x1F Val: 0x00400138
+[inst #48] addi $16,$31,0
+Register Write to Reg: 0x10 Val: 0x00400138
+[inst #49] jr $16
+[inst #50] jal 4194436
+Register Write to Reg: 0x1F Val: 0x0040013C
+[inst #51] addi $17,$31,0
+Register Write to Reg: 0x11 Val: 0x0040013C
+[inst #52] jr $17
+[inst #53] jal 4194444
+Register Write to Reg: 0x1F Val: 0x00400140
+[inst #54] addi $18,$31,0
+Register Write to Reg: 0x12 Val: 0x00400140
+[inst #55] jr $18
+[inst #56] jal 4194452
+Register Write to Reg: 0x1F Val: 0x00400144
+[inst #57] addi $19,$31,0
+Register Write to Reg: 0x13 Val: 0x00400144
+[inst #58] jr $19
+[inst #59] jal 4194460
+Register Write to Reg: 0x1F Val: 0x00400148
+[inst #60] addi $20,$31,0
+Register Write to Reg: 0x14 Val: 0x00400148
+[inst #61] jr $20
+[inst #62] jal 4194468
+Register Write to Reg: 0x1F Val: 0x0040014C
+[inst #63] addi $21,$31,0
+Register Write to Reg: 0x15 Val: 0x0040014C
+[inst #64] jr $21
+[inst #65] jal 4194476
+Register Write to Reg: 0x1F Val: 0x00400150
+[inst #66] addi $22,$31,0
+Register Write to Reg: 0x16 Val: 0x00400150
+[inst #67] jr $22
+[inst #68] jal 4194484
+Register Write to Reg: 0x1F Val: 0x00400154
+[inst #69] addi $23,$31,0
+Register Write to Reg: 0x17 Val: 0x00400154
+[inst #70] jr $23
+[inst #71] jal 4194492
+Register Write to Reg: 0x1F Val: 0x00400158
+[inst #72] addi $24,$31,0
+Register Write to Reg: 0x18 Val: 0x00400158
+[inst #73] jr $24
+[inst #74] jal 4194500
+Register Write to Reg: 0x1F Val: 0x0040015C
+[inst #75] addi $25,$31,0
+Register Write to Reg: 0x19 Val: 0x0040015C
+[inst #76] jr $25
+[inst #77] jal 4194508
+Register Write to Reg: 0x1F Val: 0x00400160
+[inst #78] addi $26,$31,0
+Register Write to Reg: 0x1A Val: 0x00400160
+[inst #79] jr $26
+[inst #80] jal 4194516
+Register Write to Reg: 0x1F Val: 0x00400164
+[inst #81] addi $27,$31,0
+Register Write to Reg: 0x1B Val: 0x00400164
+[inst #82] jr $27
+[inst #83] jal 4194524
+Register Write to Reg: 0x1F Val: 0x00400168
+[inst #84] addi $28,$31,0
+Register Write to Reg: 0x1C Val: 0x00400168
+[inst #85] jr $28
+[inst #86] jal 4194532
+Register Write to Reg: 0x1F Val: 0x0040016C
+[inst #87] addi $29,$31,0
+Register Write to Reg: 0x1D Val: 0x0040016C
+[inst #88] jr $29
+[inst #89] jal 4194540
+Register Write to Reg: 0x1F Val: 0x00400170
+[inst #90] addi $30,$31,0
+Register Write to Reg: 0x1E Val: 0x00400170
+[inst #91] jr $30
+[inst #92] jal 4194548
+Register Write to Reg: 0x1F Val: 0x00400174
+[inst #93] jr $31
+[inst #94] halt 
+

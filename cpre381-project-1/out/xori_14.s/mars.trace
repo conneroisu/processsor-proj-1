@@ -1,0 +1,30 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/xori_14.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addi $17,$0,0
+Register Write to Reg: 0x11 Val: 0x00000000
+[inst #2] xori $17,$17,0
+Register Write to Reg: 0x11 Val: 0x00000000
+[inst #3] addi $17,$0,0
+Register Write to Reg: 0x11 Val: 0x00000000
+[inst #4] xori $17,$17,65535
+Register Write to Reg: 0x11 Val: 0x0000FFFF
+[inst #5] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #6] ori $1,$1,65535
+Register Write to Reg: 0x01 Val: 0x0000FFFF
+[inst #7] add $17,$0,$1
+Register Write to Reg: 0x11 Val: 0x0000FFFF
+[inst #8] lui $17,65535
+Register Write to Reg: 0x11 Val: 0xFFFF0000
+[inst #9] xori $17,$17,0
+Register Write to Reg: 0x11 Val: 0xFFFF0000
+[inst #10] xori $9,$9,0
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #11] xori $9,$9,0
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #12] addi $9,$9,1161
+Register Write to Reg: 0x09 Val: 0x00000489
+[inst #13] xori $9,$17,0
+Register Write to Reg: 0x09 Val: 0xFFFF0000
+[inst #14] halt 
+

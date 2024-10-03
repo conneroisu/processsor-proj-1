@@ -1,0 +1,62 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/jr_2.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] jal 4194308
+Register Write to Reg: 0x1F Val: 0x00400004
+[inst #2] addi $14,$31,0
+Register Write to Reg: 0x0E Val: 0x00400004
+[inst #3] slt $10,$0,$9
+Register Write to Reg: 0x0A Val: 0x00000000
+[inst #4] bne $10,$0,22
+[inst #5] addi $9,$0,1
+Register Write to Reg: 0x09 Val: 0x00000001
+[inst #6] jal 4194328
+Register Write to Reg: 0x1F Val: 0x00400018
+[inst #7] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #8] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #9] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #10] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #11] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #12] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #13] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #14] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #15] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #16] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #17] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #18] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #19] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #20] addi $0,$0,0
+Register Write to Reg: 0x00 Val: 0x00000000
+[inst #21] addi $1,$0,24
+Register Write to Reg: 0x01 Val: 0x00000018
+[inst #22] sub $11,$31,$1
+Register Write to Reg: 0x0B Val: 0x00400000
+[inst #23] jr $11
+[inst #24] jal 4194308
+Register Write to Reg: 0x1F Val: 0x00400004
+[inst #25] addi $14,$31,0
+Register Write to Reg: 0x0E Val: 0x00400004
+[inst #26] slt $10,$0,$9
+Register Write to Reg: 0x0A Val: 0x00000001
+[inst #27] bne $10,$0,22
+[inst #28] addi $15,$11,144
+Register Write to Reg: 0x0F Val: 0x00400090
+[inst #29] jr $15
+[inst #30] addi $25,$0,-1
+Register Write to Reg: 0x19 Val: 0xFFFFFFFF
+[inst #31] jal 4194396
+Register Write to Reg: 0x1F Val: 0x00400098
+[inst #32] halt 
+

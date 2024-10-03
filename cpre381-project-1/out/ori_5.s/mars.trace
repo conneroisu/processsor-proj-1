@@ -1,0 +1,64 @@
+[inst #1] ori $1,$0,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #2] ori $2,$0,0
+Register Write to Reg: 0x02 Val: 0x00000000
+[inst #3] ori $3,$0,0
+Register Write to Reg: 0x03 Val: 0x00000000
+[inst #4] ori $4,$0,0
+Register Write to Reg: 0x04 Val: 0x00000000
+[inst #5] ori $5,$0,0
+Register Write to Reg: 0x05 Val: 0x00000000
+[inst #6] ori $6,$0,0
+Register Write to Reg: 0x06 Val: 0x00000000
+[inst #7] ori $7,$0,0
+Register Write to Reg: 0x07 Val: 0x00000000
+[inst #8] ori $8,$0,0
+Register Write to Reg: 0x08 Val: 0x00000000
+[inst #9] ori $9,$0,0
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #10] ori $10,$0,0
+Register Write to Reg: 0x0A Val: 0x00000000
+[inst #11] ori $11,$0,0
+Register Write to Reg: 0x0B Val: 0x00000000
+[inst #12] ori $12,$0,0
+Register Write to Reg: 0x0C Val: 0x00000000
+[inst #13] ori $13,$0,0
+Register Write to Reg: 0x0D Val: 0x00000000
+[inst #14] ori $14,$0,0
+Register Write to Reg: 0x0E Val: 0x00000000
+[inst #15] ori $15,$0,0
+Register Write to Reg: 0x0F Val: 0x00000000
+[inst #16] ori $16,$0,0
+Register Write to Reg: 0x10 Val: 0x00000000
+[inst #17] ori $17,$0,0
+Register Write to Reg: 0x11 Val: 0x00000000
+[inst #18] ori $18,$0,0
+Register Write to Reg: 0x12 Val: 0x00000000
+[inst #19] ori $19,$0,0
+Register Write to Reg: 0x13 Val: 0x00000000
+[inst #20] ori $20,$0,0
+Register Write to Reg: 0x14 Val: 0x00000000
+[inst #21] ori $21,$0,0
+Register Write to Reg: 0x15 Val: 0x00000000
+[inst #22] ori $22,$0,0
+Register Write to Reg: 0x16 Val: 0x00000000
+[inst #23] ori $23,$0,0
+Register Write to Reg: 0x17 Val: 0x00000000
+[inst #24] ori $24,$0,0
+Register Write to Reg: 0x18 Val: 0x00000000
+[inst #25] ori $25,$0,0
+Register Write to Reg: 0x19 Val: 0x00000000
+[inst #26] ori $26,$0,0
+Register Write to Reg: 0x1A Val: 0x00000000
+[inst #27] ori $27,$0,0
+Register Write to Reg: 0x1B Val: 0x00000000
+[inst #28] ori $28,$0,0
+Register Write to Reg: 0x1C Val: 0x00000000
+[inst #29] ori $29,$0,0
+Register Write to Reg: 0x1D Val: 0x00000000
+[inst #30] ori $30,$0,0
+Register Write to Reg: 0x1E Val: 0x00000000
+[inst #31] ori $31,$0,0
+Register Write to Reg: 0x1F Val: 0x00000000
+[inst #32] halt 
+

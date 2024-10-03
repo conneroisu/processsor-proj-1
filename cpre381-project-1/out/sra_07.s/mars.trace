@@ -1,0 +1,44 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/sra_07.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] lui $8,32768
+Register Write to Reg: 0x08 Val: 0x80000000
+[inst #2] sra $8,$8,31
+Register Write to Reg: 0x08 Val: 0xFFFFFFFF
+[inst #3] lui $8,32767
+Register Write to Reg: 0x08 Val: 0x7FFF0000
+[inst #4] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #5] ori $1,$1,65535
+Register Write to Reg: 0x01 Val: 0x0000FFFF
+[inst #6] add $8,$8,$1
+Register Write to Reg: 0x08 Val: 0x7FFFFFFF
+[inst #7] sra $8,$8,31
+Register Write to Reg: 0x08 Val: 0x00000000
+[inst #8] lui $8,15
+Register Write to Reg: 0x08 Val: 0x000F0000
+[inst #9] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #10] ori $1,$1,61440
+Register Write to Reg: 0x01 Val: 0x0000F000
+[inst #11] add $8,$8,$1
+Register Write to Reg: 0x08 Val: 0x000FF000
+[inst #12] sra $8,$8,0
+Register Write to Reg: 0x08 Val: 0x000FF000
+[inst #13] sra $8,$8,12
+Register Write to Reg: 0x08 Val: 0x000000FF
+[inst #14] lui $8,32768
+Register Write to Reg: 0x08 Val: 0x80000000
+[inst #15] sra $8,$8,17
+Register Write to Reg: 0x08 Val: 0xFFFFC000
+[inst #16] lui $8,32767
+Register Write to Reg: 0x08 Val: 0x7FFF0000
+[inst #17] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #18] ori $1,$1,65535
+Register Write to Reg: 0x01 Val: 0x0000FFFF
+[inst #19] add $8,$8,$1
+Register Write to Reg: 0x08 Val: 0x7FFFFFFF
+[inst #20] sra $8,$8,24
+Register Write to Reg: 0x08 Val: 0x0000007F
+[inst #21] halt 
+

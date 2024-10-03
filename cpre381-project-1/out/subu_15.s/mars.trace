@@ -1,0 +1,12 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/subu_15.s line 3 column 5: MARS does not recognize the .globltest4 directive.  Ignored.
+
+[inst #1] addiu $9,$0,0
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #2] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #3] ori $1,$1,16
+Register Write to Reg: 0x01 Val: 0x00000010
+[inst #4] subu $8,$9,$1
+Register Write to Reg: 0x08 Val: 0xFFFFFFF0
+[inst #5] halt 
+

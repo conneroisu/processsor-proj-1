@@ -1,0 +1,10 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/xori_02.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] lui $1,-1
+Register Write to Reg: 0x01 Val: 0xFFFF0000
+[inst #2] ori $1,$1,65516
+Register Write to Reg: 0x01 Val: 0xFFFFFFEC
+[inst #3] xor $10,$0,$1
+Register Write to Reg: 0x0A Val: 0xFFFFFFEC
+[inst #4] halt 
+

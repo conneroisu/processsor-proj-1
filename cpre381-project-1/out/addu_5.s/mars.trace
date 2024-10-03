@@ -1,0 +1,23 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/addu_5.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #2] ori $1,$1,4
+Register Write to Reg: 0x01 Val: 0x00000004
+[inst #3] addu $9,$0,$1
+Register Write to Reg: 0x09 Val: 0x00000004
+[inst #4] lui $1,-1
+Register Write to Reg: 0x01 Val: 0xFFFF0000
+[inst #5] ori $1,$1,65530
+Register Write to Reg: 0x01 Val: 0xFFFFFFFA
+[inst #6] addu $10,$0,$1
+Register Write to Reg: 0x0A Val: 0xFFFFFFFA
+[inst #7] addu $11,$10,$9
+Register Write to Reg: 0x0B Val: 0xFFFFFFFE
+[inst #8] addiu $2,$0,1
+Register Write to Reg: 0x02 Val: 0x00000001
+[inst #9] addu $4,$0,$11
+Register Write to Reg: 0x04 Val: 0xFFFFFFFE
+[inst #10] syscall 
+-2[inst #11] halt 
+

@@ -1,0 +1,34 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/slt_0.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] slt $1,$0,$0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #2] addi $1,$0,1
+Register Write to Reg: 0x01 Val: 0x00000001
+[inst #3] slt $2,$0,$1
+Register Write to Reg: 0x02 Val: 0x00000001
+[inst #4] slt $2,$1,$0
+Register Write to Reg: 0x02 Val: 0x00000000
+[inst #5] add $1,$0,$0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #6] lui $1,61439
+Register Write to Reg: 0x01 Val: 0xEFFF0000
+[inst #7] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #8] ori $1,$1,65535
+Register Write to Reg: 0x01 Val: 0x0000FFFF
+[inst #9] addu $1,$1,$1
+Register Write to Reg: 0x01 Val: 0x0001FFFE
+[inst #10] slt $2,$0,$1
+Register Write to Reg: 0x02 Val: 0x00000001
+[inst #11] slt $2,$1,$0
+Register Write to Reg: 0x02 Val: 0x00000000
+[inst #12] addi $1,$0,10
+Register Write to Reg: 0x01 Val: 0x0000000A
+[inst #13] addi $2,$0,100
+Register Write to Reg: 0x02 Val: 0x00000064
+[inst #14] slt $3,$1,$2
+Register Write to Reg: 0x03 Val: 0x00000001
+[inst #15] slt $3,$2,$1
+Register Write to Reg: 0x03 Val: 0x00000000
+[inst #16] halt 
+

@@ -1,0 +1,16 @@
+/* Custom Callouts */
+/* By Conner Ohnesorge */
+
+/* Problem Callout has color of red and icon of server-crash */
+.callout[data-callout="task"] {
+    --callout-color: 255, 77, 77 !important;
+    --callout-icon: file-check-2 !important;
+}
+
+/* Answer Callout has color of purple and icon of fingerprint */
+.callout[data-callout="answer"] {
+    --callout-color: 100, 255, 100 !important;
+    --callout-icon: user-check !important;
+    border: 2px solid #4d4d4d !important;
+}
+

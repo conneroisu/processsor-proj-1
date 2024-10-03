@@ -1,0 +1,13 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/addi_11.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] lui $1,32767
+Register Write to Reg: 0x01 Val: 0x7FFF0000
+[inst #2] ori $1,$1,65535
+Register Write to Reg: 0x01 Val: 0x7FFFFFFF
+[inst #3] add $8,$0,$1
+Register Write to Reg: 0x08 Val: 0x7FFFFFFF
+[inst #4] addi $8,$8,4
+Register Write to Reg: 0x08 Val: 0x80000003
+Arithmetic Overflow Detected
+[inst #5] halt 
+

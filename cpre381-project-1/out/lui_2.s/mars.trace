@@ -1,0 +1,128 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/lui_2.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] lui $1,65535
+Register Write to Reg: 0x01 Val: 0xFFFF0000
+[inst #2] lui $2,65535
+Register Write to Reg: 0x02 Val: 0xFFFF0000
+[inst #3] lui $3,65535
+Register Write to Reg: 0x03 Val: 0xFFFF0000
+[inst #4] lui $4,65535
+Register Write to Reg: 0x04 Val: 0xFFFF0000
+[inst #5] lui $5,65535
+Register Write to Reg: 0x05 Val: 0xFFFF0000
+[inst #6] lui $6,65535
+Register Write to Reg: 0x06 Val: 0xFFFF0000
+[inst #7] lui $7,65535
+Register Write to Reg: 0x07 Val: 0xFFFF0000
+[inst #8] lui $8,65535
+Register Write to Reg: 0x08 Val: 0xFFFF0000
+[inst #9] lui $9,65535
+Register Write to Reg: 0x09 Val: 0xFFFF0000
+[inst #10] lui $10,65535
+Register Write to Reg: 0x0A Val: 0xFFFF0000
+[inst #11] lui $11,65535
+Register Write to Reg: 0x0B Val: 0xFFFF0000
+[inst #12] lui $12,65535
+Register Write to Reg: 0x0C Val: 0xFFFF0000
+[inst #13] lui $13,65535
+Register Write to Reg: 0x0D Val: 0xFFFF0000
+[inst #14] lui $14,65535
+Register Write to Reg: 0x0E Val: 0xFFFF0000
+[inst #15] lui $15,65535
+Register Write to Reg: 0x0F Val: 0xFFFF0000
+[inst #16] lui $16,65535
+Register Write to Reg: 0x10 Val: 0xFFFF0000
+[inst #17] lui $17,65535
+Register Write to Reg: 0x11 Val: 0xFFFF0000
+[inst #18] lui $18,65535
+Register Write to Reg: 0x12 Val: 0xFFFF0000
+[inst #19] lui $19,65535
+Register Write to Reg: 0x13 Val: 0xFFFF0000
+[inst #20] lui $20,65535
+Register Write to Reg: 0x14 Val: 0xFFFF0000
+[inst #21] lui $21,65535
+Register Write to Reg: 0x15 Val: 0xFFFF0000
+[inst #22] lui $22,65535
+Register Write to Reg: 0x16 Val: 0xFFFF0000
+[inst #23] lui $23,65535
+Register Write to Reg: 0x17 Val: 0xFFFF0000
+[inst #24] lui $24,65535
+Register Write to Reg: 0x18 Val: 0xFFFF0000
+[inst #25] lui $25,65535
+Register Write to Reg: 0x19 Val: 0xFFFF0000
+[inst #26] lui $26,65535
+Register Write to Reg: 0x1A Val: 0xFFFF0000
+[inst #27] lui $27,65535
+Register Write to Reg: 0x1B Val: 0xFFFF0000
+[inst #28] lui $28,65535
+Register Write to Reg: 0x1C Val: 0xFFFF0000
+[inst #29] lui $29,65535
+Register Write to Reg: 0x1D Val: 0xFFFF0000
+[inst #30] lui $30,65535
+Register Write to Reg: 0x1E Val: 0xFFFF0000
+[inst #31] lui $31,65535
+Register Write to Reg: 0x1F Val: 0xFFFF0000
+[inst #32] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #33] lui $2,0
+Register Write to Reg: 0x02 Val: 0x00000000
+[inst #34] lui $3,0
+Register Write to Reg: 0x03 Val: 0x00000000
+[inst #35] lui $4,0
+Register Write to Reg: 0x04 Val: 0x00000000
+[inst #36] lui $5,0
+Register Write to Reg: 0x05 Val: 0x00000000
+[inst #37] lui $6,0
+Register Write to Reg: 0x06 Val: 0x00000000
+[inst #38] lui $7,0
+Register Write to Reg: 0x07 Val: 0x00000000
+[inst #39] lui $8,0
+Register Write to Reg: 0x08 Val: 0x00000000
+[inst #40] lui $9,0
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #41] lui $10,0
+Register Write to Reg: 0x0A Val: 0x00000000
+[inst #42] lui $11,0
+Register Write to Reg: 0x0B Val: 0x00000000
+[inst #43] lui $12,0
+Register Write to Reg: 0x0C Val: 0x00000000
+[inst #44] lui $13,0
+Register Write to Reg: 0x0D Val: 0x00000000
+[inst #45] lui $14,0
+Register Write to Reg: 0x0E Val: 0x00000000
+[inst #46] lui $15,0
+Register Write to Reg: 0x0F Val: 0x00000000
+[inst #47] lui $16,0
+Register Write to Reg: 0x10 Val: 0x00000000
+[inst #48] lui $17,0
+Register Write to Reg: 0x11 Val: 0x00000000
+[inst #49] lui $18,0
+Register Write to Reg: 0x12 Val: 0x00000000
+[inst #50] lui $19,0
+Register Write to Reg: 0x13 Val: 0x00000000
+[inst #51] lui $20,0
+Register Write to Reg: 0x14 Val: 0x00000000
+[inst #52] lui $21,0
+Register Write to Reg: 0x15 Val: 0x00000000
+[inst #53] lui $22,0
+Register Write to Reg: 0x16 Val: 0x00000000
+[inst #54] lui $23,0
+Register Write to Reg: 0x17 Val: 0x00000000
+[inst #55] lui $24,0
+Register Write to Reg: 0x18 Val: 0x00000000
+[inst #56] lui $25,0
+Register Write to Reg: 0x19 Val: 0x00000000
+[inst #57] lui $26,0
+Register Write to Reg: 0x1A Val: 0x00000000
+[inst #58] lui $27,0
+Register Write to Reg: 0x1B Val: 0x00000000
+[inst #59] lui $28,0
+Register Write to Reg: 0x1C Val: 0x00000000
+[inst #60] lui $29,0
+Register Write to Reg: 0x1D Val: 0x00000000
+[inst #61] lui $30,0
+Register Write to Reg: 0x1E Val: 0x00000000
+[inst #62] lui $31,0
+Register Write to Reg: 0x1F Val: 0x00000000
+[inst #63] halt 
+

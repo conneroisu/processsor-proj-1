@@ -1,0 +1,18 @@
+[inst #1] addi $8,$0,100
+Register Write to Reg: 0x08 Val: 0x00000064
+[inst #2] blez $8,10
+[inst #3] add $8,$0,$0
+Register Write to Reg: 0x08 Val: 0x00000000
+[inst #4] blez $8,1
+[inst #5] addi $8,$0,-100
+Register Write to Reg: 0x08 Val: 0xFFFFFF9C
+[inst #6] blez $8,0
+[inst #7] addiu $2,$0,4
+Register Write to Reg: 0x02 Val: 0x00000004
+[inst #8] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #9] ori $4,$1,38
+Register Write to Reg: 0x04 Val: 0x10010026
+[inst #10] syscall 
+Tests passed![inst #11] halt 
+

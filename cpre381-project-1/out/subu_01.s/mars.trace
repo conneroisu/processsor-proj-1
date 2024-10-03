@@ -1,0 +1,128 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/subu_01.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addi $1,$0,1
+Register Write to Reg: 0x01 Val: 0x00000001
+[inst #2] addi $2,$0,10
+Register Write to Reg: 0x02 Val: 0x0000000A
+[inst #3] subu $2,$2,$1
+Register Write to Reg: 0x02 Val: 0x00000009
+[inst #4] addi $3,$0,10
+Register Write to Reg: 0x03 Val: 0x0000000A
+[inst #5] subu $3,$3,$1
+Register Write to Reg: 0x03 Val: 0x00000009
+[inst #6] addi $4,$0,10
+Register Write to Reg: 0x04 Val: 0x0000000A
+[inst #7] subu $4,$4,$1
+Register Write to Reg: 0x04 Val: 0x00000009
+[inst #8] addi $5,$0,10
+Register Write to Reg: 0x05 Val: 0x0000000A
+[inst #9] subu $5,$5,$1
+Register Write to Reg: 0x05 Val: 0x00000009
+[inst #10] addi $6,$0,10
+Register Write to Reg: 0x06 Val: 0x0000000A
+[inst #11] subu $6,$6,$1
+Register Write to Reg: 0x06 Val: 0x00000009
+[inst #12] addi $7,$0,10
+Register Write to Reg: 0x07 Val: 0x0000000A
+[inst #13] subu $7,$7,$1
+Register Write to Reg: 0x07 Val: 0x00000009
+[inst #14] addi $8,$0,10
+Register Write to Reg: 0x08 Val: 0x0000000A
+[inst #15] subu $8,$8,$1
+Register Write to Reg: 0x08 Val: 0x00000009
+[inst #16] addi $9,$0,10
+Register Write to Reg: 0x09 Val: 0x0000000A
+[inst #17] subu $9,$9,$1
+Register Write to Reg: 0x09 Val: 0x00000009
+[inst #18] addi $10,$0,10
+Register Write to Reg: 0x0A Val: 0x0000000A
+[inst #19] subu $10,$10,$1
+Register Write to Reg: 0x0A Val: 0x00000009
+[inst #20] addi $11,$0,10
+Register Write to Reg: 0x0B Val: 0x0000000A
+[inst #21] subu $11,$11,$1
+Register Write to Reg: 0x0B Val: 0x00000009
+[inst #22] addi $12,$0,10
+Register Write to Reg: 0x0C Val: 0x0000000A
+[inst #23] subu $12,$12,$1
+Register Write to Reg: 0x0C Val: 0x00000009
+[inst #24] addi $13,$0,10
+Register Write to Reg: 0x0D Val: 0x0000000A
+[inst #25] subu $13,$13,$1
+Register Write to Reg: 0x0D Val: 0x00000009
+[inst #26] addi $14,$0,10
+Register Write to Reg: 0x0E Val: 0x0000000A
+[inst #27] subu $14,$14,$1
+Register Write to Reg: 0x0E Val: 0x00000009
+[inst #28] addi $15,$0,10
+Register Write to Reg: 0x0F Val: 0x0000000A
+[inst #29] subu $15,$15,$1
+Register Write to Reg: 0x0F Val: 0x00000009
+[inst #30] addi $16,$0,10
+Register Write to Reg: 0x10 Val: 0x0000000A
+[inst #31] subu $16,$16,$1
+Register Write to Reg: 0x10 Val: 0x00000009
+[inst #32] addi $17,$0,10
+Register Write to Reg: 0x11 Val: 0x0000000A
+[inst #33] subu $17,$17,$1
+Register Write to Reg: 0x11 Val: 0x00000009
+[inst #34] addi $18,$0,10
+Register Write to Reg: 0x12 Val: 0x0000000A
+[inst #35] subu $18,$18,$1
+Register Write to Reg: 0x12 Val: 0x00000009
+[inst #36] addi $19,$0,10
+Register Write to Reg: 0x13 Val: 0x0000000A
+[inst #37] subu $19,$19,$1
+Register Write to Reg: 0x13 Val: 0x00000009
+[inst #38] addi $20,$0,10
+Register Write to Reg: 0x14 Val: 0x0000000A
+[inst #39] subu $20,$20,$1
+Register Write to Reg: 0x14 Val: 0x00000009
+[inst #40] addi $21,$0,10
+Register Write to Reg: 0x15 Val: 0x0000000A
+[inst #41] subu $21,$21,$1
+Register Write to Reg: 0x15 Val: 0x00000009
+[inst #42] addi $22,$0,10
+Register Write to Reg: 0x16 Val: 0x0000000A
+[inst #43] subu $22,$22,$1
+Register Write to Reg: 0x16 Val: 0x00000009
+[inst #44] addi $23,$0,10
+Register Write to Reg: 0x17 Val: 0x0000000A
+[inst #45] subu $23,$23,$1
+Register Write to Reg: 0x17 Val: 0x00000009
+[inst #46] addi $24,$0,10
+Register Write to Reg: 0x18 Val: 0x0000000A
+[inst #47] subu $24,$24,$1
+Register Write to Reg: 0x18 Val: 0x00000009
+[inst #48] addi $25,$0,10
+Register Write to Reg: 0x19 Val: 0x0000000A
+[inst #49] subu $25,$25,$1
+Register Write to Reg: 0x19 Val: 0x00000009
+[inst #50] addi $26,$0,10
+Register Write to Reg: 0x1A Val: 0x0000000A
+[inst #51] subu $26,$26,$1
+Register Write to Reg: 0x1A Val: 0x00000009
+[inst #52] addi $27,$0,10
+Register Write to Reg: 0x1B Val: 0x0000000A
+[inst #53] subu $27,$27,$1
+Register Write to Reg: 0x1B Val: 0x00000009
+[inst #54] addi $28,$0,10
+Register Write to Reg: 0x1C Val: 0x0000000A
+[inst #55] subu $28,$28,$1
+Register Write to Reg: 0x1C Val: 0x00000009
+[inst #56] addi $29,$0,10
+Register Write to Reg: 0x1D Val: 0x0000000A
+[inst #57] subu $29,$29,$1
+Register Write to Reg: 0x1D Val: 0x00000009
+[inst #58] addi $30,$0,10
+Register Write to Reg: 0x1E Val: 0x0000000A
+[inst #59] subu $30,$30,$1
+Register Write to Reg: 0x1E Val: 0x00000009
+[inst #60] addi $31,$0,10
+Register Write to Reg: 0x1F Val: 0x0000000A
+[inst #61] subu $31,$31,$1
+Register Write to Reg: 0x1F Val: 0x00000009
+[inst #62] subu $1,$1,$1
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #63] halt 
+

@@ -1,0 +1,40 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/nor_4.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addiu $8,$0,4
+Register Write to Reg: 0x08 Val: 0x00000004
+[inst #2] nor $8,$8,$8
+Register Write to Reg: 0x08 Val: 0xFFFFFFFB
+[inst #3] addiu $8,$0,4
+Register Write to Reg: 0x08 Val: 0x00000004
+[inst #4] addiu $9,$0,5
+Register Write to Reg: 0x09 Val: 0x00000005
+[inst #5] nor $10,$9,$8
+Register Write to Reg: 0x0A Val: 0xFFFFFFFA
+[inst #6] nor $8,$8,$8
+Register Write to Reg: 0x08 Val: 0xFFFFFFFB
+[inst #7] nor $9,$9,$9
+Register Write to Reg: 0x09 Val: 0xFFFFFFFA
+[inst #8] nor $8,$9,$8
+Register Write to Reg: 0x08 Val: 0x00000004
+[inst #9] nor $8,$10,$8
+Register Write to Reg: 0x08 Val: 0x00000001
+[inst #10] addiu $8,$0,4
+Register Write to Reg: 0x08 Val: 0x00000004
+[inst #11] addiu $9,$0,1
+Register Write to Reg: 0x09 Val: 0x00000001
+[inst #12] nor $8,$8,$9
+Register Write to Reg: 0x08 Val: 0xFFFFFFFA
+[inst #13] nor $8,$8,$8
+Register Write to Reg: 0x08 Val: 0x00000005
+[inst #14] addiu $8,$0,4
+Register Write to Reg: 0x08 Val: 0x00000004
+[inst #15] addiu $9,$0,4
+Register Write to Reg: 0x09 Val: 0x00000004
+[inst #16] nor $9,$9,$9
+Register Write to Reg: 0x09 Val: 0xFFFFFFFB
+[inst #17] nor $8,$8,$8
+Register Write to Reg: 0x08 Val: 0xFFFFFFFB
+[inst #18] nor $8,$9,$8
+Register Write to Reg: 0x08 Val: 0x00000004
+[inst #19] halt 
+

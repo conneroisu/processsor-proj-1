@@ -1,0 +1,46 @@
+stages: 
+  - test
+  - failure
+default:
+  image: bslathi19/modelsim_18.1:std
+  tags:
+    - docker
+
+cacheline_adaptor:
+  stage: test
+  script:
+    - export mgls_license_file=$mgls_license_file:1717@io.ece.iastate.edu
+    - export LM_LICENSE_FILE=$LM_LICENSE_FILE:27008@io.ece.iastate.edu:1717@io.ece.iastate.edu
+    - apt-get update
+    - apt-get install -y git 
+    - apt-get install -y python3
+    - apt install -y gnat
+    - git clone https://github.com/ghdl/ghdl.git
+    - cd ghdl 
+    - ./configure --prefix=/usr/local
+    - make
+    - make install
+    - cd ..
+    - export GHDL_ROOT="/opt/Ghdl"
+    - export PATH=$PATH:$GHDL_ROOT/bin
+    - mkdir work
+    - ghdl compile --workdir=work --std=08 --ieee=synopsys ./proj/src/MIPS_types.vhd
+    - ghdl compile --workdir=work --std=08 --ieee=synopsys ./proj/src/TopLevel/low_level/dffg.vhd
+    - ghdl compile --workdir=work --std=08 --ieee=synopsys ./proj/src/TopLevel/low_level/*.vhd
+    - ghdl compile --workdir=work --std=08 --ieee=synopsys ./proj/src/TopLevel/alu/*.vhd
+    - ghdl compile --workdir=work --std=08 --ieee=synopsys ./proj/src/TopLevel/fetch/*.vhd
+    - ghdl compile --workdir=work --std=08 --ieee=synopsys ./proj/src/TopLevel/control_unit/*.vhd
+    - ghdl compile --workdir=work --std=08 --ieee=synopsys ./proj/src/TopLevel/barrel_shifter/*.vhd
+    - ghdl compile --workdir=work --std=08 --ieee=synopsys ./proj/src/TopLevel/MIPS_Processor.vhd
+test:
+  stage: test
+  script:
+    # - cd cam
+#   - make
+    - echo "CAM"
+
+failure:
+  stage: failure
+  when: on_failure
+  script: 
+    - echo "Failed"

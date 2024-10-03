@@ -1,0 +1,40 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/srl_1.s line 10 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addiu $9,$0,255
+Register Write to Reg: 0x09 Val: 0x000000FF
+[inst #2] srl $9,$9,16
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #3] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #4] ori $1,$1,65535
+Register Write to Reg: 0x01 Val: 0x0000FFFF
+[inst #5] addu $9,$0,$1
+Register Write to Reg: 0x09 Val: 0x0000FFFF
+[inst #6] srl $9,$9,16
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #7] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #8] ori $1,$1,65534
+Register Write to Reg: 0x01 Val: 0x0000FFFE
+[inst #9] addu $9,$0,$1
+Register Write to Reg: 0x09 Val: 0x0000FFFE
+[inst #10] srl $9,$9,31
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #11] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #12] ori $1,$1,65535
+Register Write to Reg: 0x01 Val: 0x0000FFFF
+[inst #13] addu $9,$0,$1
+Register Write to Reg: 0x09 Val: 0x0000FFFF
+[inst #14] srl $9,$9,0
+Register Write to Reg: 0x09 Val: 0x0000FFFF
+[inst #15] addiu $9,$0,1011
+Register Write to Reg: 0x09 Val: 0x000003F3
+[inst #16] srl $9,$9,4
+Register Write to Reg: 0x09 Val: 0x0000003F
+[inst #17] addiu $9,$0,256
+Register Write to Reg: 0x09 Val: 0x00000100
+[inst #18] srl $9,$9,6
+Register Write to Reg: 0x09 Val: 0x00000004
+[inst #19] halt 
+

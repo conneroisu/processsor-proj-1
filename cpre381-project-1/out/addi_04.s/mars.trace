@@ -1,0 +1,66 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/addi_04.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addi $1,$0,-1
+Register Write to Reg: 0x01 Val: 0xFFFFFFFF
+[inst #2] addi $2,$0,-2
+Register Write to Reg: 0x02 Val: 0xFFFFFFFE
+[inst #3] addi $3,$0,-3
+Register Write to Reg: 0x03 Val: 0xFFFFFFFD
+[inst #4] addi $4,$0,-4
+Register Write to Reg: 0x04 Val: 0xFFFFFFFC
+[inst #5] addi $5,$0,-5
+Register Write to Reg: 0x05 Val: 0xFFFFFFFB
+[inst #6] addi $6,$0,-6
+Register Write to Reg: 0x06 Val: 0xFFFFFFFA
+[inst #7] addi $7,$0,-7
+Register Write to Reg: 0x07 Val: 0xFFFFFFF9
+[inst #8] addi $8,$0,-8
+Register Write to Reg: 0x08 Val: 0xFFFFFFF8
+[inst #9] addi $9,$0,-9
+Register Write to Reg: 0x09 Val: 0xFFFFFFF7
+[inst #10] addi $10,$0,-10
+Register Write to Reg: 0x0A Val: 0xFFFFFFF6
+[inst #11] addi $11,$0,-11
+Register Write to Reg: 0x0B Val: 0xFFFFFFF5
+[inst #12] addi $12,$0,-12
+Register Write to Reg: 0x0C Val: 0xFFFFFFF4
+[inst #13] addi $13,$0,-13
+Register Write to Reg: 0x0D Val: 0xFFFFFFF3
+[inst #14] addi $14,$0,-14
+Register Write to Reg: 0x0E Val: 0xFFFFFFF2
+[inst #15] addi $15,$0,-15
+Register Write to Reg: 0x0F Val: 0xFFFFFFF1
+[inst #16] addi $16,$0,-16
+Register Write to Reg: 0x10 Val: 0xFFFFFFF0
+[inst #17] addi $17,$0,-17
+Register Write to Reg: 0x11 Val: 0xFFFFFFEF
+[inst #18] addi $18,$0,-18
+Register Write to Reg: 0x12 Val: 0xFFFFFFEE
+[inst #19] addi $19,$0,-19
+Register Write to Reg: 0x13 Val: 0xFFFFFFED
+[inst #20] addi $20,$0,-20
+Register Write to Reg: 0x14 Val: 0xFFFFFFEC
+[inst #21] addi $21,$0,-21
+Register Write to Reg: 0x15 Val: 0xFFFFFFEB
+[inst #22] addi $22,$0,-22
+Register Write to Reg: 0x16 Val: 0xFFFFFFEA
+[inst #23] addi $23,$0,-23
+Register Write to Reg: 0x17 Val: 0xFFFFFFE9
+[inst #24] addi $24,$0,-24
+Register Write to Reg: 0x18 Val: 0xFFFFFFE8
+[inst #25] addi $25,$0,-25
+Register Write to Reg: 0x19 Val: 0xFFFFFFE7
+[inst #26] addi $26,$0,-26
+Register Write to Reg: 0x1A Val: 0xFFFFFFE6
+[inst #27] addi $27,$0,-27
+Register Write to Reg: 0x1B Val: 0xFFFFFFE5
+[inst #28] addi $28,$0,-28
+Register Write to Reg: 0x1C Val: 0xFFFFFFE4
+[inst #29] addi $29,$0,-29
+Register Write to Reg: 0x1D Val: 0xFFFFFFE3
+[inst #30] addi $30,$0,-30
+Register Write to Reg: 0x1E Val: 0xFFFFFFE2
+[inst #31] addi $31,$0,-31
+Register Write to Reg: 0x1F Val: 0xFFFFFFE1
+[inst #32] halt 
+

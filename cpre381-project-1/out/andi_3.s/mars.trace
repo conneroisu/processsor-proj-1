@@ -1,0 +1,34 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/andi_3.s line 4 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addi $8,$0,-85
+Register Write to Reg: 0x08 Val: 0xFFFFFFAB
+[inst #2] addi $9,$0,5000
+Register Write to Reg: 0x09 Val: 0x00001388
+[inst #3] addi $10,$0,20000
+Register Write to Reg: 0x0A Val: 0x00004E20
+[inst #4] addi $11,$0,-1
+Register Write to Reg: 0x0B Val: 0xFFFFFFFF
+[inst #5] andi $11,$8,32767
+Register Write to Reg: 0x0B Val: 0x00007FAB
+[inst #6] lui $1,-1
+Register Write to Reg: 0x01 Val: 0xFFFF0000
+[inst #7] ori $1,$1,65451
+Register Write to Reg: 0x01 Val: 0xFFFFFFAB
+[inst #8] and $12,$9,$1
+Register Write to Reg: 0x0C Val: 0x00001388
+[inst #9] lui $1,-1
+Register Write to Reg: 0x01 Val: 0xFFFF0000
+[inst #10] ori $1,$1,32769
+Register Write to Reg: 0x01 Val: 0xFFFF8001
+[inst #11] and $13,$10,$1
+Register Write to Reg: 0x0D Val: 0x00000000
+[inst #12] andi $14,$11,32768
+Register Write to Reg: 0x0E Val: 0x00000000
+[inst #13] lui $1,-1
+Register Write to Reg: 0x01 Val: 0xFFFF0000
+[inst #14] ori $1,$1,32768
+Register Write to Reg: 0x01 Val: 0xFFFF8000
+[inst #15] and $14,$10,$1
+Register Write to Reg: 0x0E Val: 0x00000000
+[inst #16] halt 
+

@@ -1,0 +1,20 @@
+In clock cycle: 0
+Register Write to Reg: 0x02 Val: 0x00000005
+In clock cycle: 1
+Register Write to Reg: 0x03 Val: 0xFFFFFFFF
+In clock cycle: 2
+Register Write to Reg: 0x01 Val: 0x00000005
+In clock cycle: 3
+Register Write to Reg: 0x01 Val: 0xFFFFFFFB
+In clock cycle: 4
+Register Write to Reg: 0x01 Val: 0x00000005
+Arithmetic Overflow Detected
+In clock cycle: 5
+Register Write to Reg: 0x01 Val: 0xFFFFFFFF
+Arithmetic Overflow Detected
+In clock cycle: 6
+Register Write to Reg: 0x01 Val: 0x0000000A
+In clock cycle: 7
+Register Write to Reg: 0x01 Val: 0xFFFFFFFA
+Arithmetic Overflow Detected
+Execution is stopping! Clock Cycle: 8

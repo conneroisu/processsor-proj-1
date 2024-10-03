@@ -1,0 +1,66 @@
+Warning in /home/connero/cpre381-project-1/proj/mips/addiu_0.s line 3 column 5: MARS does not recognize the .globlmain directive.  Ignored.
+
+[inst #1] addiu $1,$0,1
+Register Write to Reg: 0x01 Val: 0x00000001
+[inst #2] addiu $2,$0,2
+Register Write to Reg: 0x02 Val: 0x00000002
+[inst #3] addiu $3,$0,3
+Register Write to Reg: 0x03 Val: 0x00000003
+[inst #4] addiu $4,$0,4
+Register Write to Reg: 0x04 Val: 0x00000004
+[inst #5] addiu $5,$0,5
+Register Write to Reg: 0x05 Val: 0x00000005
+[inst #6] addiu $6,$0,6
+Register Write to Reg: 0x06 Val: 0x00000006
+[inst #7] addiu $7,$0,7
+Register Write to Reg: 0x07 Val: 0x00000007
+[inst #8] addiu $8,$0,8
+Register Write to Reg: 0x08 Val: 0x00000008
+[inst #9] addiu $9,$0,9
+Register Write to Reg: 0x09 Val: 0x00000009
+[inst #10] addiu $10,$0,10
+Register Write to Reg: 0x0A Val: 0x0000000A
+[inst #11] addiu $11,$0,11
+Register Write to Reg: 0x0B Val: 0x0000000B
+[inst #12] addiu $12,$0,12
+Register Write to Reg: 0x0C Val: 0x0000000C
+[inst #13] addiu $13,$0,13
+Register Write to Reg: 0x0D Val: 0x0000000D
+[inst #14] addiu $14,$0,14
+Register Write to Reg: 0x0E Val: 0x0000000E
+[inst #15] addiu $15,$0,15
+Register Write to Reg: 0x0F Val: 0x0000000F
+[inst #16] addiu $16,$0,16
+Register Write to Reg: 0x10 Val: 0x00000010
+[inst #17] addiu $17,$0,17
+Register Write to Reg: 0x11 Val: 0x00000011
+[inst #18] addiu $18,$0,18
+Register Write to Reg: 0x12 Val: 0x00000012
+[inst #19] addiu $19,$0,19
+Register Write to Reg: 0x13 Val: 0x00000013
+[inst #20] addiu $20,$0,20
+Register Write to Reg: 0x14 Val: 0x00000014
+[inst #21] addiu $21,$0,21
+Register Write to Reg: 0x15 Val: 0x00000015
+[inst #22] addiu $22,$0,22
+Register Write to Reg: 0x16 Val: 0x00000016
+[inst #23] addiu $23,$0,23
+Register Write to Reg: 0x17 Val: 0x00000017
+[inst #24] addiu $24,$0,24
+Register Write to Reg: 0x18 Val: 0x00000018
+[inst #25] addiu $25,$0,25
+Register Write to Reg: 0x19 Val: 0x00000019
+[inst #26] addiu $26,$0,26
+Register Write to Reg: 0x1A Val: 0x0000001A
+[inst #27] addiu $27,$0,27
+Register Write to Reg: 0x1B Val: 0x0000001B
+[inst #28] addiu $28,$0,28
+Register Write to Reg: 0x1C Val: 0x0000001C
+[inst #29] addiu $29,$0,29
+Register Write to Reg: 0x1D Val: 0x0000001D
+[inst #30] addiu $30,$0,30
+Register Write to Reg: 0x1E Val: 0x0000001E
+[inst #31] addiu $31,$0,31
+Register Write to Reg: 0x1F Val: 0x0000001F
+[inst #32] halt 
+

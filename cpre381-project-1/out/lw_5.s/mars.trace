@@ -1,0 +1,16 @@
+[inst #1] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #2] ori $8,$1,0
+Register Write to Reg: 0x08 Val: 0x10010000
+[inst #3] addi $9,$0,20
+Register Write to Reg: 0x09 Val: 0x00000014
+[inst #4] lui $10,4097
+Register Write to Reg: 0x0A Val: 0x10010000
+[inst #5] sw $9,4($10)
+Memory Write to Addr: 0x10010004 Val: 0x00000014
+[inst #6] lw $10,4($8)
+Register Write to Reg: 0x0A Val: 0x00000014
+[inst #7] addiu $2,$0,10
+Register Write to Reg: 0x02 Val: 0x0000000A
+[inst #8] syscall 
+
