@@ -1,0 +1,11 @@
+[project]
+name = "processsor-proj-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+dependencies = [
+    "requests",
+]
+
+[tool.uv]
+dev-dependencies = []
