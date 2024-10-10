@@ -10,3 +10,54 @@ Due Oct 25th
 | Problem 3: Testing Each required test is equally weighted fraction of total points. If any part of waveform, annotation/discussion, or assembly file is missing, no points for that test. Full credit is given so long as the program reasonably meets the intended testing purpose (must successfully run in MARS, but not necessarily on processor). | 20 pts | 20 pts |                
 | Problem 4: Synthesis 5 points for reporting a reasonable critical path that is tracked through their top-level modules (PC -> Memory -> reg file -> ALU -> Memory, etc), if not the specific signals of the design (PC bit 0 -> Memory address 0 -> reg file address A bit 0 -> register file mux select line bit 0 , etc). 5 points for Fmax | 10 pts | 10 pts |
 | Correctness: 10 points * (Fraction of HW5 test cases that work) 5 points for every instruction test program entirely working (all or nothing) 10 points for bubblesort (and mergesort if $>4$ ) matching MARS (must have implementation working reasonably well in MARS to get points) (all or nothing) 5 points for Grendel.s entirely working | 30 pts | 30 pts |
+
+
+## SSH KEYS
+
+
+
+
+## Using SSH Tokens (github)
+
+1. Generate a new SSH key
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+2. Start the ssh-agent in the background
+```bash
+eval "$(ssh-agent -s)"
+```
+
+3. Add your SSH private key to the ssh-agent
+```bash
+ssh-add ~/.ssh/id_ed25519
+```
+
+4. Add the SSH key to your GitHub account
+
+**Select** SSH and GPG Keys under the access menuitem in your account settings.
+
+<img src="resources/Pasted%20image%2020240407141847.png" alt="Pasted image 20240407141847.png" style="zoom:50%;" />
+
+**Click** on new SSH key and paste the public key into the input box to be shown.
+
+<img src="./resources/Pasted image 20240407142015.png" alt="Pasted image 20240407142015.png" style="zoom:50%;" />
+
+**Paste** the public key into the key input shown below.
+
+<img src="resources/Pasted%20image%2020240407142115.png" alt="Pasted image 20240407142115.png" style="zoom:50%;" />
+
+You should now be **ready** to use ssh just remember to either set the remote url manually or clone using ssh. The terminal command to clone this repo using ssh is in the next step.
+
+1. Use the SSH URL to clone the repository
+
+```bash
+git clone git@github.com:conneroisu/processor-proj-1.git
+```
+
+## Introduction 
+
+Complete datapath for the multicycle implementation
+
+![Pasted image 20240415154130.png](resources/Pasted%20image%2020240415154130.png)
