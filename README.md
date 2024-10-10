@@ -33,6 +33,10 @@ eval "$(ssh-agent -s)"
 ```bash
 ssh-add ~/.ssh/id_ed25519
 ```
+and print out the public key:
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
 
 4. Add the SSH key to your GitHub account
 
@@ -56,8 +60,4 @@ You should now be **ready** to use ssh just remember to either set the remote ur
 git clone git@github.com:conneroisu/processor-proj-1.git
 ```
 
-## Introduction 
 
-Complete datapath for the multicycle implementation
-
-![Pasted image 20240415154130.png](resources/Pasted%20image%2020240415154130.png)
