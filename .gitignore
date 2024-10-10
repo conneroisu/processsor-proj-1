@@ -1,3 +1,5 @@
+.doc#
+.wlf
 *.bak
 **.bak
 *.wlf
@@ -13,8 +15,6 @@ work
 .vhdl_checker/**/*
 *.wlf
 ~*.tmp
-*~
-~$*
 /Xilinx\ ISE/**/*.*
 /Xilinx\ ISE/**/ise
 !/Xilinx\ ISE/**/*.xise
@@ -231,3 +231,4 @@ transcript
 **/modelsim.ini.*
 */*/*.ini
 */*.ini
+.venv/
