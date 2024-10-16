@@ -1,12 +1,7 @@
-all: say_hello generate
+all: generate
 
-say_hello:
-	@echo "Hello World"
-
+.PHONY: generate
 generate:
 	@echo "Launching questasim in test directory..."
 	cd proj/test; pwd; questasim .
 
-clean:
-	@echo "Cleaning up..."
-	rm *.txt
