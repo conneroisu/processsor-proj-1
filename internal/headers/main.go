@@ -8,13 +8,12 @@ import (
 	"os/exec"
 	"path/filepath"
 	"strings"
-	"time"
 )
 
 // Header template for VHDL files
 const headerTemplate = `-- <header>
 -------------------------------------------------------------------------------
--- Author(s):
+-- Author(s): %s
 -- Name: %s
 -- Notes:
 %s
@@ -105,10 +104,13 @@ func getCommitHistory(filename string) ([]CommitInfo, error) {
 // generateHeader generates the header content for a VHDL file
 func generateHeader(filename string, commitInfos []CommitInfo) string {
 	var notes strings.Builder
+	authors := make([]string, 0)
 	for _, commit := range commitInfos {
-		notes.WriteString(fmt.Sprintf("      - %s %s %s\n", commit.AuthorName, commit.AuthorEmail, commit.CommitMsg))
+		notes.WriteString(fmt.Sprintf("--	%s %s %s\n", commit.AuthorName, commit.AuthorEmail, commit.CommitMsg))
+		authors = append(authors, commit.AuthorName)
 	}
-	return fmt.Sprintf(headerTemplate, filename, notes.String())
+	return fmt.Sprintf(headerTemplate, strings.Join(authors, " & "),
+		filename, notes.String())
 }
 
 // updateHeaderInFile updates the header in the VHDL file if the content has changed
@@ -153,12 +155,6 @@ func updateHeaderInFile(filename, headerContent string) error {
 	if newContent == string(currentContent) {
 		// No changes needed
 		return nil
-	}
-
-	// Create a backup of the original file
-	backupFilename := fmt.Sprintf("%s.bak_%d", filename, time.Now().Unix())
-	if err := os.WriteFile(backupFilename, currentContent, 0644); err != nil {
-		return err
 	}
 
 	// Write the updated content to the file
