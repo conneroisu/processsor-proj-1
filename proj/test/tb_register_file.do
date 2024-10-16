@@ -1,9 +1,11 @@
-set target "tb_mux2t1_N"
+set target "tb_register_file"
 set file "${target}.vhd"
 
 #This line should be in every .do file!
+#This line should be in every .do file!
 vcom -2008 -work work ../src/MIPS_types.vhd
 vcom -2008 -work work ../src/*.vhd
+
 vcom -2008 -work work ../src/**/*.vhd
 
 
