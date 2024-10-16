@@ -2,28 +2,10 @@ name: Format
 on:
   push:
     paths:
-      - '**/*.vhdl'
-      - '**/*.vhd'
-      - '**/**/*.vhdl'
-      - '**/**/*.vhd'
-      - '**/**/**/*.vhdl'
-      - '**/**/**/*.vhd'
-      - '**/**/**/**/*.vhdl'
-      - '**/**/**/**/*.vhd'
-      - '**/**/**/**/**/*.vhdl'
-      - '**/**/**/**/**/*.vhd'
+      - '*.vhdl'
   pull_request:
     paths:
-      - '**/*.vhdl'
-      - '**/*.vhd'
-      - '**/**/*.vhdl'
-      - '**/**/*.vhd'
-      - '**/**/**/*.vhdl'
-      - '**/**/**/*.vhd'
-      - '**/**/**/**/*.vhdl'
-      - '**/**/**/**/*.vhd'
-      - '**/**/**/**/**/*.vhdl'
-      - '**/**/**/**/**/*.vhd'
+      - '*.vhdl'
 jobs:
   format:
     runs-on: ubuntu-latest
@@ -45,7 +27,7 @@ jobs:
                     echo "  (package-refresh-contents)" >> ~/.emacs.d/init.el
                     echo "  (package-install 'vhdl-mode))" >> ~/.emacs.d/init.el
                     emacs --batch -l ~/.emacs.d/init.el
-          bash ./scripts/format.sh
+          bash ./internal/format.sh
       - name: Setup Golang
         uses: actions/setup-go@v3
         with:
