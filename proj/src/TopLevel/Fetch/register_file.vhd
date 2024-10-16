@@ -36,7 +36,7 @@ architecture structural of register_file is
                 );
     end component;
 
-    component nbitregister is
+    component dffg_n is
         port
             (
                 i_clk : in  std_logic;  -- Clock input
@@ -60,7 +60,7 @@ begin
             );
 
     -- Set register $0 to 0
-    reg0 : component nbitregister
+    reg0 : component dffg_n
         port
         map(
             i_clk => clk,               -- clock
@@ -83,7 +83,7 @@ begin
 
     registerlist : for i in 1 to 31 generate
 
-        regi : component nbitregister
+        regi : component dffg_n
             port
             map(
                 i_clk => clk,           -- clock
