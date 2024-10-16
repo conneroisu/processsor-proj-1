@@ -10,15 +10,22 @@ import (
 	"strings"
 )
 
+var (
+	whitelist = []string{
+		"conneroisu",
+		"aidanfoss",
+		"DanielMauricio13",
+	}
+)
+
 // Header template for VHDL files
 const headerTemplate = `-- <header>
--------------------------------------------------------------------------------
 -- Author(s): %s
 -- Name: %s
 -- Notes:
 %s
--------------------------------------------------------------------------------
 -- </header>
+
 `
 
 // CommitInfo stores commit details for a contributor
@@ -105,12 +112,28 @@ func getCommitHistory(filename string) ([]CommitInfo, error) {
 func generateHeader(filename string, commitInfos []CommitInfo) string {
 	var notes strings.Builder
 	authors := make([]string, 0)
-	for _, commit := range commitInfos {
-		notes.WriteString(fmt.Sprintf("--	%s %s %s\n", commit.AuthorName, commit.AuthorEmail, commit.CommitMsg))
-		authors = append(authors, commit.AuthorName)
+	for i, commit := range commitInfos {
+		notes.WriteString(fmt.Sprintf("--	%s %s %s", commit.AuthorName, commit.AuthorEmail, commit.CommitMsg))
+		if i < len(commitInfos)-1 {
+			notes.WriteString("\n")
+		}
+		if !contains(authors, commit.AuthorName) {
+			if !contains(whitelist, commit.AuthorName) {
+				authors = append(authors, commit.AuthorName)
+			}
+		}
 	}
 	return fmt.Sprintf(headerTemplate, strings.Join(authors, " & "),
 		filename, notes.String())
+}
+
+func contains(slice []string, item string) bool {
+	for _, s := range slice {
+		if s == item {
+			return true
+		}
+	}
+	return false
 }
 
 // updateHeaderInFile updates the header in the VHDL file if the content has changed
