@@ -79,39 +79,40 @@ architecture structure of MIPS_Processor is
       o_d1  : out std_logic_vector(31 downto 0);
       o_d2  : out std_logic_vector(31 downto 0)
       );
+  end component;
 
-    -- TODO: You may add any additional signals or components your implementation 
-    --       requires below this comment
+  -- TODO: You may add any additional signals or components your implementation 
+  --       requires below this comment
 
-    begin
+begin
 
-      -- TODO: This is required to be your final input to your instruction memory. This provides a feasible method to externally load the memory module which means that the synthesis tool must assume it knows nothing about the values stored in the instruction memory. If this is not included, much, if not all of the design is optimized out because the synthesis tool will believe the memory to be all zeros.
-      with iInstLd select
-        s_IMemAddr <= s_NextInstAddr when '0',
-        iInstAddr                    when others;
+  -- TODO: This is required to be your final input to your instruction memory. This provides a feasible method to externally load the memory module which means that the synthesis tool must assume it knows nothing about the values stored in the instruction memory. If this is not included, much, if not all of the design is optimized out because the synthesis tool will believe the memory to be all zeros.
+  with iInstLd select
+    s_IMemAddr <= s_NextInstAddr when '0',
+    iInstAddr                    when others;
 
 
-      IMem : mem
-        generic map(ADDR_WIDTH => ADDR_WIDTH,
-                    DATA_WIDTH => N)
-        port map(clk  => iCLK,
-                 addr => s_IMemAddr(11 downto 2),
-                 data => iInstExt,
-                 we   => iInstLd,
-                 q    => s_Inst);
+  IMem : mem
+    generic map(ADDR_WIDTH => ADDR_WIDTH,
+                DATA_WIDTH => N)
+    port map(clk  => iCLK,
+             addr => s_IMemAddr(11 downto 2),
+             data => iInstExt,
+             we   => iInstLd,
+             q    => s_Inst);
 
-      DMem : mem
-        generic map(ADDR_WIDTH => ADDR_WIDTH,
-                    DATA_WIDTH => N)
-        port map(clk  => iCLK,
-                 addr => s_DMemAddr(11 downto 2),
-                 data => s_DMemData,
-                 we   => s_DMemWr,
-                 q    => s_DMemOut);
+  DMem : mem
+    generic map(ADDR_WIDTH => ADDR_WIDTH,
+                DATA_WIDTH => N)
+    port map(clk  => iCLK,
+             addr => s_DMemAddr(11 downto 2),
+             data => s_DMemData,
+             we   => s_DMemWr,
+             q    => s_DMemOut);
 
-      -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
-      -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU
+  -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
+  -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU
 
-      -- TODO: Implement the rest of your processor below this comment! 
+  -- TODO: Implement the rest of your processor below this comment! 
 
-    end structure;
+end structure;
