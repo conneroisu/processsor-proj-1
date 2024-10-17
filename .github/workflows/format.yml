@@ -1,11 +1,7 @@
 name: Format
 on:
-  push:
-    paths:
-      - '*.vhdl'
-  pull_request:
-    paths:
-      - '*.vhdl'
+  push: [main]
+  pull_request: [main]
 jobs:
   format:
     runs-on: ubuntu-latest
