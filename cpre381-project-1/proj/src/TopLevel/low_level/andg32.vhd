@@ -5,19 +5,6 @@
 --	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
 -- </header>
 
-
-
--------------------------------------------------------------------------
--- author(s): Conner Ohnesorge & Levi Wenck
--- Department of Electrical and Computer Engineering
--- Iowa State University
--------------------------------------------------------------------------
--- name: andg32.vhd
--------------------------------------------------------------------------
--- Description: This file is the test bench for the ALU. It tests the
--- ALU with different test cases. 
--------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.std_logic_1164.all;
 

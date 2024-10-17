@@ -5,20 +5,8 @@
 --	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
 -- </header>
 
-
-
--------------------------------------------------------------------------
--- author: Conner Ohnesorge
--- DEPARTMENT OF ELECTRICAL ENGINEERING
--- IOWA STATE UNIVERSITY
--------------------------------------------------------------------------
--- name: decoder5t32.vhd
--------------------------------------------------------------------------
--- DESCRIPTION: This file contains an implementation of an edge-triggered
--- flip-flop with parallel access and reset.
--------------------------------------------------------------------------
-
 library ieee;
+
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_arith.all;

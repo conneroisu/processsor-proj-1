@@ -5,19 +5,6 @@
 --	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
 -- </header>
 
-
-
--------------------------------------------------------------------------
--- Conner Ohnesorge
--- DEPARTMENT OF ELECTRICAL ENGINEERING
--- IOWA STATE UNIVERSITY
--------------------------------------------------------------------------
--- dffg_n.vhd
--------------------------------------------------------------------------
--- DESCRIPTION: A generic N-bit D Flip-Flop with asynchronous reset and
---              synchronous write. This is a generic N-bit D Flip-Flop.
--------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 

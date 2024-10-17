@@ -5,19 +5,6 @@
 --	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
 -- </header>
 
-
-
--------------------------------------------------------------------------
--- Conner Ohnesorge
--- DEPARTMENT OF ELECTRICAL ENGINEERING
--- IOWA STATE UNIVERSITY
--------------------------------------------------------------------------
--- dffg_tb.vhd
--------------------------------------------------------------------------
--- DESCRIPTION: This file contains a simple VHDL testbench for the
--- edge-triggered flip-flop with parallel access and reset.
--------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 
