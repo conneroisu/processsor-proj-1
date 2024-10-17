@@ -70,11 +70,11 @@ begin
             o_q   => s2(0)              -- 2d array
             );
 
-    -- AND gate to enable write
+    -- AND gate to enable write using decoder output
     andgate : process (s1, i_wC) is
     begin
         for i in 1 to 31 loop
-            s3(i) <= s1(i) and i_wC;  -- AND the write enable signal with the decoder output
+            s3(i) <= s1(i) and i_wC;
         end loop;
 
     end process andgate;
