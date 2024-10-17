@@ -2,8 +2,9 @@
 -- Author(s): connero
 -- Name: cpre381-project-1/proj/test/tb_shifter_N.vhd
 -- Notes:
---	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #24 from conneroisu/feature/register_file
+--	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #25 from conneroisu/sign-extend
 -- </header>
+
 
 -------------------------------------------------------------------------
 -- Levi Wenck

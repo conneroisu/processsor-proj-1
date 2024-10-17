@@ -2,8 +2,9 @@
 -- Author(s): connero
 -- Name: proj/src/LowLevel/xorg2.vhd
 -- Notes:
---	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #24 from conneroisu/feature/register_file
+--	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #25 from conneroisu/sign-extend
 -- </header>
+
 
 library IEEE;
 use IEEE.std_logic_1164.all;
