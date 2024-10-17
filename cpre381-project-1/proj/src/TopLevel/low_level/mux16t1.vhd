@@ -8,17 +8,6 @@
 
 
 
--------------------------------------------------------------------------
--- author: Levi Wenck
--- DEPARTMENT OF ELECTRICAL ENGINEERING
--- IOWA STATE UNIVERSITY
--------------------------------------------------------------------------
--- name: mux16t1.vhd
--------------------------------------------------------------------------
--- DESCRIPTION: A 16 to 1 multiplexer that takes in a 16 bit input and
--- selects one of the 16 bits to output based on a 4 bit input.
--------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 use work.MIPS_Types.all;

@@ -7,17 +7,6 @@
 
 
 
--------------------------------------------------------------------------
--- author(s): Conner Ohnesorge & Levi Wenck
--- Department of Electrical and Computer Engineering
--- Iowa State University
--------------------------------------------------------------------------
--- name: org32.vhd
--------------------------------------------------------------------------
--- Description: This file is the test bench for the ALU. It tests the
--- ALU with different test cases. 
--------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.std_logic_1164.all;
 
