@@ -1,7 +1,11 @@
 name: Format
 on:
-  push: [main]
-  pull_request: [main]
+  push: 
+    branches:
+      - "*"
+  pull_request: 
+    branches:
+      - "*"
 jobs:
   format:
     runs-on: ubuntu-latest
