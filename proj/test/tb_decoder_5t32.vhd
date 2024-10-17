@@ -2,8 +2,9 @@
 -- Author(s): connero
 -- Name: proj/test/tb_decoder_5t32.vhd
 -- Notes:
---	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #25 from conneroisu/sign-extend
+--	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
 -- </header>
+
 
 
 library ieee;
