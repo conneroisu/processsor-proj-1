@@ -1,3 +1,10 @@
+-- <header>
+-- Author(s): connero
+-- Name: proj/src/LowLevel/decoder_5t32.vhd
+-- Notes:
+--	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #24 from conneroisu/feature/register_file
+-- </header>
+
 library ieee;
 use ieee.std_logic_1164.all;
 

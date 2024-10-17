@@ -1,3 +1,10 @@
+-- <header>
+-- Author(s): connero
+-- Name: cpre381-project-1/proj/src/TopLevel/low_level/invg.vhd
+-- Notes:
+--	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #24 from conneroisu/feature/register_file
+-- </header>
+
 -------------------------------------------------------------------------
 -- Joseph Zambreno
 -- Department of Electrical and Computer Engineering
@@ -20,13 +27,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity invg is
-  port (
-    i_A : in STD_LOGIC;  -- Input to the NOT gate
-    o_F : out STD_LOGIC  -- Output from the NOT gate
-  );
+    port (
+        i_A : in  std_logic;            -- Input to the NOT gate
+        o_F : out std_logic             -- Output from the NOT gate
+        );
 end invg;
 
 architecture dataflow of invg is
 begin
-  o_F <= not i_A; -- Output is the inverse of the input
+    o_F <= not i_A;                     -- Output is the inverse of the input
 end dataflow;

@@ -1,3 +1,10 @@
+-- <header>
+-- Author(s): connero
+-- Name: internal/boilerplate_src/MIPS_types.vhd
+-- Notes:
+--	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #24 from conneroisu/feature/register_file
+-- </header>
+
 -------------------------------------------------------------------------
 -- Author: Braedon Giblin
 -- Date: 2022.02.12
@@ -14,18 +21,18 @@ use IEEE.std_logic_1164.all;
 
 package MIPS_types is
 
-  -- Example Constants. Declare more as needed
-  constant DATA_WIDTH : integer := 32;
-  constant ADDR_WIDTH : integer := 10;
+    -- Example Constants. Declare more as needed
+    constant DATA_WIDTH : integer := 32;
+    constant ADDR_WIDTH : integer := 10;
 
-  -- Example record type. Declare whatever types you need here
-  type control_t is record
-    reg_wr : std_logic;
-    reg_to_mem : std_logic;
-  end record control_t;
+    -- Example record type. Declare whatever types you need here
+    type control_t is record
+        reg_wr     : std_logic;
+        reg_to_mem : std_logic;
+    end record control_t;
 
 end package MIPS_types;
 
 package body MIPS_types is
-  -- Probably won't need anything here... function bodies, etc.
+-- Probably won't need anything here... function bodies, etc.
 end package body MIPS_types;

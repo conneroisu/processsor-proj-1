@@ -1,3 +1,10 @@
+-- <header>
+-- Author(s): connero
+-- Name: cpre381-project-1/proj/src/TopLevel/low_level/andg2.vhd
+-- Notes:
+--	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #24 from conneroisu/feature/register_file
+-- </header>
+
 -------------------------------------------------------------------------
 -- Joseph Zambreno
 -- Department of Electrical and Computer Engineering
@@ -21,17 +28,17 @@ use IEEE.std_logic_1164.all;
 
 entity andg2 is
 
-  port (
-    i_A : in STD_LOGIC; -- First input
-    i_B : in STD_LOGIC; -- Second input
-    o_F : out STD_LOGIC -- Output
-  );
+    port (
+        i_A : in  std_logic;            -- First input
+        i_B : in  std_logic;            -- Second input
+        o_F : out std_logic             -- Output
+        );
 
 end andg2;
 
 architecture dataflow of andg2 is
 begin
 
-  o_F <= i_A and i_B; -- Output is the logical AND of the two inputs
+    o_F <= i_A and i_B;  -- Output is the logical AND of the two inputs
 
 end dataflow;
