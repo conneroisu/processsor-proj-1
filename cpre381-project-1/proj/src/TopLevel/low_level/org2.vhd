@@ -2,28 +2,11 @@
 -- Author(s): connero
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/org2.vhd
 -- Notes:
---	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
+--	connero 88785126+conneroisu@users.noreply.github.com Merge 4f34c422cf72d5fd2b8d20c7eec5f97b5864e12b into 7f8dd730b40cf8f2dce4e781c792d9e15bafdab1
 -- </header>
 
 
 
--------------------------------------------------------------------------
--- Joseph Zambreno
--- Department of Electrical and Computer Engineering
--- Iowa State University
--------------------------------------------------------------------------
--- org2.vhd
--------------------------------------------------------------------------
--- DESCRIPTION: This file contains an implementation of a 2-input OR 
--- gate.
---
---
--- NOTES:
--- 8/19/16 by JAZ::Design created.
--- 1/16/19 by H3::Changed name to avoid name conflict with Quartus 
---         primitives.
--- 3/24/24 by CO::Formatted, Aligned, and added comments.
--------------------------------------------------------------------------
 
 library IEEE;
 use IEEE.std_logic_1164.all;

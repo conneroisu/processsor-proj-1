@@ -2,25 +2,10 @@
 -- Author(s): connero
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/extender8t32.vhd
 -- Notes:
---	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
+--	connero 88785126+conneroisu@users.noreply.github.com Merge 4f34c422cf72d5fd2b8d20c7eec5f97b5864e12b into 7f8dd730b40cf8f2dce4e781c792d9e15bafdab1
 -- </header>
 
 
-
--------------------------------------------------------------------------
--- Levi Wenck
--- Computer Engineering Undergrad
--- Iowa State University
--------------------------------------------------------------------------
--- extender8t32.vhd
--------------------------------------------------------------------------
--- DESCRIPTION: extends a byte signal to 32 bits with appropiate ext
--- ension for either positive or negative numbers
---
---
--- NOTES:
--- 02/19/24 by LW::Design created.
--------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 

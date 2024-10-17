@@ -2,21 +2,11 @@
 -- Author(s): connero
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/mux32t1.vhd
 -- Notes:
---	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
+--	connero 88785126+conneroisu@users.noreply.github.com Merge 4f34c422cf72d5fd2b8d20c7eec5f97b5864e12b into 7f8dd730b40cf8f2dce4e781c792d9e15bafdab1
 -- </header>
 
 
 
--------------------------------------------------------------------------
--- author: Conner Ohnesorge
--- DEPARTMENT OF ELECTRICAL ENGINEERING
--- IOWA STATE UNIVERSITY
--------------------------------------------------------------------------
--- name: mux32t1.vhd
--------------------------------------------------------------------------
--- DESCRIPTION: A 32 to 1 multiplexer that takes in a 32 bit input and
--- selects one of the 32 bits to output based on a 5 bit input.
--------------------------------------------------------------------------
 
 library ieee;
 use ieee.std_logic_1164.all;
