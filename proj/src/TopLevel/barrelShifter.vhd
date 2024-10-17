@@ -1,9 +1,10 @@
 -- <header>
--- Author(s): connero
+-- Author(s): github-actions[bot]
 -- Name: proj/src/TopLevel/barrelShifter.vhd
 -- Notes:
---	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
+--	github-actions[bot] github-actions[bot]@users.noreply.github.com Format and Header
 -- </header>
+
 
 
 

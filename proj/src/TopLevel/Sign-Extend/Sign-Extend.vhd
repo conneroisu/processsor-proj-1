@@ -1,9 +1,10 @@
 -- <header>
--- Author(s): connero
--- Name: cpre381-project-1/proj/src/TopLevel/Sign-Extend/Sign-Extend.vhd
+-- Author(s): github-actions[bot]
+-- Name: proj/src/TopLevel/Sign-Extend/Sign-Extend.vhd
 -- Notes:
---	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
+--	github-actions[bot] github-actions[bot]@users.noreply.github.com Format and Header
 -- </header>
+
 
 
 library IEEE;

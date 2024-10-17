@@ -1,9 +1,10 @@
 -- <header>
--- Author(s): connero
--- Name: cpre381-project-1/proj/src/TopLevel/Sign-Extend/Sign-Extend-tb.vhd
+-- Author(s): github-actions[bot]
+-- Name: proj/test/Sign-Extend-tb.vhd
 -- Notes:
---	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
+--	github-actions[bot] github-actions[bot]@users.noreply.github.com Format and Header
 -- </header>
+
 
 
 library IEEE;
@@ -22,7 +23,7 @@ architecture Behavioral of SignExtend_tb is
     signal in_signal_tb  : std_logic_vector(15 downto 0);  -- Input signal to the DUT (16-bit)
     signal out_signal_tb : std_logic_vector(31 downto 0);  -- Output signal from the DUT (32-bit)
 
-   
+
     component SignExtend
         port (
             in_signal  : in  std_logic_vector(15 downto 0);  -- 16-bit input to be sign-extended
@@ -36,7 +37,7 @@ begin
             in_signal  => in_signal_tb,  -- Connect the input signal to the DUT
             out_signal => out_signal_tb  -- Connect the output signal to the DUT
             );
-    
+
     process
     begin
         -- Test Case 1: Small positive number 
@@ -76,7 +77,7 @@ begin
             report "Test case 6 failed: Expected -256 (0xFF00 extended to 32 bits)" severity error;
 
         -- Test Case 7: Small positive number 
-        in_signal_tb <= "0000000000001010";  
+        in_signal_tb <= "0000000000001010";
         wait for 10 ns;
         assert out_signal_tb = "00000000000000000000000000001010"  -- Expected 32-bit output: +10
             report "Test case 7 failed: Expected +10 (0x000A extended to 32 bits)" severity error;
