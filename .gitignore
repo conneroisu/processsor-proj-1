@@ -232,3 +232,4 @@ transcript
 */*/*.ini
 */*.ini
 .venv/
+*.vhd.bak
