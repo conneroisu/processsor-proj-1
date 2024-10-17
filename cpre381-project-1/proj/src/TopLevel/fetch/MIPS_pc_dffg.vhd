@@ -1,3 +1,10 @@
+-- <header>
+-- Author(s): connero
+-- Name: cpre381-project-1/proj/src/TopLevel/fetch/MIPS_pc_dffg.vhd
+-- Notes:
+--	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #24 from conneroisu/feature/register_file
+-- </header>
+
 -------------------------------------------------------------------------
 -- author(s): Conner Ohnesorge & Levi Wenck
 -- Department of Electrical and Computer Engineering
@@ -14,42 +21,42 @@
 -- 3/23/24 by CO:: Design Created
 -------------------------------------------------------------------------
 
-LIBRARY IEEE;
-USE IEEE.std_logic_1164.ALL;
+library IEEE;
+use IEEE.std_logic_1164.all;
 
-ENTITY MIPS_pc_dffg IS
-  port(
-    i_CLK        : in std_logic;     -- Clock input
-    i_RST        : in std_logic;     -- Reset input
-    i_RST_data   : in std_logic;     -- Write enable input
-    i_D          : in std_logic;     -- Data value input
-    o_Q          : out std_logic     -- Data value output
-  );
+entity MIPS_pc_dffg is
+    port(
+        i_CLK      : in  std_logic;     -- Clock input
+        i_RST      : in  std_logic;     -- Reset input
+        i_RST_data : in  std_logic;     -- Write enable input
+        i_D        : in  std_logic;     -- Data value input
+        o_Q        : out std_logic      -- Data value output
+        );
 
-END MIPS_pc_dffg;
+end MIPS_pc_dffg;
 
-ARCHITECTURE mixed OF MIPS_pc_dffg IS
-  --signal s_D    : std_logic;    -- Multiplexed input to the FF
-  SIGNAL s_Q : STD_LOGIC; -- Output of the FF
+architecture mixed of MIPS_pc_dffg is
+    --signal s_D    : std_logic;    -- Multiplexed input to the FF
+    signal s_Q : std_logic;             -- Output of the FF
 
-BEGIN
+begin
 
-  -- The output of the FF is fixed to s_Q
-  o_Q <= s_Q;
+    -- The output of the FF is fixed to s_Q
+    o_Q <= s_Q;
 
-  -- Create a multiplexed input to the FF based on i_WE
+    -- Create a multiplexed input to the FF based on i_WE
 
-  -- This process handles the asyncrhonous reset and
-  -- synchronous write. We want to be able to reset 
-  -- our processor's registers so that we minimize
-  -- glitchy behavior on startup.
-  PROCESS (i_CLK, i_RST)
-  BEGIN
-    IF (i_RST = '1') THEN
-      s_Q <= i_RST_data; -- Use "(others => '0')" for N-bit values
-    ELSIF (rising_edge(i_CLK)) THEN
-      s_Q <= i_D;
-    END IF;
-  end process;
+    -- This process handles the asyncrhonous reset and
+    -- synchronous write. We want to be able to reset 
+    -- our processor's registers so that we minimize
+    -- glitchy behavior on startup.
+    process (i_CLK, i_RST)
+    begin
+        if (i_RST = '1') then
+            s_Q <= i_RST_data;  -- Use "(others => '0')" for N-bit values
+        elsif (rising_edge(i_CLK)) then
+            s_Q <= i_D;
+        end if;
+    end process;
 
 end mixed;

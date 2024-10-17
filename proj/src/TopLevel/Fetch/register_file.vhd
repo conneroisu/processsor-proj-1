@@ -1,3 +1,10 @@
+-- <header>
+-- Author(s): connero
+-- Name: proj/src/TopLevel/Fetch/register_file.vhd
+-- Notes:
+--	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #24 from conneroisu/feature/register_file
+-- </header>
+
 library ieee;
 use ieee.std_logic_1164.all;
 use work.mips_types.all;
@@ -18,7 +25,7 @@ entity register_file is
 end entity register_file;
 
 architecture structural of register_file is
-  
+
     component mux32t1 is
         port
             (

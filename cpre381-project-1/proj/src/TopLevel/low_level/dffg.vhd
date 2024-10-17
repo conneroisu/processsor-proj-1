@@ -1,3 +1,10 @@
+-- <header>
+-- Author(s): connero
+-- Name: cpre381-project-1/proj/src/TopLevel/low_level/dffg.vhd
+-- Notes:
+--	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #24 from conneroisu/feature/register_file
+-- </header>
+
 -------------------------------------------------------------------------
 -- Conner Ohnesorge
 -- DEPARTMENT OF ELECTRICAL ENGINEERING
@@ -13,40 +20,40 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity dffg is
-  port (
-    i_clk : in STD_LOGIC; -- Clock input
-    i_rst : in STD_LOGIC; -- Reset input
-    i_we : in STD_LOGIC;  -- Write enable input
-    i_d : in STD_LOGIC;   -- Data value input
-    o_q : out STD_LOGIC   -- Data value output
-  );
+    port (
+        i_clk : in  std_logic;          -- Clock input
+        i_rst : in  std_logic;          -- Reset input
+        i_we  : in  std_logic;          -- Write enable input
+        i_d   : in  std_logic;          -- Data value input
+        o_q   : out std_logic           -- Data value output
+        );
 end entity dffg;
 
 
 architecture mixed of dffg is
 
-  signal s_d : STD_LOGIC; -- Multiplexed input to the FF
-  signal s_q : STD_LOGIC; -- Output of the FF
+    signal s_d : std_logic;             -- Multiplexed input to the FF
+    signal s_q : std_logic;             -- Output of the FF
 
 begin
-  -- The output of the FF is fixed to s_Q
-  o_q <= s_q;
+    -- The output of the FF is fixed to s_Q
+    o_q <= s_q;
 
-  -- Create a multiplexed input to the FF based on i_WE
-  with i_WE select s_d <=
-    i_D when '1',
-    s_q when others;
+    -- Create a multiplexed input to the FF based on i_WE
+    with i_WE select s_d <=
+        i_D when '1',
+        s_q when others;
 
-  -- This process handles the asyncrhonous reset and synchronous write. 
-  -- We want to reset our processor's registers to minimize glitchy behavior on startup.
-  process (i_clk, i_rst) is
-  begin
+    -- This process handles the asyncrhonous reset and synchronous write. 
+    -- We want to reset our processor's registers to minimize glitchy behavior on startup.
+    process (i_clk, i_rst) is
+    begin
 
-    if (i_rst = '1') then -- if the reset is active
-      s_q <= '0'; -- Use "(others => '0')" for N-bit values
-    elsif (rising_edge(i_clk)) then -- else if the clock is rising edge
-      s_q <= s_d; -- then set the output to the input
-    end if;
+        if (i_rst = '1') then           -- if the reset is active
+            s_q <= '0';  -- Use "(others => '0')" for N-bit values
+        elsif (rising_edge(i_clk)) then  -- else if the clock is rising edge
+            s_q <= s_d;                 -- then set the output to the input
+        end if;
 
-  end process;
+    end process;
 end architecture mixed;
