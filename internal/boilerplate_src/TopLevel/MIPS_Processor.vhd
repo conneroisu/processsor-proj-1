@@ -1,19 +1,3 @@
--------------------------------------------------------------------------
--- Henry Duwe
--- Department of Electrical and Computer Engineering
--- Iowa State University
--------------------------------------------------------------------------
-
-
--- MIPS_Processor.vhd
--------------------------------------------------------------------------
--- DESCRIPTION: This file contains a skeleton of a MIPS_Processor  
--- implementation.
-
--- 01/29/2019 by H3::Design created.
--------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.std_logic_1164.all;
 
