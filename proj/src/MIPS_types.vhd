@@ -24,8 +24,24 @@ package MIPS_types is
     reg_to_mem : std_logic;
   end record control_t;
 
+  -- 2D array type. 
+  TYPE twodarray IS ARRAY (31 DOWNTO 0) OF STD_LOGIC_VECTOR(31 DOWNTO 0); --TODO rename this to array_32x32
+
+  type array_16x32 is ARRAY (15 downto 0) OF std_logic_vector(31 downto 0);
+
+  function bit_reverse(s1:std_logic_vector) return std_logic_vector;
 end package MIPS_types;
 
 package body MIPS_types is
   -- Probably won't need anything here... function bodies, etc.
+
+  function bit_reverse(s1:std_logic_vector) return std_logic_vector is
+    variable rr : std_logic_vector(s1'high downto s1'low);
+  begin
+    for ii in s1'high downto s1'low loop
+      rr(ii) := s1(s1'high-ii);
+    end loop;
+    return rr;
+  end bit_reverse;
+
 end package body MIPS_types;
