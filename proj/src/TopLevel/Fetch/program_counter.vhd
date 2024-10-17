@@ -14,7 +14,7 @@ end program_counter;
 
 architecture structural of program_counter is
 
-  component MIPS_pc_dffg is
+  component program_counter_dff is
     port(
       i_CLK      : in  std_logic;       -- Clock input
       i_RST      : in  std_logic;       -- Reset input
@@ -29,7 +29,7 @@ begin
 
   -- Instantiate N dff instances.
   G_NBit_DFFG : for i in 0 to (N-1) generate
-    ONESCOMPI : MIPS_pc_dffg port map(
+    ONESCOMPI : program_counter_dff port map(
       i_CLK      => i_CLK,              -- every dff has the same clock
       i_RST      => i_RST,              -- parallel rst
       i_RST_data => s_RST_data(i),      -- parallel write enable
