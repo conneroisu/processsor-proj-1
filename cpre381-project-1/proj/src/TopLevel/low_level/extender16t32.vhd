@@ -5,23 +5,6 @@
 --	connero 88785126+conneroisu@users.noreply.github.com Merge pull request #15 from conneroisu/feature/program_counter
 -- </header>
 
-
-
--------------------------------------------------------------------------
--- Levi Wenck
--- Computer Engineering Undergrad
--- Iowa State University
--------------------------------------------------------------------------
--- extender16t32.vhd
--------------------------------------------------------------------------
--- DESCRIPTION: extends a 16 bit immediate to 32 bits with appropiate ext
--- ension for either positive or negative numbers
---
---
--- NOTES:
--- 02/19/24 by LW::Design created.
--- 03/24/24 by CO::Formatted, aligned, and added comments.
--------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 
