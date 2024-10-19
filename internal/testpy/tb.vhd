@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: internal/testpy/tb.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> added-toolflow
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------
@@ -50,7 +49,7 @@ architecture mixed of tb is
 -- := '0' or := (others => '0') just make all the signals start at an initial value of zero
     signal CLK, reset : std_logic := '0';
     signal reset_done : std_logic := '0';
-    signal alu_out : std_logic_vector(N-1 downto 0);
+    signal alu_out    : std_logic_vector(N-1 downto 0);
 begin
 -- Make an instance of the component to test and wire all signals to the corresponding
 -- input or output.
@@ -86,19 +85,19 @@ begin
     end process;
     -- Dumps modifications to the state of the processor to trace file
     P_DUMP_STATE : process (CLK)
-        file my_dump       : text open write_mode is OUTPUT_TRACE;
-        variable my_line   : line;
-        variable cycle_cnt : integer := 0;
+        file my_dump                                    : text open write_mode is OUTPUT_TRACE;
+        variable my_line                                : line;
+        variable cycle_cnt                              : integer := 0;
         -- Setup hierarchical/external names
         -- Reference for external names: https://www.doulos.com/knowhow/vhdl_designers_guide/vhdl_2008/vhdl_200x_ease/#hierarchicalnames
-        alias memWr is << signal MyMips.s_DMemWr     : std_logic >>;
-        alias memAddr is << signal MyMips.s_DMemAddr : std_logic_vector(N-1 downto 0) >>;
-        alias memData is << signal MyMips.s_DMemData : std_logic_vector(N-1 downto 0) >>;
+        alias memWr is << signal MyMips.s_DMemWr        : std_logic >>;
+        alias memAddr is << signal MyMips.s_DMemAddr    : std_logic_vector(N-1 downto 0) >>;
+        alias memData is << signal MyMips.s_DMemData    : std_logic_vector(N-1 downto 0) >>;
         alias regWr is << signal MyMips.s_RegWr         : std_logic >>;
         alias regWrAddr is << signal MyMips.s_RegWrAddr : std_logic_vector(4 downto 0) >>;
         alias regWrData is << signal MyMips.s_RegWrData : std_logic_vector(N-1 downto 0) >>;
-        alias halt is << signal MyMips.s_Halt : std_logic >>;
-        alias ovfl is << signal MyMips.s_Ovfl : std_logic >>;
+        alias halt is << signal MyMips.s_Halt           : std_logic >>;
+        alias ovfl is << signal MyMips.s_Ovfl           : std_logic >>;
     begin
         if (rising_edge(CLK) and (reset_done = '1')) then
             if (regWr) then

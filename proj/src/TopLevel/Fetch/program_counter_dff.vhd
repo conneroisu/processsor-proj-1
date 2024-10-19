@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: proj/src/TopLevel/Fetch/program_counter_dff.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	conneroisu  <conneroisu@outlook.com> add-starting-place-for-program-counter
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 library IEEE;
@@ -29,7 +28,7 @@ begin
     process (i_CLK, i_RST)
     begin
         if (i_RST = '1') then
-            s_Q <= i_RST_data;  -- Use "(others => '0')" for N-bit values
+            s_Q <= i_RST_data;       -- Use "(others => '0')" for N-bit values
         elsif (rising_edge(i_CLK)) then
             s_Q <= i_D;
         end if;

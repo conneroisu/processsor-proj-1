@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: proj/test/tb_decoder_5t32.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	conneroisu  <conneroisu@outlook.com> add-missing-assembly-files
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 library ieee;
@@ -43,4 +42,5 @@ begin
     end process;
 
 end architecture behavior;
+
 

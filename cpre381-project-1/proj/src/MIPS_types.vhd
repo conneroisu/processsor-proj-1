@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/MIPS_types.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------
@@ -34,9 +33,9 @@ package MIPS_types is
     type twodarray is array (31 downto 0) of std_logic_vector(31 downto 0);  --TODO rename this to array_32x32
     type array_16x32 is array (15 downto 0) of std_logic_vector(31 downto 0);
     function bit_reverse(s1 : std_logic_vector) return std_logic_vector;
-    --It reverses the bits of std_logic_vector
-    --ie LSB becomes MSB and vice-versa
-    --Example 01100000 becomes 00000110
+--It reverses the bits of std_logic_vector
+--ie LSB becomes MSB and vice-versa
+--Example 01100000 becomes 00000110
 end package MIPS_types;
 package body MIPS_types is
     -- Probably won't need anything here... function bodies, etc.

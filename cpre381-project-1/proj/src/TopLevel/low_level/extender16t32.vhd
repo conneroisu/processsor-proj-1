@@ -2,9 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/extender16t32.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> added-extender16t32
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 library ieee;
@@ -35,4 +33,5 @@ begin
 
 
 end dataflow;
+
 

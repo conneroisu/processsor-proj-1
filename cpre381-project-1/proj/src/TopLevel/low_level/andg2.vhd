@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/andg2.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------
@@ -34,5 +33,5 @@ entity andg2 is
 end andg2;
 architecture dataflow of andg2 is
 begin
-    o_F <= i_A and i_B;  -- Output is the logical AND of the two inputs
+    o_F <= i_A and i_B;       -- Output is the logical AND of the two inputs
 end dataflow;

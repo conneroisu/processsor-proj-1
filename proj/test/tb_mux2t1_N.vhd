@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: proj/test/tb_mux2t1_N.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	conneroisu  <conneroisu@outlook.com> add-lowlevel-components-and-testbenches
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 library IEEE;
@@ -20,7 +19,7 @@ architecture behavioral of tb_mux2t1_N is
             N : integer := 32
             );
         port (
-            i_S  : in  std_logic;                         -- Select input
+            i_S  : in  std_logic;       -- Select input
             i_D0 : in  std_logic_vector(N - 1 downto 0);  -- Data input 0
             i_D1 : in  std_logic_vector(N - 1 downto 0);  -- Data input 1
             o_O  : out std_logic_vector(N - 1 downto 0)   -- Output data
@@ -48,24 +47,24 @@ begin
     begin
         -- Test Case 1: Select input '0', both inputs zero
         s_S  <= '0';
-        s_D0 <= (others => '0');
-        s_D1 <= (others => '0');
+        s_D0 <= (others       => '0');
+        s_D1 <= (others       => '0');
         wait for 10 ns;
         assert s_O = s_D0 report "Test Case 1 Failed: s_O /= s_D0 when s_S = '0'" severity error;
         -- Test Case 2: Select input '1', both inputs zero
-        s_S <= '1';
+        s_S  <= '1';
         wait for 10 ns;
         assert s_O = s_D1 report "Test Case 2 Failed: s_O /= s_D1 when s_S = '1'" severity error;
         -- Test Case 3: Select input '0', D0 all ones, D1 all zeros
         s_S  <= '0';
-        s_D0 <= (others => '1');
-        s_D1 <= (others => '0');
+        s_D0 <= (others       => '1');
+        s_D1 <= (others       => '0');
         wait for 10 ns;
         assert s_O = s_D0 report "Test Case 3 Failed: s_O /= s_D0 when s_S = '0'" severity error;
         -- Test Case 4: Select input '1', D0 all zeros, D1 all ones
         s_S  <= '1';
-        s_D0 <= (others => '0');
-        s_D1 <= (others => '1');
+        s_D0 <= (others       => '0');
+        s_D1 <= (others       => '1');
         wait for 10 ns;
         assert s_O = s_D1 report "Test Case 4 Failed: s_O /= s_D1 when s_S = '1'" severity error;
         -- Test Case 5: Select input '0', D0 alternating bits, D1 all ones
@@ -76,7 +75,7 @@ begin
                 s_D0(i) <= '1';
             end if;
         end loop;
-        s_D1 <= (others => '1');
+        s_D1 <= (others       => '1');
         wait for 10 ns;
         assert s_O = s_D0 report "Test Case 5 Failed: s_O /= s_D0 when s_S = '0'" severity error;
         -- Test Case 6: Select input '1', D0 all zeros, D1 alternating bits
@@ -97,7 +96,7 @@ begin
         wait for 10 ns;
         assert s_O = s_D0 report "Test Case 7 Failed: s_O /= s_D0 when s_S = '0'" severity error;
         -- Test Case 8: Random data inputs, select '1'
-        s_S <= '1';
+        s_S  <= '1';
         wait for 10 ns;
         assert s_O = s_D1 report "Test Case 8 Failed: s_O /= s_D1 when s_S = '1'" severity error;
         -- Test Case 9: Change select signal dynamically

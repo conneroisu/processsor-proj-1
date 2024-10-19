@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/mux2t1_N.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------
@@ -56,4 +55,5 @@ begin
 
     end generate g_nbit_mux;
 end architecture structural;
+
 

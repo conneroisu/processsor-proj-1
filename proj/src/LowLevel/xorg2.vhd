@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: proj/src/LowLevel/xorg2.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	conneroisu  <conneroisu@outlook.com> add-lowlevel-components-and-testbenches
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 library IEEE;

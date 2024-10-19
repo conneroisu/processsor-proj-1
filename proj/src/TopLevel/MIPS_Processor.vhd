@@ -2,10 +2,7 @@
 -- Author(s): conneroisu
 -- Name: proj/src/TopLevel/MIPS_Processor.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> formatted-MIPS_Processor
---	Conner Ohnesorge  <connero@iastate.edu> added-register-file-component-to-the-MIPS-processor
---	conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------
@@ -34,22 +31,22 @@ entity MIPS_Processor is
 end MIPS_Processor;
 architecture structure of MIPS_Processor is
     -- Required data memory signals
-    signal s_DMemWr   : std_logic;  -- TODO: use this signal as the final active high data memory write enable signal
-    signal s_DMemAddr : std_logic_vector(N-1 downto 0);  -- TODO: use this signal as the final data memory address input
-    signal s_DMemData : std_logic_vector(N-1 downto 0);  -- TODO: use this signal as the final data memory data input
-    signal s_DMemOut  : std_logic_vector(N-1 downto 0);  -- TODO: use this signal as the data memory output
+    signal s_DMemWr       : std_logic;  -- TODO: use this signal as the final active high data memory write enable signal
+    signal s_DMemAddr     : std_logic_vector(N-1 downto 0);  -- TODO: use this signal as the final data memory address input
+    signal s_DMemData     : std_logic_vector(N-1 downto 0);  -- TODO: use this signal as the final data memory data input
+    signal s_DMemOut      : std_logic_vector(N-1 downto 0);  -- TODO: use this signal as the data memory output
     -- Required register file signals 
-    signal s_RegWr     : std_logic;  -- TODO: use this signal as the final active high write enable input to the register file
-    signal s_RegWrAddr : std_logic_vector(4 downto 0);  -- TODO: use this signal as the final destination register address input
-    signal s_RegWrData : std_logic_vector(N-1 downto 0);  -- TODO: use this signal as the final data memory data input
+    signal s_RegWr        : std_logic;  -- TODO: use this signal as the final active high write enable input to the register file
+    signal s_RegWrAddr    : std_logic_vector(4 downto 0);  -- TODO: use this signal as the final destination register address input
+    signal s_RegWrData    : std_logic_vector(N-1 downto 0);  -- TODO: use this signal as the final data memory data input
     -- Required instruction memory signals
     signal s_IMemAddr     : std_logic_vector(N-1 downto 0);  -- Do not assign this signal, assign to s_NextInstAddr instead
     signal s_NextInstAddr : std_logic_vector(N-1 downto 0);  -- TODO: use this signal as your intended final instruction memory address input.
     signal s_Inst         : std_logic_vector(N-1 downto 0);  -- TODO: use this signal as the instruction signal 
     -- Required halt signal -- for simulation
-    signal s_Halt : std_logic;  -- TODO: this signal indicates to the simulation that intended program execution has completed. (Opcode: 01 0100)
+    signal s_Halt         : std_logic;  -- TODO: this signal indicates to the simulation that intended program execution has completed. (Opcode: 01 0100)
     -- Required overflow signal -- for overflow exception detection
-    signal s_Ovfl : std_logic;  -- TODO: this signal indicates an overflow exception would have been initiated
+    signal s_Ovfl         : std_logic;  -- TODO: this signal indicates an overflow exception would have been initiated
     component mem is
         generic(ADDR_WIDTH : integer;
                 DATA_WIDTH : integer);
@@ -73,8 +70,8 @@ architecture structure of MIPS_Processor is
             o_d2  : out std_logic_vector(31 downto 0)
             );
     end component;
-    -- TODO: You may add any additional signals or components your implementation 
-    --       requires below this comment
+-- TODO: You may add any additional signals or components your implementation 
+--       requires below this comment
 begin
     -- TODO: This is required to be your final input to your instruction memory. This provides a feasible method to externally load the memory module which means that the synthesis tool must assume it knows nothing about the values stored in the instruction memory. If this is not included, much, if not all of the design is optimized out because the synthesis tool will believe the memory to be all zeros.
     with iInstLd select
@@ -96,7 +93,7 @@ begin
                  data => s_DMemData,
                  we   => s_DMemWr,
                  q    => s_DMemOut);
-    -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
-    -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU
-    -- TODO: Implement the rest of your processor below this comment! 
+-- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
+-- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU
+-- TODO: Implement the rest of your processor below this comment! 
 end structure;

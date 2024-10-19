@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/Sign-Extend/Sign-Extend.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	dmvp01  <dmvp01@linuxvdi-34.ece.iastate.edu> Added-new-Sign-Extender-and-test-bench
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 library IEEE;
@@ -12,8 +11,8 @@ use IEEE.STD_LOGIC_ARITH.all;
 use IEEE.STD_LOGIC_UNSIGNED.all;
 entity SignExtend is
     port (
-        in_signal  : in  std_logic_vector(15 downto 0);  -- 16-bit input
-        out_signal : out std_logic_vector(31 downto 0)   -- 32-bit output
+        in_signal  : in  std_logic_vector(15 downto 0);       -- 16-bit input
+        out_signal : out std_logic_vector(31 downto 0)        -- 32-bit output
         );
 end SignExtend;
 architecture Behavioral of SignExtend is

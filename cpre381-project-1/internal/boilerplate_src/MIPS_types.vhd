@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/internal/boilerplate_src/MIPS_types.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------

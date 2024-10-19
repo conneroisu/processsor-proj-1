@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/alu/alu.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------
@@ -34,13 +33,13 @@ use work.MIPS_Types.all;
 entity alu is
     port
         (
-            CLK        : in  std_logic;                     -- Clock signal
+            CLK        : in  std_logic;  -- Clock signal
             i_Data1    : in  std_logic_vector(31 downto 0);  -- 32-bit input data 1
             i_Data2    : in  std_logic_vector(31 downto 0);  -- 32-bit input data 2
             i_shamt    : in  std_logic_vector(4 downto 0);  -- 5-bit shift amount
             i_aluOp    : in  std_logic_vector(3 downto 0);  -- 4-bit ALU operation code
             o_F        : out std_logic_vector(31 downto 0);  -- 32-bit ALU result
-            o_Overflow : out std_logic;                     -- Overflow flag
+            o_Overflow : out std_logic;  -- Overflow flag
             o_Zero     : out std_logic  -- Zero flag
             );
 end alu;
@@ -52,7 +51,7 @@ architecture structural of alu is
             (
                 i_a        : in  std_logic_vector(N - 1 downto 0);
                 i_b        : in  std_logic_vector(N - 1 downto 0);
-                i_s        : in  std_logic;  -- signed or unsigned operations
+                i_s        : in  std_logic;    -- signed or unsigned operations
                 nadd_sub   : in  std_logic;
                 o_y        : out std_logic_vector(N - 1 downto 0);
                 o_cout     : out std_logic;
@@ -242,5 +241,5 @@ begin
             i_S     => i_aluOp(3 downto 0),
             o_O     => o_F              -- FINAL OUTPUT OF ALU
             );
-    -- END OF SELECTING OUTPUT
+-- END OF SELECTING OUTPUT
 end structural;

@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/alu/comp1_N.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------
@@ -34,8 +33,8 @@ end comp1_N;
 architecture structural of comp1_N is
     component invg is
         port(
-            i_A : in  std_logic;        -- Input data.
-            o_F : out std_logic         -- Output data.
+            i_A : in  std_logic;                    -- Input data.
+            o_F : out std_logic                     -- Output data.
             );
     end component;
 begin

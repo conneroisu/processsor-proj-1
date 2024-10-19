@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/barrel_shifter/shifter_N.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------
@@ -45,7 +44,7 @@ architecture structure of shifter_N is
         port
             (
                 i_D0, i_D1 : in  std_logic_vector(N - 1 downto 0);  --inputs
-                i_S        : in  std_logic;  --shift or not
+                i_S        : in  std_logic;      --shift or not
                 o_O        : out std_logic_vector(N - 1 downto 0)   --output
                 );
     end component;
@@ -72,7 +71,7 @@ begin
     mux0_t : mux2t1_N  -- this mux either lets the arithmetic or logical shift through
         port
         map(
-            i_D0 => s_mux_flip(30 downto 0) & "0",  -- sl 1 (additional)
+            i_D0 => s_mux_flip(30 downto 0) & "0",     -- sl 1 (additional)
             i_D1 => s_mux_flip(30 downto 0) & s_b(0 downto 0),  -- sa 1 (additional)
             i_S  => i_Arithmetic,       -- logical or arithmetic shift
             o_O  => s_mux_0t            -- output
@@ -110,7 +109,7 @@ begin
     mux2_t : mux2t1_N
         port
         map(
-            i_D0 => s_mux1(27 downto 0) & "0000",  -- sl 4 (additional)
+            i_D0 => s_mux1(27 downto 0) & "0000",      -- sl 4 (additional)
             i_D1 => s_mux1(27 downto 0) & s_b(3 downto 0),  --sa 4 (additional)
             i_S  => i_Arithmetic,       -- logical or arithmetic shift
             o_O  => s_mux_2t            -- output
@@ -167,9 +166,9 @@ begin
     mux_unflip : mux2t1_N
         port
         map(
-            i_D0 => s_mux_unflip,               -- normal signal (sll)
-            i_D1 => bit_reverse(s_mux_unflip),  -- unflip signal (sra/srl)
-            i_S  => i_T,                        -- right shift(0) or left(1)
-            o_O  => o_O                         -- output/End of circuit
+            i_D0 => s_mux_unflip,       -- normal signal (sll)
+            i_D1 => bit_reverse(s_mux_unflip),   -- unflip signal (sra/srl)
+            i_S  => i_T,                -- right shift(0) or left(1)
+            o_O  => o_O                 -- output/End of circuit
             );
 end structure;

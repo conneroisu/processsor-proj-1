@@ -2,9 +2,7 @@
 -- Author(s): conneroisu
 -- Name: proj/src/MIPS_types.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> update-MIPS_types-in-context-of-the-register_file
---	conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------

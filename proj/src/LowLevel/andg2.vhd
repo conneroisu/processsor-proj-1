@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: proj/src/LowLevel/andg2.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	conneroisu  <conneroisu@outlook.com> add-lowlevel-components-and-testbenches
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 library IEEE;
@@ -16,5 +15,5 @@ entity andg2 is
 end andg2;
 architecture dataflow of andg2 is
 begin
-    o_F <= i_A and i_B;  -- simple dataflow implementation of an AND gate
+    o_F <= i_A and i_B;        -- simple dataflow implementation of an AND gate
 end dataflow;

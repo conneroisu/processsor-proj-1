@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/control_unit/control.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------
@@ -56,7 +55,7 @@ begin
     -- bit(s) 0         halt bit,               used to stop simulation
     -- TODO look here when testing first to find errors
     with i_opcode select o_Ctrl_Unit <=
-        s_RTYPE_database when "000000",  -- R-TYPE instructions don't use opcode (use funct field instead)
+        s_RTYPE_database        when "000000",  -- R-TYPE instructions don't use opcode (use funct field instead)
         "000000000000000000001" when "010100",  -- halt
         "000000000000000000110" when "000010",  -- j
         "000000010000000100110" when "000011",  -- jal

@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/fetch/MIPS_pc_dffg.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------
@@ -46,7 +45,7 @@ begin
     process (i_CLK, i_RST)
     begin
         if (i_RST = '1') then
-            s_Q <= i_RST_data;  -- Use "(others => '0')" for N-bit values
+            s_Q <= i_RST_data;       -- Use "(others => '0')" for N-bit values
         elsif (rising_edge(i_CLK)) then
             s_Q <= i_D;
         end if;

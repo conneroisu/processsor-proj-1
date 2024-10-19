@@ -2,8 +2,7 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/MIPS_Processor.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 -- </header>
 
 -------------------------------------------------------------------------
@@ -27,25 +26,25 @@ entity MIPS_processor is
             iInstLd   : in  std_logic;  -- Load instruction
             iInstAddr : in  std_logic_vector(N - 1 downto 0);  -- Instruction address
             iInstExt  : in  std_logic_vector(N - 1 downto 0);  -- Instruction data
-            oALUOut   : out std_logic_vector(N - 1 downto 0)   -- ALU output
+            oALUOut   : out std_logic_vector(N - 1 downto 0)  -- ALU output
             );
 end MIPS_processor;
 architecture structure of MIPS_processor is
     -- Required data memory signals
-    signal s_DMemWr   : std_logic;                         -- Write enable
-    signal s_DMemAddr : std_logic_vector(N - 1 downto 0);  -- Address
-    signal s_DMemData : std_logic_vector(N - 1 downto 0);  -- Data
-    signal s_DMemOut  : std_logic_vector(N - 1 downto 0);  -- Data
+    signal s_DMemWr                                   : std_logic;  -- Write enable
+    signal s_DMemAddr                                 : std_logic_vector(N - 1 downto 0);  -- Address
+    signal s_DMemData                                 : std_logic_vector(N - 1 downto 0);  -- Data
+    signal s_DMemOut                                  : std_logic_vector(N - 1 downto 0);  -- Data
     -- Required register file signals 
-    signal s_RegWr     : std_logic;                         -- Write enable
-    signal s_RegWrAddr : std_logic_vector(4 downto 0);      -- Address
-    signal s_RegWrData : std_logic_vector(N - 1 downto 0);  -- Data
+    signal s_RegWr                                    : std_logic;  -- Write enable
+    signal s_RegWrAddr                                : std_logic_vector(4 downto 0);  -- Address
+    signal s_RegWrData                                : std_logic_vector(N - 1 downto 0);  -- Data
     -- Required instruction memory signals
-    signal s_IMemAddr     : std_logic_vector(N - 1 downto 0);  -- DO NOT assign this signal, assign to s_NextInstAddr instead
-    signal s_NextInstAddr : std_logic_vector(N - 1 downto 0);  -- Next instruction address
-    signal s_Inst         : std_logic_vector(N - 1 downto 0);  -- Instruction
+    signal s_IMemAddr                                 : std_logic_vector(N - 1 downto 0);  -- DO NOT assign this signal, assign to s_NextInstAddr instead
+    signal s_NextInstAddr                             : std_logic_vector(N - 1 downto 0);  -- Next instruction address
+    signal s_Inst                                     : std_logic_vector(N - 1 downto 0);  -- Instruction
     -- Required halt signal -- for simulation
-    signal s_Halt : std_logic;
+    signal s_Halt                                     : std_logic;
     -- Required overflow signal -- for overflow exception detection
     signal s_Ovfl                                     : std_logic;
     --Added Signals  
@@ -54,36 +53,36 @@ architecture structure of MIPS_processor is
     signal s_RegInReadData1, s_RegInReadData2, s_RegD : std_logic_vector(4 downto 0);
     --rs(instructions [25-21]), rt(instructions [20-16]),     rd (instructions [15-11])
     signal s_shamt, s_lui_shamt, s_alu_shamt          : std_logic_vector(4 downto 0);
-    signal s_imm16     : std_logic_vector(15 downto 0);  -- instruction bits [15-0]
-    signal s_imm32     : std_logic_vector(31 downto 0);  -- after extension
-    signal s_imm32x4   : std_logic_vector(31 downto 0);  -- after multiplication
-    signal s_immMuxOut : std_logic_vector(N - 1 downto 0);  -- output of Immediate Mux (ALU 2nd input)
-    signal s_opCode   : std_logic_vector(5 downto 0);  --instruction bits[31-26] 
-    signal s_funcCode : std_logic_vector(5 downto 0);  --instruction bits[5-0]
-    signal s_inputPC              : std_logic_vector(31 downto 0);  -- wire from the jump mux
-    signal s_Ctrl                 : std_logic_vector(20 downto 0);  -- control brick output, each bit is a different switch
-    signal s_ALUSrc               : std_logic;  -- alu source
-    signal s_jr, s_shamt_s, s_lui : std_logic;
-    signal s_jal                  : std_logic;  -- jump and link
-    signal s_ALUOp                : std_logic_vector(3 downto 0);   -- alu code
-    signal s_MemtoReg             : std_logic;  -- memory to register
-    signal s_RegDst               : std_logic;  -- register destination
-    signal s_Branch, s_BranchNE   : std_logic;  -- branch
-    signal s_SignExt              : std_logic;  -- sign extend
-    signal s_jump                 : std_logic;  -- jump
+    signal s_imm16                                    : std_logic_vector(15 downto 0);  -- instruction bits [15-0]
+    signal s_imm32                                    : std_logic_vector(31 downto 0);  -- after extension
+    signal s_imm32x4                                  : std_logic_vector(31 downto 0);  -- after multiplication
+    signal s_immMuxOut                                : std_logic_vector(N - 1 downto 0);  -- output of Immediate Mux (ALU 2nd input)
+    signal s_opCode                                   : std_logic_vector(5 downto 0);  --instruction bits[31-26] 
+    signal s_funcCode                                 : std_logic_vector(5 downto 0);  --instruction bits[5-0]
+    signal s_inputPC                                  : std_logic_vector(31 downto 0);  -- wire from the jump mux
+    signal s_Ctrl                                     : std_logic_vector(20 downto 0);  -- control brick output, each bit is a different switch
+    signal s_ALUSrc                                   : std_logic;  -- alu source
+    signal s_jr, s_shamt_s, s_lui                     : std_logic;
+    signal s_jal                                      : std_logic;  -- jump and link
+    signal s_ALUOp                                    : std_logic_vector(3 downto 0);  -- alu code
+    signal s_MemtoReg                                 : std_logic;  -- memory to register
+    signal s_RegDst                                   : std_logic;  -- register destination
+    signal s_Branch, s_BranchNE                       : std_logic;  -- branch
+    signal s_SignExt                                  : std_logic;  -- sign extend
+    signal s_jump                                     : std_logic;  -- jump
     --Addressing Signals
-    signal s_PCPlusFour    : std_logic_vector(N - 1 downto 0);  -- pc + 4
-    signal s_jumpAddress   : std_logic_vector(N - 1 downto 0);  -- jump address
-    signal s_branchAddress : std_logic_vector(N - 1 downto 0);  -- branch address
-    signal s_MemToReg0     : std_logic_vector(31 downto 0);  -- memory to register 0
-    signal s_RegDst0       : std_logic_vector(4 downto 0);  -- register destination 0
-    signal s_normalOrBranch, s_finalJumpAddress : std_logic_vector(31 downto 0);
+    signal s_PCPlusFour                               : std_logic_vector(N - 1 downto 0);  -- pc + 4
+    signal s_jumpAddress                              : std_logic_vector(N - 1 downto 0);  -- jump address
+    signal s_branchAddress                            : std_logic_vector(N - 1 downto 0);  -- branch address
+    signal s_MemToReg0                                : std_logic_vector(31 downto 0);  -- memory to register 0
+    signal s_RegDst0                                  : std_logic_vector(4 downto 0);  -- register destination 0
+    signal s_normalOrBranch, s_finalJumpAddress       : std_logic_vector(31 downto 0);
     signal s_ALUBranch, s_abnormal, s_HorBExt, s_HorB : std_logic;
-    signal s1, s2, s3 : std_logic;
-    signal s_lb1or0, s_lb3or2, s_lbUorL   : std_logic_vector(7 downto 0);  -- lb and lbu raw signals
-    signal s_lhUorL                       : std_logic_vector(15 downto 0);  -- lh and lhu raw signals
-    signal s_bSelect                      : std_logic_vector(1 downto 0);  --lb & lh selectors
-    signal s_lb_word, s_lh_word, s_lbOrlh : std_logic_vector(31 downto 0);  --extended selected signal
+    signal s1, s2, s3                                 : std_logic;
+    signal s_lb1or0, s_lb3or2, s_lbUorL               : std_logic_vector(7 downto 0);  -- lb and lbu raw signals
+    signal s_lhUorL                                   : std_logic_vector(15 downto 0);  -- lh and lhu raw signals
+    signal s_bSelect                                  : std_logic_vector(1 downto 0);  --lb & lh selectors
+    signal s_lb_word, s_lh_word, s_lbOrlh             : std_logic_vector(31 downto 0);  --extended selected signal
     component mem is
         generic
             (
@@ -111,14 +110,14 @@ architecture structure of MIPS_processor is
         port
             (
                 clk   : in  std_logic;
-                i_wA  : in  std_logic_vector(4 downto 0);   -- Write Address
-                i_wD  : in  std_logic_vector(31 downto 0);  -- Write Data
+                i_wA  : in  std_logic_vector(4 downto 0);    -- Write Address
+                i_wD  : in  std_logic_vector(31 downto 0);   -- Write Data
                 i_wC  : in  std_logic;  -- WriteControl aka RegWrite
-                i_r1  : in  std_logic_vector(4 downto 0);   -- Read 1
-                i_r2  : in  std_logic_vector(4 downto 0);   -- Read 2
+                i_r1  : in  std_logic_vector(4 downto 0);    -- Read 1
+                i_r2  : in  std_logic_vector(4 downto 0);    -- Read 2
                 reset : in  std_logic;  --Reset
-                o_d1  : out std_logic_vector(31 downto 0);  --Output Data 1
-                o_d2  : out std_logic_vector(31 downto 0)   --Output Data 2
+                o_d1  : out std_logic_vector(31 downto 0);   --Output Data 1
+                o_d2  : out std_logic_vector(31 downto 0)    --Output Data 2
                 );
     end component;
     component extender16t32 is
@@ -132,9 +131,9 @@ architecture structure of MIPS_processor is
     component extender8t32 is
         port
             (
-                i_I : in  std_logic_vector(7 downto 0);  -- Data value input
+                i_I : in  std_logic_vector(7 downto 0);   -- Data value input
                 i_C : in  std_logic;    -- 0 for zero, 1 for signextension
-                o_O : out std_logic_vector(31 downto 0)  -- Data value output
+                o_O : out std_logic_vector(31 downto 0)   -- Data value output
                 );
     end component;
     component mux2t1_N is
@@ -154,11 +153,11 @@ architecture structure of MIPS_processor is
         port
             (
                 i_s      : in  std_logic;
-                nadd_sub : in  std_logic;  -- 0 for add, 1 for subtract
-                i_a      : in  std_logic_vector(N - 1 downto 0);  -- input a
-                i_b      : in  std_logic_vector(N - 1 downto 0);  -- input b
-                o_y      : out std_logic_vector(N - 1 downto 0);  -- output y
-                o_cout   : out std_logic   -- carry out
+                nadd_sub : in  std_logic;   -- 0 for add, 1 for subtract
+                i_a      : in  std_logic_vector(N - 1 downto 0);    -- input a
+                i_b      : in  std_logic_vector(N - 1 downto 0);    -- input b
+                o_y      : out std_logic_vector(N - 1 downto 0);    -- output y
+                o_cout   : out std_logic  -- carry out
                 );
     end component;
     component alu is
@@ -170,17 +169,17 @@ architecture structure of MIPS_processor is
                 i_aluOp    : in  std_logic_vector(3 downto 0);  -- ALU operation code
                 i_shamt    : in  std_logic_vector(4 downto 0);  -- Shift amount
                 o_F        : out std_logic_vector(31 downto 0);  -- Data value output
-                o_Zero     : out std_logic;  -- zero branch signal
-                o_OverFlow : out std_logic   -- overflow
+                o_Zero     : out std_logic;   -- zero branch signal
+                o_OverFlow : out std_logic  -- overflow
                 );
     end component;
     component MIPS_pc is
         port
             (
-                i_CLK : in  std_logic;                      -- clock
-                i_RST : in  std_logic;                      -- reset
-                i_D   : in  std_logic_vector(31 downto 0);  -- data
-                o_Q   : out std_logic_vector(31 downto 0)   -- output
+                i_CLK : in  std_logic;  -- clock
+                i_RST : in  std_logic;  -- reset
+                i_D   : in  std_logic_vector(31 downto 0);   -- data
+                o_Q   : out std_logic_vector(31 downto 0)    -- output
                 );
     end component;
 begin
@@ -190,30 +189,30 @@ begin
     IMem : mem
         generic
         map(
-            ADDR_WIDTH => 10,                 -- 1024 words
-            DATA_WIDTH => N                   -- 32 bits
+            ADDR_WIDTH => 10,           -- 1024 words
+            DATA_WIDTH => N             -- 32 bits
             )
         port map
         (
-            clk  => iCLK,                     -- clock
+            clk  => iCLK,               -- clock
             addr => s_IMemAddr(11 downto 2),  -- address
-            data => iInstExt,                 -- data
-            we   => iInstLd,                  -- write enable
-            q    => s_Inst                    -- output
+            data => iInstExt,           -- data
+            we   => iInstLd,            -- write enable
+            q    => s_Inst              -- output
             );
     DMem : mem
         generic
         map(
-            ADDR_WIDTH => 10,                 -- 1024 words
-            DATA_WIDTH => N                   -- 32 bits
+            ADDR_WIDTH => 10,           -- 1024 words
+            DATA_WIDTH => N             -- 32 bits
             )
         port
         map(
-            clk  => iCLK,                     -- clock
+            clk  => iCLK,               -- clock
             addr => s_DMemAddr(11 downto 2),  -- address
-            data => s_DMemData,               -- data
-            we   => s_DMemWr,                 -- write enable
-            q    => s_DMemOut                 -- output
+            data => s_DMemData,         -- data
+            we   => s_DMemWr,           -- write enable
+            q    => s_DMemOut           -- output
             );
     instructionSlice : process (s_Inst)  -- snip the Instruction data into smaller parts
     begin
@@ -224,9 +223,9 @@ begin
         s_RegInReadData2(4 downto 0) <= s_Inst(20 downto 16);  -- bits[16-20] into RegDstMux and Register (bits[4-0])
         s_RegInReadData1(4 downto 0) <= s_Inst(25 downto 21);  -- bits[25-21] into Register (bits[4-0])
         s_opCode(5 downto 0)         <= s_Inst(31 downto 26);  -- bits[26-31] into Control Brick (bits[5-0)
-        s_jumpAddress(0)           <= '0';
-        s_jumpAddress(1)           <= '0';  -- Set first two bits to zero
-        s_jumpAddress(27 downto 2) <= s_Inst(25 downto 0);  -- Instruction bits[25-0] into bits[27-2] of jumpAddr
+        s_jumpAddress(0)             <= '0';
+        s_jumpAddress(1)             <= '0';  -- Set first two bits to zero
+        s_jumpAddress(27 downto 2)   <= s_Inst(25 downto 0);  -- Instruction bits[25-0] into bits[27-2] of jumpAddr
     end process;
     oALUOut <= s_DMemAddr;              -- oALU is for synthesis
     control : control_unit  -- grabs the fields from the instruction after decoding that translate to control signals
@@ -256,7 +255,7 @@ begin
         s_Branch            <= s_Ctrl(3);
         s_SignExt           <= s_Ctrl(2);
         s_jump              <= s_Ctrl(1);
-        s_Halt <= s_Ctrl(0);
+        s_Halt              <= s_Ctrl(0);
     end process;
     addFour : adder_subtractor          -- iterates the program counter by 4
         generic
@@ -279,9 +278,9 @@ begin
     jumpAddresses : process (s_PCPlusFour, s_imm32)  -- process for converting address arguments into actual 32 bit addresses
     begin
         s_jumpAddress(31 downto 28) <= s_PCPlusFour(31 downto 28);  -- PC+4 bits[31-28] into bits[31-28] of jumpAddr
-        s_imm32x4(0)           <= '0';
-        s_imm32x4(1)           <= '0';
-        s_imm32x4(31 downto 2) <= s_imm32(29 downto 0);  -- imm32 bits[29-0] into bits[31-2] of jumpAddr
+        s_imm32x4(0)                <= '0';
+        s_imm32x4(1)                <= '0';
+        s_imm32x4(31 downto 2)      <= s_imm32(29 downto 0);  -- imm32 bits[29-0] into bits[31-2] of jumpAddr
     end process;
     pcReg : MIPS_pc  -- 32 bit register that stores the value of the program counter
         port
@@ -295,15 +294,15 @@ begin
     registers : register_file
         port
         map(
-            clk   => iCLK,               -- std_logic;
-            i_wA  => s_RegWrAddr,        -- std_logic_vector(4 downto 0);
-            i_wD  => s_RegWrData,        -- std_logic_vector(31 downto 0);
-            i_wC  => s_RegWr,            -- std_logic;
-            i_r1  => s_RegInReadData1,   -- std_logic_vector(4 downto 0);
-            i_r2  => s_RegInReadData2,   -- std_logic_vector(4 downto 0);
-            reset => iRST,               -- std_logic;
+            clk   => iCLK,              -- std_logic;
+            i_wA  => s_RegWrAddr,       -- std_logic_vector(4 downto 0);
+            i_wD  => s_RegWrData,       -- std_logic_vector(31 downto 0);
+            i_wC  => s_RegWr,           -- std_logic;
+            i_r1  => s_RegInReadData1,  -- std_logic_vector(4 downto 0);
+            i_r2  => s_RegInReadData2,  -- std_logic_vector(4 downto 0);
+            reset => iRST,              -- std_logic;
             o_d1  => s_RegOutReadData1,  -- std_logic_vector(31 downto 0);
-            o_d2  => s_DMemData          -- std_logic_vector(31 downto 0));
+            o_d2  => s_DMemData         -- std_logic_vector(31 downto 0));
             );
     branchAdder : adder_subtractor  -- branch adder that supplies the modified address to adjust the program counter on branches
         generic
@@ -322,7 +321,7 @@ begin
         map(N => 5)  -- Generic of type integer for input/output data width. Default value is 32.
         port
         map(
-            i_S  => s_lui,    -- selects either v or normal operations
+            i_S  => s_lui,  -- selects either v or normal operations
             i_D0 => s_shamt,            -- used for sll, srl, sra
             i_D1 => "10000",  -- 16 (hardcoded for lui, lui implemented as sll with 16 shift)
             o_O  => s_lui_shamt
@@ -332,9 +331,9 @@ begin
         map(N => 5)  -- Generic of type integer for input/output data width. Default value is 32.
         port
         map(
-            i_S  => s_shamt_s,  -- selects either v or normal operations
+            i_S  => s_shamt_s,    -- selects either v or normal operations
             i_D0 => s_lui_shamt,        -- used for sll, srl, sra
-            i_D1 => s_RegOutReadData1(4 downto 0),  -- used for sllv srlv srav
+            i_D1 => s_RegOutReadData1(4 downto 0),   -- used for sllv srlv srav
             o_O  => s_alu_shamt);
     mainALU : alu  -- does all the arithmetic operations and interfaces with memory
         port
@@ -472,7 +471,7 @@ begin
             i_I => s_lhUorL,            -- holds upper or lower half
             i_C => s_HorBExt,
             o_O => s_lh_word);
-    byteOrHalf : mux2t1_N  -- selects between loading a byte or a half signal
+    byteOrHalf : mux2t1_N   -- selects between loading a byte or a half signal
         generic map(N => 32)
         port map(
             i_S  => s_HorB,
