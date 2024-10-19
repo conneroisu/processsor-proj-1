@@ -2,22 +2,12 @@
 -- Author(s): conneroisu
 -- Name: proj/src/TopLevel/mem.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
 -- </header>
 
-
-
-
-
-
-
-
-
-
-
 -- Quartus Prime VHDL Template
 -- Single-port RAM with single read/write address
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -65,3 +55,4 @@ begin
     q <= ram(to_integer(unsigned(addr)));
 
 end rtl;
+

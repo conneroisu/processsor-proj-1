@@ -2,22 +2,12 @@
 -- Author(s): conneroisu
 -- Name: proj/src/LowLevel/dffg_n.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	conneroisu  <conneroisu@outlook.com> add-lowlevel-components-and-testbenches
 -- </header>
 
-
-
-
-
-
-
-
-
-
-
 library IEEE;
 use IEEE.std_logic_1164.all;
-
 -- Entity declaration of nbit_register
 entity dffg_n is
     generic (
@@ -31,7 +21,6 @@ entity dffg_n is
         o_Q   : out std_logic_vector(N-1 downto 0)   -- Data value output
         );
 end dffg_n;
-
 -- Architecture of nbit_register
 architecture structural of dffg_n is
 begin

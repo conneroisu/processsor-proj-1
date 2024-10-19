@@ -1,19 +1,10 @@
 -- <header>
--- Author(s): Conner Ohnesorge
+-- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/fullAdder.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------
 -- Conner Ohnesorge
@@ -25,7 +16,6 @@
 -- Description: This is a structural description of a full adder. It is
 -- made up of 2 xor gates, 2 and gates, and 1 or gate.
 -------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -116,3 +106,4 @@ begin
     -- end generate G_OnesComp;
 
 end architecture structural;
+

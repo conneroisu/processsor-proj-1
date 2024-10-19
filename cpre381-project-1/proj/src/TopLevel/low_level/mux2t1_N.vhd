@@ -1,19 +1,10 @@
 -- <header>
--- Author(s): Conner Ohnesorge
+-- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/mux2t1_N.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------
 -- Henry Duwe
@@ -25,7 +16,6 @@
 -- DESCRIPTION: This file contains an implementation of an N-bit wide 2:1
 -- mux using structural VHDL, generics, and generate statements.
 -------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -66,3 +56,4 @@ begin
 
     end generate g_nbit_mux;
 end architecture structural;
+

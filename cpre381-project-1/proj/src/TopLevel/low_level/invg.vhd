@@ -1,19 +1,10 @@
 -- <header>
--- Author(s): Conner Ohnesorge
+-- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/invg.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------
 -- Joseph Zambreno
@@ -32,17 +23,14 @@
 --         primitives.
 -- 3/25/24 by CO::Formatted, added comments.
 -------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.std_logic_1164.all;
-
 entity invg is
     port (
         i_A : in  std_logic;            -- Input to the NOT gate
         o_F : out std_logic             -- Output from the NOT gate
         );
 end invg;
-
 architecture dataflow of invg is
 begin
     o_F <= not i_A;                     -- Output is the inverse of the input

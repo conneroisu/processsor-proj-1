@@ -2,18 +2,9 @@
 -- Author(s): conneroisu
 -- Name: proj/src/LowLevel/org2.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	conneroisu  <conneroisu@outlook.com> add-lowlevel-components-and-testbenches
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -33,3 +24,4 @@ begin
     o_f <= i_a or i_b;
 
 end architecture dataflow;
+

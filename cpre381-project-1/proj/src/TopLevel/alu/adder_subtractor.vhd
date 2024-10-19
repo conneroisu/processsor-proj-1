@@ -1,19 +1,10 @@
 -- <header>
--- Author(s): Conner Ohnesorge
+-- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/alu/adder_subtractor.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------
 -- Conner Ohnesorge
@@ -27,7 +18,6 @@
 -- and a 32-bit 1's complementer. The adder/subtractor has a control signal
 -- that determines whether the operation is addition or subtraction.
 -------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -183,3 +173,4 @@ begin
             );
 
 end architecture structural;
+

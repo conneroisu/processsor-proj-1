@@ -1,19 +1,10 @@
 -- <header>
--- Author(s): Conner Ohnesorge
+-- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/fetch/register_file.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------
 -- author: Conner Ohnesorge
@@ -33,7 +24,6 @@
 -- NOTES:
 -- 1/25/24 by CO:: Design created.
 -------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 use work.mips_types.all;
@@ -154,3 +144,4 @@ begin
             );
 
 end architecture structural;
+

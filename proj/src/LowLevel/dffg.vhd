@@ -2,25 +2,14 @@
 -- Author(s): conneroisu
 -- Name: proj/src/LowLevel/dffg.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	conneroisu  <conneroisu@outlook.com> add-lowlevel-components-and-testbenches
 -- </header>
 
-
-
-
-
-
-
-
-
-
-
 library IEEE;
 use IEEE.std_logic_1164.all;
-
 -- Entity declaration of dffg
 entity dffg is
-
     port (
         i_CLK : in  std_logic;          -- Clock input
         i_RST : in  std_logic;          -- Reset input
@@ -28,9 +17,7 @@ entity dffg is
         i_D   : in  std_logic;          -- Data value input
         o_Q   : out std_logic           -- Data value output
         );
-
 end dffg;
-
 -- Architecture of dffg
 architecture mixed of dffg is
     signal s_D : std_logic;             -- Multiplexed input to the FF
@@ -38,12 +25,10 @@ architecture mixed of dffg is
 begin
     -- The output of the FF is fixed to s_Q
     o_Q <= s_Q;
-
     -- Create a multiplexed input to the FF based on i_WE
     with i_WE select
         s_D <= i_D when '1',
         s_Q        when others;
-
     -- This process handles the asyncrhonous reset and
     -- synchronous write. We want to reset our processor's registers so that we minimize
     -- glitchy behavior on startup.
@@ -54,7 +39,5 @@ begin
         elsif (rising_edge(i_CLK)) then  -- else if the clock is rising edge
             s_Q <= s_D;                 -- then set the output to the input
         end if;
-
     end process;
-
 end mixed;

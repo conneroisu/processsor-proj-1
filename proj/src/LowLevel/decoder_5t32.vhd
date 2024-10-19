@@ -2,18 +2,9 @@
 -- Author(s): conneroisu
 -- Name: proj/src/LowLevel/decoder_5t32.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	conneroisu  <conneroisu@outlook.com> update-do-files-and-add-tests-for-lowlevel-components
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -122,3 +113,4 @@ begin
     end generate;
 
 end architecture structural;
+

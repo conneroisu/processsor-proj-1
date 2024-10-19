@@ -1,19 +1,10 @@
 -- <header>
--- Author(s): Conner Ohnesorge
+-- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/alu/alu.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------
 -- author(s): Conner Ohnesorge & Levi Wenck
@@ -35,12 +26,10 @@
 -- 3/25/24 by LW:: Added logical and slt instructions.
 -- 3/27/24 by LW:: Implemented sltu & changed mux to 16t1
 -------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.MIPS_Types.all;
-
 -- Entity declaration of the ALU
 entity alu is
     port
@@ -55,9 +44,7 @@ entity alu is
             o_Zero     : out std_logic  -- Zero flag
             );
 end alu;
-
 architecture structural of alu is
-
     component adder_subtractor is
         generic
             (N : integer := 32);
@@ -72,7 +59,6 @@ architecture structural of alu is
                 o_overflow : out std_logic
                 );
     end component;
-
     component shifter_N is
         port
             (
@@ -82,7 +68,6 @@ architecture structural of alu is
                 i_T          : in  std_logic;  -- 0 == left shift and 1 == right shift
                 o_O          : out std_logic_vector(31 downto 0));  -- output of the shifter
     end component;
-
     component mux2t1_N is
         generic
             (N : integer := 16);
@@ -94,7 +79,6 @@ architecture structural of alu is
                 o_O  : out std_logic_vector(31 downto 0)
                 );
     end component;
-
     component xorg2 is
         port
             (
@@ -103,7 +87,6 @@ architecture structural of alu is
                 o_f : out std_logic
                 );
     end component;
-
     component andg32 is
         port
             (
@@ -112,7 +95,6 @@ architecture structural of alu is
                 o_F : out std_logic_vector(31 downto 0)
                 );
     end component;
-
     component org32 is
         port
             (
@@ -121,7 +103,6 @@ architecture structural of alu is
                 o_F : out std_logic_vector(31 downto 0)
                 );
     end component;
-
     component xorg32 is
         port
             (
@@ -130,7 +111,6 @@ architecture structural of alu is
                 o_F : out std_logic_vector(31 downto 0)
                 );
     end component;
-
     component nandg32 is
         port
             (
@@ -139,7 +119,6 @@ architecture structural of alu is
                 o_F : out std_logic_vector(31 downto 0)
                 );
     end component;
-
     component norg32 is
         port
             (
@@ -148,9 +127,7 @@ architecture structural of alu is
                 o_F : out std_logic_vector(31 downto 0)
                 );
     end component;
-
     -- TODO (project part 2) ADD NXORG32
-
     component mux16t1 is
         port
             (
@@ -159,18 +136,14 @@ architecture structural of alu is
                 o_O : out std_logic_vector(31 downto 0)
                 );
     end component;
-
     signal s_AddSub_res                                                                  : std_logic_vector(31 downto 0);
     signal s_overflow, s_alu_cout                                                        : std_logic;
     signal s_shift_res                                                                   : std_logic_vector(31 downto 0);
     signal s_Mux_res                                                                     : std_logic_vector(31 downto 0);
     signal s_o_andg32, s_o_org32, s_o_xorg32, s_o_nandg32, s_o_norg32, s_o_slt, s_o_sltu : std_logic_vector(31 downto 0);
     signal s_mux_input                                                                   : array_16x32;
-
 begin
-
     -- ARITHMETIC UNIT, used for arithmetic instructions(adding and subtracting)
-
     --Instantiante add_Sub unit
     G_ADD_SUB : adder_subtractor
         port map
@@ -182,16 +155,12 @@ begin
             o_y        => s_AddSub_res,
             o_cout     => s_alu_cout,
             o_overflow => s_overflow);
-
     o_Overflow <= s_overflow;           --assign overflow for output
     -- loop through the output of the mux and check if all bits are 0
     o_Zero     <= '1' when s_AddSub_res = x"00000000" else
               '0';
-
     -- END OF ARITHMETIC UNIT (adding and subtracting)
-
     -- BARREL SHIFTING UNIT (does sll and srl and sra instructions)
-
     --Instantiate barrel shifter
     G_SHIFTER : shifter_N               -- does shifting and lui
         port
@@ -202,11 +171,8 @@ begin
             i_T          => i_aluOp(3),  -- 0 == left shift and 1 == right shift (this bit also dictates signed/unsigned arithmetic)
             o_O          => s_shift_res
             );
-
     -- END OF BARREL SHIFTING UNIT
-
     -- LOGIC UNIT, used for logic instructions (basic 32bit OR, AND, XOR, NOR, NAND, and NXOR operations)
-
     G_AND32 : andg32
         port
         map(
@@ -214,7 +180,6 @@ begin
             i_B => i_Data2,
             o_F => s_o_andg32
             );
-
     G_OR32 : org32
         port
         map(
@@ -222,7 +187,6 @@ begin
             i_B => i_Data2,
             o_F => s_o_org32
             );
-
     G_XOR32 : xorg32
         port
         map(
@@ -230,20 +194,16 @@ begin
             i_B => i_Data2,
             o_F => s_o_xorg32
             );
-
-
     -- SLT signal generation    
     s_o_slt(0) <= s_AddSub_res(31);
     G2 : for i in 1 to 31 generate  --generate rest of output bits of s_o_slt result
         s_o_slt(i) <= '0';
     end generate;
-
     -- SLTU signal generation (this might just be the same as above)
     s_o_sltu(0) <= (not s_alu_cout);    --used for sltu
     G3 : for i in 1 to 31 generate  --generate rest of output bits of s_o_sltu result
         s_o_sltu(i) <= '0';
     end generate;
-
     G_NAND32 : nandg32
         port
         map(
@@ -251,7 +211,6 @@ begin
             i_B => i_Data2,
             o_F => s_o_nandg32
             );
-
     G_NOR32 : norg32
         port
         map(
@@ -259,9 +218,7 @@ begin
             i_B => i_Data2,
             o_F => s_o_norg32
             );
-
     -- END OF LOGIC UNIT
-
     -- SELECT OUTPUT (what instruction was done)
     G_MUX_RES : mux16t1
         port
@@ -286,5 +243,4 @@ begin
             o_O     => o_F              -- FINAL OUTPUT OF ALU
             );
     -- END OF SELECTING OUTPUT
-
 end structural;

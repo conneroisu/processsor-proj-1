@@ -1,19 +1,10 @@
 -- <header>
--- Author(s): Conner Ohnesorge
+-- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/test/tb_register_file.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------
 -- Conner Ohnesorge
@@ -25,7 +16,6 @@
 -- DESCRIPTION: This file contains a simple VHDL testbench for the
 -- edge-triggered flip-flop with parallel access and reset.
 -------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;  -- This line includes the numeric_std package
@@ -525,3 +515,4 @@ begin
     end process p_tb;
 
 end architecture behavior;
+

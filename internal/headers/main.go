@@ -163,20 +163,17 @@ func GetCommitHistory(filename string) ([]Commit, error) {
 // generateHeader generates the header content for a VHDL file
 func generateHeader(filename string, commitInfos []Commit) string {
 	var notes strings.Builder
-	authors := make([]string, 0)
 	for i, commit := range commitInfos {
 		if commit.AuthorName == blacklist {
 			logger.Debug("Blacklisted author", slog.String("author", commit.AuthorName))
 			continue
 		}
-		authors = append(authors, commit.AuthorName)
 		notes.WriteString(fmt.Sprintf("--	%s  %s %s", commit.AuthorName, commit.AuthorEmail, commit.Message))
 		if i < len(commitInfos)-1 {
 			notes.WriteString("\n")
 		}
 	}
-	return fmt.Sprintf(headerTemplate, strings.Join(authors, " & "),
-		filename, notes.String())
+	return fmt.Sprintf(headerTemplate, commitInfos[0].AuthorName, filename, notes.String())
 }
 
 // updateHeaderInFile updates the header in the VHDL file if the content has changed
@@ -209,8 +206,19 @@ func updateHeaderInFile(filename, headerContent string) error {
 		return err
 	}
 
+	ogCnt := ""
+	done := false
+	for _, line := range strings.Split(originalContent.String(), "\n") {
+		if !done && line == "" {
+			continue
+		}
+		if strings.Contains(line, "library ie") {
+			done = true
+		}
+		ogCnt += line + "\n"
+	}
 	// Combine the new header with the original content
-	newContent := headerContent + originalContent.String()
+	newContent := headerContent + ogCnt
 
 	// Check if the new content is different from the current content
 	currentContent, err := os.ReadFile(filename)

@@ -1,19 +1,10 @@
 -- <header>
--- Author(s): Conner Ohnesorge
+-- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/control_unit/control.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------
 -- author(s): Conner Ohnesorge & Levi Wenck
@@ -26,15 +17,12 @@
 -- instruction fetched from IMEM and creates a new output which is fed
 -- into other components of the processor, ensuring it executes/interacts
 -- as needed per instruction
-
 -- NOTES:
 -- 03/21/24 by LW::Design created
 -- 03/25/24 by CO::Formatted, Aligned, and Commented
 -------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.std_logic_1164.all;
-
 entity control_unit is
     port
         (
@@ -43,14 +31,11 @@ entity control_unit is
             o_Ctrl_Unit : out std_logic_vector(20 downto 0)  -- output control signals
             );
 end control_unit;
-
 -- architecture declaration of control_unit
 architecture dataflow of control_unit is
     signal s_RTYPE_database : std_logic_vector(20 downto 0);  -- if its an R-type instruction, use the R-type funct code
 begin
-
     -- Breaking down the o_Ctrl_Unit signal
-
     -- bit(s) 20          selects between either loading a word or a half/byte from memory
     -- bit(s) 19          half or byte extention type indicator, determines if lb/lbu/lh/lhu instruction
     -- bit(s) 18          half or byte indicator, determines if lb/lbu/lh/lhu instruction
@@ -72,9 +57,7 @@ begin
     -- TODO look here when testing first to find errors
     with i_opcode select o_Ctrl_Unit <=
         s_RTYPE_database when "000000",  -- R-TYPE instructions don't use opcode (use funct field instead)
-
         "000000000000000000001" when "010100",  -- halt
-
         "000000000000000000110" when "000010",  -- j
         "000000010000000100110" when "000011",  -- jal
         "000000000000100001100" when "000100",  -- beq (do subtraction)
@@ -94,7 +77,6 @@ begin
         "101000001000010100100" when "100101",  -- lhu
         "000000001000001000100" when "101011",  -- sw
         "000000000000000000000" when others;
-
     with i_funct select s_RTYPE_database <=
         "000000100000000000110" when "001000",  -- jr
         "000000000010000110100" when "000000",  -- sll
@@ -114,5 +96,4 @@ begin
         "000000000011100110100" when "101010",  -- slt
         "000000000110100110100" when "101011",  -- sltu
         "000000000000000000000" when others;    -- R-TYPE and others
-
 end dataflow;

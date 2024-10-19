@@ -1,19 +1,10 @@
 -- <header>
--- Author(s): Conner Ohnesorge
+-- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/test/tb_alu.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------
 -- author(s): Conner Ohnesorge & Levi Wenck
@@ -197,7 +188,6 @@ begin
         s_ALUOp    <= "1111";
         wait for gCLK_HPER * 2;
         wait for gCLK_HPER * 2;
-
         --Test case 7: lw operation (either unsigned add or sll by 0)
         s_Data1    <= x"0000a000";
         s_Data2    <= x"000000a0";
@@ -286,7 +276,6 @@ begin
         s_ALUOp    <= "0000";
         wait for gCLK_HPER * 2;
         wait for gCLK_HPER * 2;
-
         --Test case 11.5: add the two values from data1 and data2 (addu) ("negative" number)
         s_Data1    <= x"00000006";
         s_Data2    <= x"90000000";

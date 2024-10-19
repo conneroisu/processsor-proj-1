@@ -1,19 +1,10 @@
 -- <header>
--- Author(s): Conner Ohnesorge
+-- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/mem.vhd
 -- Notes:
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
-
-
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------
 -- author(s): Conner Ohnesorge & Levi Wenck
@@ -26,7 +17,6 @@
 -- with a single read/write address. The RAM is implemented as a 2-D
 -- array of std_logic_vectors. The RAM is synchronous and is updated
 -------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -76,3 +66,4 @@ begin
     q <= ram(to_integer(unsigned(addr)));
 
 end rtl;
+
