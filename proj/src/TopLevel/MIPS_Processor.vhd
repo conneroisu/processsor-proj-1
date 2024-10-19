@@ -7,22 +7,11 @@
 --	Conner Ohnesorge  <connero@iastate.edu> added-register-file-component-to-the-MIPS-processor
 --	conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
 -- </header>
-
--------------------------------------------------------------------------
--- Henry Duwe
--- Department of Electrical and Computer Engineering
--- Iowa State University
--------------------------------------------------------------------------
--- MIPS_Processor.vhd
--------------------------------------------------------------------------
--- DESCRIPTION: This file contains a skeleton of a MIPS_Processor  
--- implementation.
--- 01/29/2019 by H3::Design created.
--------------------------------------------------------------------------
 library IEEE;
 use IEEE.std_logic_1164.all;
 library work;
 use work.MIPS_types.all;
+
 entity MIPS_Processor is
     generic(N : integer := DATA_WIDTH);
     port(iCLK      : in  std_logic;

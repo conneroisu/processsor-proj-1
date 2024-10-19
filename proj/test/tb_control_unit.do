@@ -1,4 +1,4 @@
-set target "tb_decoder_5t32"
+set target "tb_control_unit"
 set file "${target}.vhd"
 
 #This line should be in every .do file!
