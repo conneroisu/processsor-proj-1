@@ -1,8 +1,8 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): connero
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/xorg2.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-28-from-conneroisu-feature-control_unit
 -- </header>
 
 library ieee;
@@ -23,5 +23,6 @@ begin
     o_f <= i_a xor i_b;                 -- XOR the two inputs
 
 end architecture dataflow;
+
 
 

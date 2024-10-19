@@ -1,8 +1,8 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): connero
 -- Name: proj/src/LowLevel/dffg_n.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-28-from-conneroisu-feature-control_unit
 -- </header>
 
 library IEEE;

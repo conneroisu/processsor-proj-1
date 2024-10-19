@@ -1,14 +1,14 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): connero
 -- Name: proj/src/TopLevel/MIPS_Processor.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-28-from-conneroisu-feature-control_unit
 -- </header>
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 library work;
 use work.MIPS_types.all;
-
 entity MIPS_Processor is
     generic(N : integer := DATA_WIDTH);
     port(iCLK      : in  std_logic;

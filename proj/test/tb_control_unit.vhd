@@ -1,21 +1,23 @@
-library IEEE;
+-- <header>
+-- Author(s): connero
+-- Name: proj/test/tb_control_unit.vhd
+-- Notes:
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-28-from-conneroisu-feature-control_unit
+-- </header>
 
+library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_textio.all;          -- For logic types I/O
 use IEEE.numeric_std.all;               -- For to_usnigned
-
 library std;
-
 use std.env.all;                        -- For hierarchical/external signals
 use std.textio.all;                     -- For basic I/O
-
 entity tb_control_unit is
     generic
         (
             gCLK_HPER : time := 50 ns
-        );
+            );
 end tb_control_unit;
-
 architecture behavior of tb_control_unit is
     constant cCLK_PER : time := gCLK_HPER * 2;
     component control_unit
@@ -25,7 +27,6 @@ architecture behavior of tb_control_unit is
             o_Ctrl_Unit : out std_logic_vector(14 downto 0)  --output/control signals fetched correlating to function
             );
     end component;
-
     signal s_CLK        : std_logic                     := '0';
     signal s_opcode     : std_logic_vector(5 downto 0)  := (others => '0');
     signal s_funct      : std_logic_vector(5 downto 0)  := (others => '0');
@@ -39,7 +40,6 @@ begin
         s_CLK <= '1';
         wait for gCLK_HPER/2;
     end process;
-    
     DUT : control_unit
         port map(
             i_opcode    => s_opcode,
@@ -49,9 +49,7 @@ begin
     -- Testbench process  
     P_TB : process
     begin
-        
         -- RTYPE
-        
         -- test add
         s_opcode     <= "000000";
         s_funct      <= "100000";
@@ -112,9 +110,7 @@ begin
         s_funct      <= "100011";
         expected_out <= "000000100110100";
         wait for cCLK_PER/2;
-
         -- ITYPE
-        
         -- test addi
         s_opcode     <= "001000";
         s_funct      <= "000000";
@@ -160,9 +156,7 @@ begin
         s_opcode     <= "101011";
         expected_out <= "001000001000100";
         wait for cCLK_PER/2;
-        
         -- JTYPE
-        
         -- test j
         s_opcode     <= "000010";
         expected_out <= "000000000000110";
