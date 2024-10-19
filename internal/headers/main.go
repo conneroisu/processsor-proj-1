@@ -2,8 +2,11 @@ package main
 
 import (
 	"bufio"
+	"bytes"
+	"encoding/json"
 	"fmt"
 	"log"
+	"log/slog"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -11,11 +14,37 @@ import (
 )
 
 var (
-	whitelist = []string{
-		"conneroisu",
-		"aidanfoss",
-		"DanielMauricio13",
-	}
+	blacklist = "github-actions[bot]"
+)
+
+var (
+	logger = slog.New(slog.NewTextHandler(os.Stdout, &slog.HandlerOptions{
+		AddSource: true,
+		Level:     slog.LevelDebug,
+		ReplaceAttr: func(groups []string, a slog.Attr) slog.Attr {
+			if a.Key == "time" {
+				return slog.Attr{}
+			}
+			if a.Key == "level" {
+				return slog.Attr{}
+			}
+			if a.Key == slog.SourceKey {
+				str := a.Value.String()
+				split := strings.Split(str, "/")
+				if len(split) > 2 {
+					a.Value = slog.StringValue(strings.Join(split[len(split)-2:], "/"))
+					a.Value = slog.StringValue(strings.Replace(a.Value.String(), "}", "", -1))
+				}
+				a.Key = a.Value.String()
+				a.Value = slog.IntValue(0)
+			}
+			if a.Key == "body" {
+				a.Value = slog.StringValue(strings.Replace(a.Value.String(), "/", "", -1))
+				a.Value = slog.StringValue(strings.Replace(a.Value.String(), "\n", "", -1))
+				a.Value = slog.StringValue(strings.Replace(a.Value.String(), "\"", "", -1))
+			}
+			return a
+		}}))
 )
 
 // Header template for VHDL files
@@ -47,7 +76,7 @@ func main() {
 
 	// Add header to each VHDL file
 	for _, file := range files {
-		commitInfos, err := getCommitHistory(file)
+		commitInfos, err := GetCommitHistory(file)
 		if err != nil {
 			log.Printf("Error getting commit history for %s: %v", file, err)
 			continue
@@ -80,60 +109,74 @@ func findFilesWithExtension(extension string) ([]string, error) {
 	return files, nil
 }
 
-// getCommitHistory gets the commit history for a given file
-func getCommitHistory(filename string) ([]CommitInfo, error) {
-	cmd := exec.Command("git", "log", "--pretty=format:%an|%ae|%s", filename)
-	output, err := cmd.Output()
+// Commit is a struct for parsing the output of git log.
+type Commit struct {
+	Commit      string `json:"commit"`
+	AuthorName  string `json:"author_name"`
+	AuthorEmail string `json:"author_email"`
+	Date        string `json:"date"`
+	Timestamp   int64  `json:"timestamp"`
+	Message     string `json:"message"`
+	Repo        string `json:"repo"`
+}
+
+// GetCommitHistory gets the commit history for a given file
+func GetCommitHistory(filename string) ([]Commit, error) {
+	cmd := exec.Command("git", "log",
+		"--date=iso8601-strict",
+		"--pretty=format:{%n  \"commit\": \"%H\",%n  \"author_name\": \"%aN\", \"author_email\": \"<%aE>\",%n  \"date\": \"%ad\",%n  \"timestamp\": %at,%n  \"message\": \"%f\",%n  \"repo\": \"$repository\"%n},",
+		filename)
+
+	var gitLogBuffer bytes.Buffer
+	cmd.Stdout = &gitLogBuffer
+
+	err := cmd.Run()
 	if err != nil {
-		return nil, err
+		log.Fatalf("Failed to run git log command: %v", err)
 	}
 
-	var commitInfos []CommitInfo
-	scanner := bufio.NewScanner(strings.NewReader(string(output)))
-	for scanner.Scan() {
-		parts := strings.Split(scanner.Text(), "|")
-		if len(parts) == 3 {
-			commitInfos = append(commitInfos, CommitInfo{
-				AuthorName:  parts[0],
-				AuthorEmail: parts[1],
-				CommitMsg:   parts[2],
-			})
+	output := gitLogBuffer.String()
+
+	// Split the output by lines and process each commit
+	commits := []Commit{}
+	entries := strings.Split(output, "},")
+	for _, entry := range entries {
+		entry = strings.TrimSuffix(entry, "}") // Handle trailing comma at the end
+		entry = strings.TrimSpace(entry)
+		if len(entry) == 0 {
+			continue
 		}
-	}
 
-	if err := scanner.Err(); err != nil {
-		return nil, err
+		// Clean up the JSON string and unmarshal it into the Commit struct
+		entry = entry + "}" // Add closing brace back
+		var commit Commit
+		err = json.Unmarshal([]byte(entry), &commit)
+		if err != nil {
+			log.Printf("Error unmarshalling commit entry: %v", err)
+			continue
+		}
+		commits = append(commits, commit)
 	}
-
-	return commitInfos, nil
+	return commits, err
 }
 
 // generateHeader generates the header content for a VHDL file
-func generateHeader(filename string, commitInfos []CommitInfo) string {
+func generateHeader(filename string, commitInfos []Commit) string {
 	var notes strings.Builder
 	authors := make([]string, 0)
 	for i, commit := range commitInfos {
-		notes.WriteString(fmt.Sprintf("--	%s %s %s", commit.AuthorName, commit.AuthorEmail, commit.CommitMsg))
+		if commit.AuthorName == blacklist {
+			logger.Debug("Blacklisted author", slog.String("author", commit.AuthorName))
+			continue
+		}
+		authors = append(authors, commit.AuthorName)
+		notes.WriteString(fmt.Sprintf("--	%s  %s %s", commit.AuthorName, commit.AuthorEmail, commit.Message))
 		if i < len(commitInfos)-1 {
 			notes.WriteString("\n")
-		}
-		if !contains(authors, commit.AuthorName) {
-			if !contains(whitelist, commit.AuthorName) {
-				authors = append(authors, commit.AuthorName)
-			}
 		}
 	}
 	return fmt.Sprintf(headerTemplate, strings.Join(authors, " & "),
 		filename, notes.String())
-}
-
-func contains(slice []string, item string) bool {
-	for _, s := range slice {
-		if s == item {
-			return true
-		}
-	}
-	return false
 }
 
 // updateHeaderInFile updates the header in the VHDL file if the content has changed

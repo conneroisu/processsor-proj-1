@@ -1,9 +1,18 @@
 -- <header>
--- Author(s): connero
+-- Author(s): Conner Ohnesorge & Conner Ohnesorge & conneroisu
 -- Name: proj/src/TopLevel/Fetch/program_counter.vhd
 -- Notes:
---	connero 88785126+conneroisu@users.noreply.github.com Merge 4f34c422cf72d5fd2b8d20c7eec5f97b5864e12b into 7f8dd730b40cf8f2dce4e781c792d9e15bafdab1
+--	Conner Ohnesorge  <connero@iastate.edu> fix-generic-width-instantiation-of-the-program-counter
+--	Conner Ohnesorge  <connero@iastate.edu> fix-component-name-instantiation-of-the-program_counter_dff-in
+--	conneroisu  <conneroisu@outlook.com> add-starting-place-for-program-counter
 -- </header>
+
+
+
+
+
+
+
 
 
 library IEEE;

@@ -1,9 +1,19 @@
 -- <header>
--- Author(s): connero
+-- Author(s): Conner Ohnesorge & conneroisu & conneroisu & conneroisu
 -- Name: proj/src/TopLevel/Fetch/register_file.vhd
 -- Notes:
---	connero 88785126+conneroisu@users.noreply.github.com Merge 4f34c422cf72d5fd2b8d20c7eec5f97b5864e12b into 7f8dd730b40cf8f2dce4e781c792d9e15bafdab1
+--	Conner Ohnesorge  <connero@iastate.edu> more-relevant-comment-and-cleaner-formatting-in-register_file-before
+--	conneroisu  <conneroisu@outlook.com> fix-name-of-nbitregister-component-in-register_file
+--	conneroisu  <conneroisu@outlook.com> update-do-files-and-add-tests-for-lowlevel-components
+--	conneroisu  <conneroisu@outlook.com> added-register-file-starting-point
 -- </header>
+
+
+
+
+
+
+
 
 
 
