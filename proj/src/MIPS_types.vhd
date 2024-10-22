@@ -5,16 +5,6 @@
 --	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-28-from-conneroisu-feature-control_unit
 -- </header>
 
--------------------------------------------------------------------------
--- Author: Braedon Giblin
--- Date: 2022.02.12
--- Files: MIPS_types.vhd
--------------------------------------------------------------------------
--- Description: This file contains a skeleton for some types that 381 students
--- may want to use. This file is guarenteed to compile first, so if any types,
--- constants, functions, etc., etc., are wanted, students should declare them
--- here.
--------------------------------------------------------------------------
 library IEEE;
 use IEEE.std_logic_1164.all;
 package MIPS_types is

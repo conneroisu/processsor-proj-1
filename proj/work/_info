@@ -10,67 +10,87 @@ z2
 cModel Technology
 d/home/awfoss/CPRE3810/Lab2
 Ebarrelshifter
-w1729639615
-Z0 DPx4 work 10 mips_types 0 22 D92WHjDfPGL]HFdeJle=e2
-Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 8
-Z3 d/home/awfoss/processsor-proj-1/proj
-8/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd
-F/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd
+Z0 w1729640828
+Z1 DPx4 work 10 mips_types 0 22 jd1;_4;WLQ9?j2[e?S[];0
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 32
+Z4 d/home/awfoss/processsor-proj-1/proj
+Z5 8/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd
+Z6 F/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd
 l0
-L9 1
-V6=_A9DZ6V6_zBN8AWe5fc0
-!s100 HBEg4b9S>KQmH1iA;G0:L1
-Z4 OL;C;2024.2;79
+L10 1
+VN<Ki;Y^fa1oWRLRHZ4AIV3
+!s100 9h<z]KL_aM3a2[bLjI^PI3
+Z7 OL;C;2024.2;79
 32
-Z5 !s110 1729639616
+Z8 !s110 1729640829
 !i10b 1
-Z6 !s108 1729639616.000000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd|
+Z9 !s108 1729640829.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd|
 !s107 /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd|
 !i113 0
-Z7 o-work work -2002 -explicit
-Z8 tExplicit 1 CvgOpt 0
-Pmips_types
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Astructure
 R1
 R2
-!i122 7
-Z9 w1729636775
 R3
-Z10 8/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd
-Z11 F/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd
-l0
-L20 14
-VD92WHjDfPGL]HFdeJle=e2
-!s100 2]@ZVJoNX@]DC2M3[Q0@02
+DEx4 work 13 barrelshifter 0 22 N<Ki;Y^fa1oWRLRHZ4AIV3
+!i122 32
+l52
+L24 151
+VNIXfPVG@k07f]4;Y[nmKk1
+!s100 gSoo=B4>?8UjhIEcNQZPH1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+Z13 !s107 /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd|
+!i113 0
+R11
+R12
+Pmips_types
+R2
+R3
+!i122 31
+Z14 w1729640012
 R4
+Z15 8/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd
+Z16 F/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd
+l0
+L10 14
+Vjd1;_4;WLQ9?j2[e?S[];0
+!s100 omR4U1Ea<do0P8D^>_3ER2
+R7
 32
 b1
-R5
-!i10b 1
-R6
-Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd|
-Z13 !s107 /home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd|
-!i113 0
-R7
 R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd|
+Z18 !s107 /home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd|
+!i113 0
+R11
+R12
 Bbody
-R0
 R1
 R2
-!i122 7
+R3
+!i122 31
 l0
-L34 11
-VnER>Cj1<gO7EhO<]0E`>52
-!s100 S7So0S::`jhOTOI_VNR7e0
-R4
-32
-R5
-!i10b 1
-R6
-R12
-R13
-!i113 0
+L24 11
+VhEidH9EFQOkA9RJZel0g;1
+!s100 PAoRgJg=hZl1=_C6OmPfg2
 R7
+32
 R8
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R11
+R12

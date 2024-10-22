@@ -1,1 +1,21 @@
+/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package MIPS_types
+-- Compiling entity barrelShifter
+-- Compiling architecture structure of barrelShifter
+** Error: /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd(56): (vcom-1436) Actual expression (infix expression) of formal "i_D0" is not globally static.
+** Error: /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd(57): (vcom-1436) Actual expression (infix expression) of formal "i_D1" is not globally static.
+** Error: /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd(73): (vcom-1436) Actual expression (infix expression) of formal "i_D0" is not globally static.
+** Error: /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd(74): (vcom-1436) Actual expression (infix expression) of formal "i_D1" is not globally static.
+** Error: /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd(90): (vcom-1436) Actual expression (infix expression) of formal "i_D0" is not globally static.
+** Error: /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd(91): (vcom-1436) Actual expression (infix expression) of formal "i_D1" is not globally static.
+** Error: /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd(107): (vcom-1436) Actual expression (infix expression) of formal "i_D0" is not globally static.
+** Error: /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd(108): (vcom-1436) Actual expression (infix expression) of formal "i_D1" is not globally static.
+** Error: /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd(124): (vcom-1436) Actual expression (infix expression) of formal "i_D0" is not globally static.
+** Error: /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd(125): (vcom-1436) Actual expression (infix expression) of formal "i_D1" is not globally static.
+** Note: /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd(146): VHDL Compiler exiting
 
+} {9.0 19.0} {}}
