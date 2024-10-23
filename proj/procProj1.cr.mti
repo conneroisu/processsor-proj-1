@@ -1,4 +1,13 @@
-/home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd
+/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package MIPS_types
+-- Compiling entity barrelShifter
+-- Compiling architecture structure of barrelShifter
+
+} {} {}} /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Loading package STANDARD
 -- Loading package TEXTIO
