@@ -1,6 +1,12 @@
 m255
 K4
 z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
 !s11e vcom 2024.2 2024.05, May 20 2024
 13
 !s112 1.1
@@ -9,88 +15,599 @@ z2
 !i10f 100
 cModel Technology
 d/home/awfoss/CPRE3810/Lab2
-Ebarrelshifter
-Z0 w1729640828
-Z1 DPx4 work 10 mips_types 0 22 jd1;_4;WLQ9?j2[e?S[];0
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 32
-Z4 d/home/awfoss/processsor-proj-1/proj
-Z5 8/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd
-Z6 F/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd
-l0
-L10 1
-VN<Ki;Y^fa1oWRLRHZ4AIV3
-!s100 9h<z]KL_aM3a2[bLjI^PI3
-Z7 OL;C;2024.2;79
-32
-Z8 !s110 1729640829
-!i10b 1
-Z9 !s108 1729640829.000000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd|
-!s107 /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd|
-!i113 0
-Z11 o-work work -2002 -explicit
-Z12 tExplicit 1 CvgOpt 0
-Astructure
+T_opt
+!s110 1729642140
+V7z81l_eZ2TXU[_NDTadFI1
+04 16 8 work tb_barrelshifter behavior 1
+=1-7486e228aba4-67183e9c-2af5a-11b95
 R1
-R2
-R3
-DEx4 work 13 barrelshifter 0 22 N<Ki;Y^fa1oWRLRHZ4AIV3
-!i122 32
-l52
-L24 151
-VNIXfPVG@k07f]4;Y[nmKk1
-!s100 gSoo=B4>?8UjhIEcNQZPH1
-R7
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Eandg2
+Z2 w1729636775
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 88
+Z5 d/home/awfoss/processsor-proj-1/proj
+Z6 8/home/awfoss/processsor-proj-1/proj/src/LowLevel/andg2.vhd
+Z7 F/home/awfoss/processsor-proj-1/proj/src/LowLevel/andg2.vhd
+l0
+Z8 L10 1
+VRY09TjYdzzR4A]_PK=85@3
+!s100 _;z0>PBG[8`3DM4C<VF2T2
+Z9 OL;C;2024.2;79
 32
-R8
+Z10 !s110 1729642134
 !i10b 1
-R9
-R10
-Z13 !s107 /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd|
+Z11 !s108 1729642134.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/LowLevel/andg2.vhd|
+Z13 !s107 /home/awfoss/processsor-proj-1/proj/src/LowLevel/andg2.vhd|
 !i113 0
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Adataflow
+R3
+R4
+DEx4 work 5 andg2 0 22 RY09TjYdzzR4A]_PK=85@3
+!i122 88
+l17
+L16 4
+V0:n<9jXGP`eMBcC0SJEQ[2
+!s100 4HK;h1WSajd:bDim0iz:d2
+R9
+32
+R10
+!i10b 1
 R11
 R12
-Pmips_types
+R13
+!i113 0
+R14
+R15
+Ebarrelshifter
+Z16 w1729642133
+Z17 DPx4 work 10 mips_types 0 22 jd1;_4;WLQ9?j2[e?S[];0
+R3
+R4
+!i122 86
+R5
+Z18 8/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd
+Z19 F/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd
+l0
+R8
+VN<Ki;Y^fa1oWRLRHZ4AIV3
+!s100 9h<z]KL_aM3a2[bLjI^PI3
+R9
+32
+R10
+!i10b 1
+R11
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd|
+Z21 !s107 /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd|
+!i113 0
+R14
+R15
+Astructure
+R17
+R3
+R4
+DEx4 work 13 barrelshifter 0 22 N<Ki;Y^fa1oWRLRHZ4AIV3
+!i122 86
+l52
+L24 151
+VoLPDHUQafW<F=lHU_amAN2
+!s100 8QD15:2_Q>7TDITcD36V61
+R9
+32
+R10
+!i10b 1
+R11
+R20
+R21
+!i113 0
+R14
+R15
+Edecoder_2to4
 R2
 R3
-!i122 31
-Z14 w1729640012
 R4
-Z15 8/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd
-Z16 F/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd
+!i122 62
+R5
+Z22 8/home/awfoss/processsor-proj-1/proj/src/LowLevel/decoder_5t32.vhd
+Z23 F/home/awfoss/processsor-proj-1/proj/src/LowLevel/decoder_5t32.vhd
+l0
+Z24 L11 1
+Viln>b@UY?P0>J]m3?GLnk0
+!s100 49?J5Ve5T55z_mUoo4E6]1
+R9
+32
+Z25 !s110 1729642079
+!i10b 1
+Z26 !s108 1729642079.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/LowLevel/decoder_5t32.vhd|
+Z28 !s107 /home/awfoss/processsor-proj-1/proj/src/LowLevel/decoder_5t32.vhd|
+!i113 0
+R14
+R15
+Astructural
+R3
+R4
+DEx4 work 12 decoder_2to4 0 22 iln>b@UY?P0>J]m3?GLnk0
+!i122 62
+l20
+Z29 L19 17
+V`ZCb5i1P@dc2oFZg@T`Pk0
+!s100 M99hTFkzljDTYVz`0>IO>0
+R9
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R14
+R15
+Edffg
+R2
+R3
+R4
+!i122 89
+R5
+Z30 8/home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg.vhd
+Z31 F/home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg.vhd
+l0
+R24
+VTE>RGZ7ZLVB_=zj2WOmhQ1
+!s100 dMV`f4KlbfZzZ1KE[h[z33
+R9
+32
+R10
+!i10b 1
+R11
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg.vhd|
+Z33 !s107 /home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg.vhd|
+!i113 0
+R14
+R15
+Amixed
+R3
+R4
+Z34 DEx4 work 4 dffg 0 22 TE>RGZ7ZLVB_=zj2WOmhQ1
+!i122 89
+l24
+L21 22
+VRQ8:aDIG3EbKXnHMMdVN81
+!s100 A`n<X95]b2SM>U8[cRH1j0
+R9
+32
+R10
+!i10b 1
+R11
+R32
+R33
+!i113 0
+R14
+R15
+Edffg_n
+R2
+R3
+R4
+!i122 90
+R5
+Z35 8/home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg_n.vhd
+Z36 F/home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg_n.vhd
+l0
+R24
+V9^lb:0oW:bH9khbEQMjNM2
+!s100 DhHBo=LSmmcbFBJ^DA_Kh1
+R9
+32
+R10
+!i10b 1
+R11
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg_n.vhd|
+Z38 !s107 /home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg_n.vhd|
+!i113 0
+R14
+R15
+Astructural
+R34
+R3
+R4
+DEx4 work 6 dffg_n 0 22 9^lb:0oW:bH9khbEQMjNM2
+!i122 90
+l25
+L24 14
+VRRC7Nf0nnR[PAZ3lS;9i_0
+!s100 E5e6W<IX2nhhPMiM^HBbI0
+R9
+32
+R10
+!i10b 1
+R11
+R37
+R38
+!i113 0
+R14
+R15
+Eextender16t32
+R2
+R3
+R4
+!i122 91
+R5
+Z39 8/home/awfoss/processsor-proj-1/proj/src/LowLevel/extender16t32.vhd
+Z40 F/home/awfoss/processsor-proj-1/proj/src/LowLevel/extender16t32.vhd
+l0
+R24
+V4f>L@8P2>OW_<FRZc]N=T3
+!s100 eAUBm=<@4oM7Ndka7709c0
+R9
+32
+R10
+!i10b 1
+R11
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/LowLevel/extender16t32.vhd|
+Z42 !s107 /home/awfoss/processsor-proj-1/proj/src/LowLevel/extender16t32.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R3
+R4
+DEx4 work 13 extender16t32 0 22 4f>L@8P2>OW_<FRZc]N=T3
+!i122 91
+l22
+R29
+VEbOf<XXJH=GlzDY6UUaCG1
+!s100 ;BXlgGXMAHkMQ8521H8Q00
+R9
+32
+R10
+!i10b 1
+R11
+R41
+R42
+!i113 0
+R14
+R15
+Emem
+R2
+Z43 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 92
+R5
+Z44 8/home/awfoss/processsor-proj-1/proj/src/LowLevel/mem.vhd
+Z45 F/home/awfoss/processsor-proj-1/proj/src/LowLevel/mem.vhd
+l0
+L14 1
+Vh9<d98o[E6KFe76_od`c53
+!s100 j^Uc[=@LD=Z^JR_D@_b`43
+R9
+32
+R10
+!i10b 1
+R11
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/LowLevel/mem.vhd|
+Z47 !s107 /home/awfoss/processsor-proj-1/proj/src/LowLevel/mem.vhd|
+!i113 0
+R14
+R15
+Artl
+R43
+R3
+R4
+DEx4 work 3 mem 0 22 h9<d98o[E6KFe76_od`c53
+!i122 92
+l43
+L33 24
+VGhonYaY7<:A<hR@l=ldzf3
+!s100 :<iPT8X_WTU[Hg@0UND682
+R9
+32
+R10
+!i10b 1
+R11
+R46
+R47
+!i113 0
+R14
+R15
+Pmips_types
+R3
+R4
+!i122 85
+Z48 w1729640012
+R5
+Z49 8/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd
+Z50 F/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd
 l0
 L10 14
 Vjd1;_4;WLQ9?j2[e?S[];0
 !s100 omR4U1Ea<do0P8D^>_3ER2
-R7
+R9
 32
 b1
-R8
+R10
 !i10b 1
-R9
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd|
-Z18 !s107 /home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd|
-!i113 0
 R11
-R12
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd|
+Z52 !s107 /home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd|
+!i113 0
+R14
+R15
 Bbody
-R1
-R2
+R17
 R3
-!i122 31
+R4
+!i122 85
 l0
 L24 11
 VhEidH9EFQOkA9RJZel0g;1
 !s100 PAoRgJg=hZl1=_C6OmPfg2
-R7
-32
-R8
-!i10b 1
 R9
-R17
-R18
-!i113 0
+32
+R10
+!i10b 1
 R11
-R12
+R51
+R52
+!i113 0
+R14
+R15
+Emux2t1
+R2
+R3
+R4
+!i122 93
+R5
+Z53 8/home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1.vhd
+Z54 F/home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1.vhd
+l0
+L13 1
+V3:JdlQ06`LRXbIMVd@JfW1
+!s100 [K5[0zoc2bFcd`k^hb2Ud2
+R9
+32
+R10
+!i10b 1
+R11
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1.vhd|
+Z56 !s107 /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R3
+R4
+DEx4 work 6 mux2t1 0 22 3:JdlQ06`LRXbIMVd@JfW1
+!i122 93
+l26
+L24 8
+V0:TF5^Jda4H^mQE9Q^cSK1
+!s100 J97:oG397fRSBd^f67fWa1
+R9
+32
+R10
+!i10b 1
+R11
+R55
+R56
+!i113 0
+R14
+R15
+Emux2t1_n
+R2
+R3
+R4
+!i122 94
+R5
+Z57 8/home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd
+Z58 F/home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd
+l0
+R8
+V?lQl9Dg21Y[ehn9kO`B423
+!s100 21z5MJZV^_`SLe]O4meGb3
+R9
+32
+R10
+!i10b 1
+R11
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd|
+Z60 !s107 /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd|
+!i113 0
+R14
+R15
+Astructural
+R3
+R4
+DEx4 work 8 mux2t1_n 0 22 ?lQl9Dg21Y[ehn9kO`B423
+!i122 94
+l31
+L22 20
+VaX<;=WJ:Z7KVEEJj]VJMf3
+!s100 T:_YHaE4]6OHS;h7G76fS3
+R9
+32
+R10
+!i10b 1
+R11
+R59
+R60
+!i113 0
+R14
+R15
+Emux32t1
+R2
+R17
+R3
+R4
+!i122 95
+R5
+Z61 8/home/awfoss/processsor-proj-1/proj/src/LowLevel/mux32t1.vhd
+Z62 F/home/awfoss/processsor-proj-1/proj/src/LowLevel/mux32t1.vhd
+l0
+L12 1
+V?O;O^V3X0_nBng_g7<`2T1
+!s100 4chi44PYXJF=zk8igfQBl3
+R9
+32
+Z63 !s110 1729642135
+!i10b 1
+R11
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/LowLevel/mux32t1.vhd|
+Z65 !s107 /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux32t1.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R17
+R3
+R4
+DEx4 work 7 mux32t1 0 22 ?O;O^V3X0_nBng_g7<`2T1
+!i122 95
+l24
+L22 41
+VHd@h@kSF9[Zh3BlzZJ_1O1
+!s100 Gej6gUX=^H3LbiU]?4[Ji3
+R9
+32
+R63
+!i10b 1
+R11
+R64
+R65
+!i113 0
+R14
+R15
+Eorg2
+R2
+R3
+R4
+!i122 96
+R5
+Z66 8/home/awfoss/processsor-proj-1/proj/src/LowLevel/org2.vhd
+Z67 F/home/awfoss/processsor-proj-1/proj/src/LowLevel/org2.vhd
+l0
+R24
+V]Db2bbn6zSOXgE[_NR6A81
+!s100 YNlKfla>8kAQBHPQcRfC]1
+R9
+32
+R63
+!i10b 1
+Z68 !s108 1729642135.000000
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/LowLevel/org2.vhd|
+Z70 !s107 /home/awfoss/processsor-proj-1/proj/src/LowLevel/org2.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R3
+R4
+DEx4 work 4 org2 0 22 ]Db2bbn6zSOXgE[_NR6A81
+!i122 96
+l21
+L19 7
+Vi;d[?kj>e>DAXz5R8CJ922
+!s100 n9T3ESE:co@c@j;`<8T<41
+R9
+32
+R63
+!i10b 1
+R68
+R69
+R70
+!i113 0
+R14
+R15
+Etb_barrelshifter
+Z71 w1729641985
+R3
+R4
+!i122 87
+R5
+Z72 8/home/awfoss/processsor-proj-1/proj/tb_barrelShifter.vhd
+Z73 F/home/awfoss/processsor-proj-1/proj/tb_barrelShifter.vhd
+l0
+L5 1
+VgCR=n3P:iPjWEVMT^86bS1
+!s100 7`GUS1?KKJ15]k6;JMVEU3
+R9
+32
+R10
+!i10b 1
+R11
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/tb_barrelShifter.vhd|
+Z75 !s107 /home/awfoss/processsor-proj-1/proj/tb_barrelShifter.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R3
+R4
+DEx4 work 16 tb_barrelshifter 0 22 gCR=n3P:iPjWEVMT^86bS1
+!i122 87
+l27
+L11 128
+Vfzo2`ed[FAJ?0z@ma^U`K3
+!s100 RF8o7N@fcVI61z_i9>@I53
+R9
+32
+R10
+!i10b 1
+R11
+R74
+R75
+!i113 0
+R14
+R15
+Exorg2
+R2
+R3
+R4
+!i122 97
+R5
+Z76 8/home/awfoss/processsor-proj-1/proj/src/LowLevel/xorg2.vhd
+Z77 F/home/awfoss/processsor-proj-1/proj/src/LowLevel/xorg2.vhd
+l0
+R8
+V^DRmc4cC4E4fNaLofgQf03
+!s100 SA0=2HMUoEmAX>=@PG[_z3
+R9
+32
+R63
+!i10b 1
+R68
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/awfoss/processsor-proj-1/proj/src/LowLevel/xorg2.vhd|
+Z79 !s107 /home/awfoss/processsor-proj-1/proj/src/LowLevel/xorg2.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R3
+R4
+DEx4 work 5 xorg2 0 22 ^DRmc4cC4E4fNaLofgQf03
+!i122 97
+l18
+L17 4
+V_ghLL3beMLCk<G`RN_OWM0
+!s100 <KX:Qmhh[Yl`^d79f@2cL1
+R9
+32
+R63
+!i10b 1
+R68
+R78
+R79
+!i113 0
+R14
+R15

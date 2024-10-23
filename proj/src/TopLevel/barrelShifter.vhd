@@ -64,8 +64,8 @@ s_b <= (others => i_data(31) and i_leftOrRight); --copies MSB
 --part 0: shift 1
 
 
-	s_muxFlip_shifted0 <= s_muxFlip(29 downto 0) & "0";
-	s_muxFlip_arith0   <= s_muxFlip(29 downto 0) & s_b(0 downto 0);
+	s_muxFlip_shifted0 <= s_muxFlip(30 downto 0) & "0";
+	s_muxFlip_arith0   <= s_muxFlip(30 downto 0) & s_b(0 downto 0);
 
     mux0_t : mux2t1_N  -- this mux either lets the arithmetic or logical shift through
         port
