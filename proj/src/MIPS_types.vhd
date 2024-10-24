@@ -1,5 +1,5 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): Aidan Foss
 -- Name: proj/src/MIPS_types.vhd
 -- Notes:
 --      conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
