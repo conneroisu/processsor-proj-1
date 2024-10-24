@@ -42,5 +42,6 @@ jobs:
       #     commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7.0.5
-        commit_message: "Format and Header"
-        labels: "automated"
+        with:
+          commit_message: "Format and Header"
+          labels: "automated"
