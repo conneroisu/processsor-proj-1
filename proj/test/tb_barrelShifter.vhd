@@ -23,7 +23,7 @@ architecture behavior of tb_barrelShifter is
 	signal s_data, s_O : std_logic_vector(N-1 downto 0);
 	signal s_shamt : std_logic_vector(4 downto 0);
 	signal s_leftOrRight, s_shiftType : std_logic;
-	signal s_debug : std_logic_vector(N-1 downto 0); --debug value is genius
+	signal s_debug : std_logic_vector(N-1 downto 0); --debug value is genius, will show correct value hand calculated in the waveform
 begin
 	shifter1 : barrelShifter
 		port map(
@@ -48,7 +48,7 @@ begin
 	       	wait for ClkHelper;
 	       	s_leftOrRight          <= '0';          --sll 1
 	       	s_data          <= x"30303030";		-- 00110000001100000011000000110000 to 01100000011000000110000001100000
-	       	s_debug   <= x"C0C0C0C0"; 		-- 30303030 to 60606060
+	       	s_debug   <= x"60606060"; 		-- 30303030 to 60606060
 	       	s_shamt      <= "00001";  		
 	       	 
 	       	wait for ClkHelper;
@@ -77,9 +77,9 @@ begin
 
 	        wait for ClkHelper;
 	        s_leftOrRight          <= '0';          --sll 5 (left 5)
-	        s_data          <= x"40404040";  	-- 0100 0000 0100 0000 0100 0000 0100 0000 	to	0000 1000 0000 1000 0000 1000 0000 0000
- 	        s_debug   <= x"06060600";		-- 40404040					to	08080800
- 	        s_shamt      <= "00100";--4
+	        s_data          <= x"40404040";  	-- <0100 0>000 0100 0000 0100 0000 0100 0000 	to	0000 1000 0000 1000 0000 1000 000<0 0000>
+ 	        s_debug   <= x"08080800";		-- 40404040					to	08080800
+ 	        s_shamt      <= "00101";--5
 	        
 	       	wait for ClkHelper;
 	       	s_leftOrRight          <= '1';         	--srl 8 (RIGHT 8)
@@ -92,18 +92,6 @@ begin
  	       	s_data          <= x"40404040";  	--0100 0000 0100 0000 0100 0000 0100 0000	to	0100 0000 0100 0000 0100 0000 0000 0000
  	       	s_debug   <= x"40404000";		--40404040					to	40404000
  	       	s_shamt      <= "01000";
-
- 	       	wait for ClkHelper; --human x2 positive
- 	       	s_leftOrRight          <= '0';          --sll 1 (this one should maintain positive value, 5 to 10)
- 	       	s_data          <= x"00000005";		--(0)000 0000 0000 0000 0000 0000 0000 0101	to	(0)000 0000 0000 0000 0000 0000 0000 1010
- 	       	s_debug   <= x"0000000A";		--00000005					to	0000000A
-   	       	s_shamt      <= "00001";
-
- 	       	wait for ClkHelper; --human x2 negative
- 	       	s_leftOrRight          <= '0';          --sll 1 (this one shouldnt maintain negative value, -5 to 10)
- 	       	s_data          <= x"80000005";		--1000 0000 0000 0000 0000 0000 0000 0101	to	0000 0000 0000 0000 0000 0000 0000 1010
- 	       	s_debug   <= x"8000000A";		--80000005					to	0000000A
-   	       	s_shamt      <= "00001";
 
 ----------------------------------------------------------------------------------------------------------
 --Begin arithmetic tests, look for proper sign extension
@@ -127,54 +115,73 @@ begin
  	       	s_data          <= x"0E0E0E0E";		--(0)000 1110 0000 1110 0000 1110 0000 1110	to	(0)001 1100 0001 1100 0001 1100 0001 1100
  	       	s_debug   <= x"C1C1C1C0";		--E0E0E0E0					to	1C1C1C1C
    	       	s_shamt      <= "00001";
+  	      
+   	       	wait for ClkHelper;
+  	       	s_leftOrRight          <= '1';          --sra 2
+  	       	s_data          <= x"ABCDEF12";		--(1)010 1011 1100 1101 1110 1111 0001 0010	to	(1)000 1010 1111 0011 0111 1011 1100 0100
+   	       	s_debug   <= x"8AF37BC4";		--ABCDEF12					to	8AF37BC4
+  	       	s_shamt      <= "00010";
+ 	       
+ 	       	wait for ClkHelper;
+ 	       	s_leftOrRight          <= '1';          --sra 3
+ 	       	s_data          <= x"ABCDEF12";		--(1)010 1011 1100 1101 1110 1111 0001 0010	to	(1)000 0101 0111 1001 1011 1101 1110 0010
+ 	       	s_debug   <= x"8579BDE2";		--ABCDEF12					to	8579BDE2
+ 	       	s_shamt      <= "00011";
+ 	       	
+ 	       	wait for ClkHelper;
+  	      	s_leftOrRight          <= '1';          --sra 4 (-1412567278 sra 4 = -88285455), which is pretty much (-1412567278 / 16 = -88285454.875) 
+  	      	s_data          <= x"ABCDEF12";  	--(1)010 1011 1100 1101 1110 1111 0001 0010	to	(1)000 0010 1011 1100 1101 1110 1111 0001
+  	      	s_debug   <= x"82BCDEF1";		--ABCDEF12					to	82BCDEF1
+  	      	s_shamt      <= "00100";		--
+   	     	
+   	     	wait for ClkHelper;
+ 	        s_leftOrRight          <= '0';          --sla 4
+  	      	s_data          <= x"ABCDEF12";  	--(1)010 1011 1100 1101 1110 1111 0001 0010	to	(1)011 1100 1101 1110 1111 0001 0010 0000
+	        s_debug   <= x"07070700";		--ABCDEF12					to	BCDEF120
+	        s_shamt      <= "00100";
+	        
+ 	        wait for ClkHelper;
+ 	        s_leftOrRight          <= '1';           --sra 8
+  	      	s_data          <= x"ABCDEF12";  	--(1)010 1011 1100 1101 1110 1111 0001 0010	to	(1)000 0000 0010 1011 1100 1101 1110 1111	
+	        s_debug   <= x"802BCDEF";		--ABCDEF12					to	802BCDEF
+ 	        s_shamt      <= "01000";
+	        
+ 	        wait for ClkHelper;
+ 	       	s_leftOrRight          <= '0';           --sla 8
+  	      	s_data          <= x"ABCDEF12";  	--(1)010 1011 1100 1101 1110 1111 0001 0010	to	(1)100 1101 1110 1111 0001 0010 0000 0000
+	        s_debug   <= x"CDEF1200";		--ABCDEF12					to	CDEF1200
+  		s_shamt      <= "01000";
 
- 	       	wait for ClkHelper; --human x2 positive
+----------------------------------------------------------------------------------------------------------
+--Begin human readable tests, look for improper/proper sign extension
+---------------------------------------------------------------------------------------------------------- 
+
+ 	       	wait for ClkHelper; --human x2 positive arithmetic (should maintain signage)
  	       	s_leftOrRight          <= '0';          --sla 1 (this one should maintain positive value, 5 to 10)
  	       	s_data          <= x"00000005";		--(0)000 0000 0000 0000 0000 0000 0000 0101	to	(0)000 0000 0000 0000 0000 0000 0000 1010
  	       	s_debug   <= x"0000000A";		--00000005					to	0000000A
    	       	s_shamt      <= "00001";
 
- 	       	wait for ClkHelper; --human x2 negative
+ 	       	wait for ClkHelper; --human x2 negative arithmetic (should maintain signage)
  	       	s_leftOrRight          <= '0';          --sla 1 (this one should maintain negative value, -5 to -10)
  	       	s_data          <= x"80000005";		--(1)000 0000 0000 0000 0000 0000 0000 0101	to	(1)000 0000 0000 0000 0000 0000 0000 1010
  	       	s_debug   <= x"8000000A";		--80000005					to	8000000A
    	       	s_shamt      <= "00001";
-  	      
-   	       	wait for ClkHelper;
-  	       	s_leftOrRight          <= '1';           --sra
-  	       	s_data          <= x"E0E0E0E0";
-   	       	s_debug   <= x"F8383838";
-  	       	s_shamt      <= "00010";
- 	       
- 	       	wait for ClkHelper;
- 	       	s_leftOrRight          <= '1';           --sra
- 	       	s_data          <= x"E0E0E0E0";
- 	       	s_debug   <= x"FC1C1C1C";
- 	       	s_shamt      <= "00011";
- 	       	
- 	       	wait for ClkHelper;
-  	      	s_leftOrRight          <= '1';           --sra
-  	      	s_data          <= x"E0E0E0E0";  -- shift by 4 should mean it becomes F7070707
-  	      	s_debug   <= x"FE0E0E0E";
-  	      	s_shamt      <= "00100";
-   	     	
-   	     	wait for ClkHelper;
- 	        s_leftOrRight          <= '0';            --sla
-  	      	s_data          <= x"30303030";  -- shift by 4 should mean it becomes 07070700
-	        s_debug   <= x"07070700";
-	        s_shamt      <= "00100";
-	        
- 	        wait for ClkHelper;
- 	        s_leftOrRight          <= '1';            --sra
- 	        s_data          <= x"30303030";  -- shift by 8 should mean it becomes 00707070
- 	        s_debug   <= x"00707070";
- 	        s_shamt      <= "01000";
-	        
- 	        wait for ClkHelper;
- 	       	s_leftOrRight          <= '0';            --sla
-  	      	s_data          <= x"30303030";  -- shift by 8 should mean it becomes 70707000
-  	      	s_debug   <= x"70707000";
-  		s_shamt      <= "01000";
+
+  	        s_shiftType <= '0'; --set shift type back to logical
+
+ 	       	wait for ClkHelper; --human x2 positive logical (shouldnt purposefully maintain signage)
+ 	       	s_leftOrRight          <= '0';          --sll 1 (this one should maintain positive value, 5 to 10)
+ 	       	s_data          <= x"00000005";		--(0)000 0000 0000 0000 0000 0000 0000 0101	to	(0)000 0000 0000 0000 0000 0000 0000 1010
+ 	       	s_debug   <= x"0000000A";		--00000005					to	0000000A
+   	       	s_shamt      <= "00001";
+
+ 	       	wait for ClkHelper; --human x2 negative logical (shouldnt purposefully maintain signage)
+ 	       	s_leftOrRight          <= '0';          --sll 1 (this one shouldnt maintain negative value, -5 to 10)
+ 	       	s_data          <= x"80000005";		--1000 0000 0000 0000 0000 0000 0000 0101	to	0000 0000 0000 0000 0000 0000 0000 1010
+ 	       	s_debug   <= x"8000000A";		--80000005					to	0000000A
+   	       	s_shamt      <= "00001";
+
  	   
     end process;
 end behavior;
