@@ -2,7 +2,7 @@
 -- Author(s): connero
 -- Name: internal/boilerplate_src/TopLevel/mem.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-32-from-conneroisu-project-structure
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-33-from-conneroisu-component-nbit1scomplementor
 -- </header>
 
 library ieee;
@@ -52,6 +52,7 @@ begin
     q <= ram(to_integer(unsigned(addr)));
 
 end rtl;
+
 
 
 

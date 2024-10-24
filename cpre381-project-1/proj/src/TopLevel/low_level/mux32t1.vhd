@@ -2,7 +2,7 @@
 -- Author(s): connero
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/mux32t1.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-32-from-conneroisu-project-structure
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-33-from-conneroisu-component-nbit1scomplementor
 -- </header>
 
 library ieee;
@@ -62,6 +62,7 @@ begin
         "00000000000000000000000000000000" when others;
 
 end architecture behavior;
+
 
 
 

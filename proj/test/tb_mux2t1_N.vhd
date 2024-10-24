@@ -2,7 +2,7 @@
 -- Author(s): connero
 -- Name: proj/test/tb_mux2t1_N.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-32-from-conneroisu-project-structure
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-33-from-conneroisu-component-nbit1scomplementor
 -- </header>
 
 library IEEE;

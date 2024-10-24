@@ -2,7 +2,7 @@
 -- Author(s): connero
 -- Name: cpre381-project-1/internal/testpy/tb.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-32-from-conneroisu-project-structure
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-33-from-conneroisu-component-nbit1scomplementor
 -- </header>
 
 -------------------------------------------------------------------------

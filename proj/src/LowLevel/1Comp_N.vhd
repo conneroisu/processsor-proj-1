@@ -1,6 +1,12 @@
+-- <header>
+-- Author(s): connero
+-- Name: proj/src/LowLevel/1Comp_N.vhd
+-- Notes:
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-33-from-conneroisu-component-nbit1scomplementor
+-- </header>
+
 library IEEE;
 use IEEE.std_logic_1164.all;
-
 entity comp1_N is
     generic(N : integer := 32);
     port(
@@ -8,12 +14,11 @@ entity comp1_N is
         o_O  : out std_logic_vector(N-1 downto 0)   -- Output data.
         );
 end comp1_N;
-
 architecture structural of comp1_N is
     component invg is
         port(
-            i_A : in  std_logic;                    -- Input data.
-            o_F : out std_logic                     -- Output data.
+            i_A : in  std_logic;        -- Input data.
+            o_F : out std_logic         -- Output data.
             );
     end component;
 begin

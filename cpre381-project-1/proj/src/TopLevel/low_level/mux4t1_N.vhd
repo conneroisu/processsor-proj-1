@@ -2,7 +2,7 @@
 -- Author(s): connero
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/mux4t1_N.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-32-from-conneroisu-project-structure
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-33-from-conneroisu-component-nbit1scomplementor
 -- </header>
 
 library ieee;
@@ -51,6 +51,7 @@ begin
 
     end generate g_nbit_mux;
 end architecture structural;
+
 
 
 
