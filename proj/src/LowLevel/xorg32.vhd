@@ -1,8 +1,8 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): github-actions[bot]
 -- Name: proj/src/LowLevel/xorg32.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> renamed-proj-src-LowLevel-1Comp_N.vhd-proj-src-LowLevel-complementor1_N.vhd
+--	conneroisu  <conneroisu@outlook.com> added-xorg32-component-to-the-low-level-components-a-32-bit-xor-gate
 -- </header>
 
 library IEEE;

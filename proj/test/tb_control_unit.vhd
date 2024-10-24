@@ -1,8 +1,8 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): github-actions[bot]
 -- Name: proj/test/tb_control_unit.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> renamed-proj-src-LowLevel-1Comp_N.vhd-proj-src-LowLevel-complementor1_N.vhd
+--	Conner Ohnesorge  <connero@iastate.edu> added-intial-implementation-of-the-test-bench-for-the-control_unit
 -- </header>
 
 library IEEE;

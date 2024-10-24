@@ -1,8 +1,10 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): github-actions[bot]
 -- Name: proj/src/TopLevel/barrelShifter.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> renamed-proj-src-LowLevel-1Comp_N.vhd-proj-src-LowLevel-complementor1_N.vhd
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
+--	awfoss  <awfoss@co2050-07.ece.iastate.edu> inital-creation-of-barrelShifter-very-little-done
 -- </header>
 
 --Aidan Foss

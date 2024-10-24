@@ -1,21 +1,12 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): github-actions[bot]
 -- Name: cpre381-project-1/internal/boilerplate_src/TopLevel/MIPS_Processor.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> renamed-proj-src-LowLevel-1Comp_N.vhd-proj-src-LowLevel-complementor1_N.vhd
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
+--	Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
 
--------------------------------------------------------------------------
--- Henry Duwe
--- Department of Electrical and Computer Engineering
--- Iowa State University
--------------------------------------------------------------------------
--- MIPS_Processor.vhd
--------------------------------------------------------------------------
--- DESCRIPTION: This file contains a skeleton of a MIPS_Processor  
--- implementation.
--- 01/29/2019 by H3::Design created.
--------------------------------------------------------------------------
 library IEEE;
 use IEEE.std_logic_1164.all;
 library work;

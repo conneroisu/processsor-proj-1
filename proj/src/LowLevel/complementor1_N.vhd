@@ -1,5 +1,5 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): github-actions[bot]
 -- Name: proj/src/LowLevel/complementor1_N.vhd
 -- Notes:
 --	conneroisu  <conneroisu@outlook.com> renamed-proj-src-LowLevel-1Comp_N.vhd-proj-src-LowLevel-complementor1_N.vhd

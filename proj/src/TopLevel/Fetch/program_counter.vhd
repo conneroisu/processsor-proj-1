@@ -1,8 +1,12 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): github-actions[bot]
 -- Name: proj/src/TopLevel/Fetch/program_counter.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> renamed-proj-src-LowLevel-1Comp_N.vhd-proj-src-LowLevel-complementor1_N.vhd
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
+--	Conner Ohnesorge  <connero@iastate.edu> fix-generic-width-instantiation-of-the-program-counter
+--	Conner Ohnesorge  <connero@iastate.edu> fix-component-name-instantiation-of-the-program_counter_dff-in
+--	conneroisu  <conneroisu@outlook.com> add-starting-place-for-program-counter
 -- </header>
 
 library IEEE;

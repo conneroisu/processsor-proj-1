@@ -1,8 +1,12 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): connero
 -- Name: proj/src/MIPS_types.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> renamed-proj-src-LowLevel-1Comp_N.vhd-proj-src-LowLevel-complementor1_N.vhd
+--	connero  <88785126+conneroisu@users.noreply.github.com> Update-MIPS_types.vhd
+--	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
+--	Conner Ohnesorge  <connero@iastate.edu> update-MIPS_types-in-context-of-the-register_file
+--	conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
 -- </header>
 
 library IEEE;
