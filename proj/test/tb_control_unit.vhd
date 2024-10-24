@@ -1,8 +1,8 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): connero
 -- Name: proj/test/tb_control_unit.vhd
 -- Notes:
---	Conner Ohnesorge  <connero@iastate.edu> added-intial-implementation-of-the-test-bench-for-the-control_unit
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-55-from-conneroisu-test-branch
 -- </header>
 
 library IEEE;

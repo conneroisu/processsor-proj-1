@@ -1,10 +1,8 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): connero
 -- Name: proj/src/LowLevel/org2.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	conneroisu  <conneroisu@outlook.com> add-lowlevel-components-and-testbenches
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-55-from-conneroisu-test-branch
 -- </header>
 
 library ieee;
@@ -25,6 +23,7 @@ begin
     o_f <= i_a or i_b;
 
 end architecture dataflow;
+
 
 
 

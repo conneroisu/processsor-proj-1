@@ -1,10 +1,8 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): connero
 -- Name: proj/src/TopLevel/barrelShifter.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	awfoss  <awfoss@co2050-07.ece.iastate.edu> inital-creation-of-barrelShifter-very-little-done
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-55-from-conneroisu-test-branch
 -- </header>
 
 --Aidan Foss

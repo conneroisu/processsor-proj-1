@@ -1,14 +1,8 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): connero
 -- Name: proj/src/TopLevel/MIPS_Processor.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-30-from-conneroisu-control
---	conneroisu  <conneroisu@outlook.com> fix-do-files-duplciated-comments-for-test-benches
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> formatted-MIPS_Processor
---	Conner Ohnesorge  <connero@iastate.edu> added-register-file-component-to-the-MIPS-processor
---	conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-55-from-conneroisu-test-branch
 -- </header>
 
 library IEEE;

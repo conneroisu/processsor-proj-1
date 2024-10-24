@@ -1,10 +1,8 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): connero
 -- Name: proj/src/LowLevel/mux32t1.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> add-mux32t1-and-fix-testbench-for-register_file
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-55-from-conneroisu-test-branch
 -- </header>
 
 library ieee;
@@ -62,6 +60,7 @@ begin
         "00000000000000000000000000000000" when others;
 
 end architecture behavior;
+
 
 
 

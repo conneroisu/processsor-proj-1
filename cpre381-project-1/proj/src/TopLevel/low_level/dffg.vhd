@@ -1,11 +1,8 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): connero
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/dffg.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> fix-remove-remaining-old-comment-headers-in-low_level
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-55-from-conneroisu-test-branch
 -- </header>
 
 library ieee;
@@ -49,6 +46,7 @@ begin
 
     end process;
 end architecture mixed;
+
 
 
 

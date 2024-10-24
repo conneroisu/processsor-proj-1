@@ -1,8 +1,8 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): connero
 -- Name: proj/src/TopLevel/Control/control_unit.vhd
 -- Notes:
---	Conner Ohnesorge  <connero@iastate.edu> added-starting-control-unit
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-55-from-conneroisu-test-branch
 -- </header>
 
 library IEEE;

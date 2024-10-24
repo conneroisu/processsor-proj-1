@@ -1,11 +1,8 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): connero
 -- Name: proj/test/tb_register_file.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> add-mux32t1-and-fix-testbench-for-register_file
---	conneroisu  <conneroisu@outlook.com> update-do-files-and-add-tests-for-lowlevel-components
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-55-from-conneroisu-test-branch
 -- </header>
 
 library ieee;
@@ -504,6 +501,7 @@ begin
     end process p_tb;
 
 end architecture behavior;
+
 
 
 

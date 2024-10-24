@@ -1,8 +1,8 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): connero
 -- Name: proj/src/LowLevel/xorg32.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> added-xorg32-component-to-the-low-level-components-a-32-bit-xor-gate
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-55-from-conneroisu-test-branch
 -- </header>
 
 library IEEE;
