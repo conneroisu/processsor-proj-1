@@ -2,7 +2,7 @@
 -- Author(s): connero
 -- Name: proj/src/LowLevel/mux2t1.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-28-from-conneroisu-feature-control_unit
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-31-from-conneroisu-control
 -- </header>
 
 library ieee;
@@ -29,6 +29,7 @@ begin
            i_d1 when (i_s = '1');  -- Output is i_D0 when i_S is '0' and i_D1 when i_S is '1'
 
 end architecture dataflow;
+
 
 
 

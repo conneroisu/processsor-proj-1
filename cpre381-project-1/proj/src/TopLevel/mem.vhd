@@ -2,7 +2,7 @@
 -- Author(s): connero
 -- Name: cpre381-project-1/proj/src/TopLevel/mem.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-28-from-conneroisu-feature-control_unit
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-31-from-conneroisu-control
 -- </header>
 
 -------------------------------------------------------------------------
@@ -65,6 +65,7 @@ begin
     q <= ram(to_integer(unsigned(addr)));
 
 end rtl;
+
 
 
 

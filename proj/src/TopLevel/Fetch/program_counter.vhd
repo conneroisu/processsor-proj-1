@@ -2,7 +2,7 @@
 -- Author(s): connero
 -- Name: proj/src/TopLevel/Fetch/program_counter.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-28-from-conneroisu-feature-control_unit
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-31-from-conneroisu-control
 -- </header>
 
 library IEEE;

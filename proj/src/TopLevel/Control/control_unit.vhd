@@ -2,7 +2,7 @@
 -- Author(s): connero
 -- Name: proj/src/TopLevel/Control/control_unit.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-28-from-conneroisu-feature-control_unit
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-31-from-conneroisu-control
 -- </header>
 
 library IEEE;
@@ -38,7 +38,7 @@ begin
     -- bit(s) 1         Jump-bit,               used in final mux to indicate jump address goes back to PC
     -- bit(s) 0         halt bit,               used to stop simulation
     with i_opcode select o_Ctrl_Unit <=
-        s_RTYPE_funct when "000000",  -- R-TYPE instructions don't use opcode (use funct field instead)
+        s_RTYPE_funct           when "000000",  -- R-TYPE instructions don't use opcode (use funct field instead)
         "000000000000000000001" when "010100",  -- halt
         "000000000000000000110" when "000010",  -- j
         "000000010000000100110" when "000011",  -- jal

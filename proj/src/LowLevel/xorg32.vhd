@@ -1,3 +1,9 @@
+-- <header>
+-- Author(s): connero
+-- Name: proj/src/LowLevel/xorg32.vhd
+-- Notes:
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-31-from-conneroisu-control
+-- </header>
 
 library IEEE;
 use IEEE.std_logic_1164.all;
