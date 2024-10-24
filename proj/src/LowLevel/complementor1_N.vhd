@@ -1,8 +1,8 @@
 -- <header>
--- Author(s): connero
--- Name: proj/src/LowLevel/1Comp_N.vhd
+-- Author(s): conneroisu
+-- Name: proj/src/LowLevel/complementor1_N.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-33-from-conneroisu-component-nbit1scomplementor
+--	conneroisu  <conneroisu@outlook.com> renamed-proj-src-LowLevel-1Comp_N.vhd-proj-src-LowLevel-complementor1_N.vhd
 -- </header>
 
 library IEEE;
@@ -17,8 +17,8 @@ end complementor1_N;
 architecture structural of complementor1_N is
     component invg is
         port(
-            i_A : in  std_logic;        -- Input data.
-            o_F : out std_logic         -- Output data.
+            i_A : in  std_logic;                    -- Input data.
+            o_F : out std_logic                     -- Output data.
             );
     end component;
 begin

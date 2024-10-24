@@ -1,8 +1,8 @@
 -- <header>
--- Author(s): connero
+-- Author(s): conneroisu
 -- Name: proj/src/TopLevel/Fetch/register_file.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-33-from-conneroisu-component-nbit1scomplementor
+--	conneroisu  <conneroisu@outlook.com> renamed-proj-src-LowLevel-1Comp_N.vhd-proj-src-LowLevel-complementor1_N.vhd
 -- </header>
 
 library ieee;
@@ -121,6 +121,7 @@ begin
             );
 
 end architecture structural;
+
 
 
 
