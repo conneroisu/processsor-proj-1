@@ -1,7 +1,8 @@
 -- <header>
--- Author(s): connero
+-- Author(s): awfoss
 -- Name: proj/src/TopLevel/barrelShifter.vhd
 -- Notes:
+--      awfoss  <awfoss@linuxvdi-27.ece.iastate.edu> putting-barrel-shifter-into-its-own-toplevel-file
 --      conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --      awfoss  <awfoss@co2050-01.ece.iastate.edu> added-lowlevel-stuff-to-project-and-created-and-got-tb_barrelShifter-working.-Need-to-look-deeper-but-im-pretty-sure-it-works-exactly-as-intended
 --      awfoss  <awfoss@co2050-01.ece.iastate.edu> debugged-had-to-do-some-weird-declarations-to-avoid-a-static-error-I-think-not-sure-why-I-had-to-make-so-many-signals.-Could-use-some-work-to-improve-perhaps
@@ -32,16 +33,15 @@ entity barrelShifter is
             );
 end barrelShifter;
 architecture structure of barrelShifter is
-
     component mux2t1_N
         generic
             (N : integer := 32);
         port
             (
-                i_D0 : in  std_logic_vector(N - 1 downto 0);         --input 1
-                i_D1 : in  std_logic_vector(N - 1 downto 0);         --input 2
+                i_D0 : in  std_logic_vector(N - 1 downto 0);   --input 1
+                i_D1 : in  std_logic_vector(N - 1 downto 0);   --input 2
                 i_S  : in  std_logic;   --shift toggle
-                o_O  : out std_logic_vector(N - 1 downto 0)          --output
+                o_O  : out std_logic_vector(N - 1 downto 0)    --output
                 );
     end component;
 -- mux signals (i think i need 5 or 6 for outputs, 5 or 6 for r/l, and 1 for carrying 16 bits)
@@ -151,7 +151,7 @@ begin
     mux4_t : mux2t1_N  -- this mux either lets the arithmetic or logical shift through
         port
         map(
-            i_D0 => s_muxFlip_shifted4,                              --sl 16
+            i_D0 => s_muxFlip_shifted4,     --sl 16
             i_D1 => s_muxFlip_arith4,   --sa 16
             i_S  => i_shiftType,
             o_O  => s_mux4t             -- output
@@ -169,7 +169,7 @@ begin
         port
         map(
             i_D0 => s_muxUnflip,        --sll
-            i_D1 => bit_reverse(s_muxUnflip),                        --sra/srl
+            i_D1 => bit_reverse(s_muxUnflip),                  --sra/srl
             i_S  => i_leftOrRight,      --0 for right, 1 for left shift
             o_O  => o_O                 --final output
             );

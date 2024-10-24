@@ -1,5 +1,5 @@
 -- <header>
--- Author(s): awfoss
+-- Author(s): conneroisu
 -- Name: proj/test/tb_barrelShifter.vhd
 -- Notes:
 --      awfoss  <awfoss@co2050-01.ece.iastate.edu> move-test-to-test-folder
@@ -141,4 +141,3 @@ begin
     ---------------------------
     end process;
 end behavior;
-
