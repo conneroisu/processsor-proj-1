@@ -1,12 +1,9 @@
 -- <header>
--- Author(s): connero
+-- Author(s): conneroisu
 -- Name: proj/src/TopLevel/MIPS_Processor.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-branch-main-into-component-addersub
 --	conneroisu  <conneroisu@outlook.com> added-adder-subtractor-and-instantiated-the-program-counter-and-others
---	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
 --	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-30-from-conneroisu-control
 --	conneroisu  <conneroisu@outlook.com> fix-do-files-duplciated-comments-for-test-benches
 --	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 --	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
@@ -74,10 +71,10 @@ architecture structure of MIPS_Processor is
     component program_counter is
         port
             (
-                i_CLK : in  std_logic;                      -- clock
-                i_RST : in  std_logic;                      -- reset
-                i_D   : in  std_logic_vector(31 downto 0);  -- data
-                o_Q   : out std_logic_vector(31 downto 0)   -- output
+                i_CLK : in  std_logic;  -- clock
+                i_RST : in  std_logic;  -- reset
+                i_D   : in  std_logic_vector(31 downto 0);   -- data
+                o_Q   : out std_logic_vector(31 downto 0)  -- output
                 );
     end component;
 -- TODO: You may add any additional signals or components your implementation 
@@ -98,16 +95,16 @@ begin
     DMem : mem
         generic
         map(
-            ADDR_WIDTH => 10,                               -- 1024 words
-            DATA_WIDTH => N                                 -- 32 bits
+            ADDR_WIDTH => 10,           -- 1024 words
+            DATA_WIDTH => N             -- 32 bits
             )
         port
         map(
-            clk  => iCLK,                                   -- clock
-            addr => s_DMemAddr(11 downto 2),                -- address
-            data => s_DMemData,                             -- data
-            we   => s_DMemWr,                               -- write enable
-            q    => s_DMemOut                               -- output
+            clk  => iCLK,               -- clock
+            addr => s_DMemAddr(11 downto 2),               -- address
+            data => s_DMemData,         -- data
+            we   => s_DMemWr,           -- write enable
+            q    => s_DMemOut           -- output
             );
 -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
 -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU

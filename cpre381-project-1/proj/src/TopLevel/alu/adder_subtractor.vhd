@@ -2,8 +2,6 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/alu/adder_subtractor.vhd
 -- Notes:
---	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
---	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
 --	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 --	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
@@ -177,6 +175,7 @@ begin
             );
 
 end architecture structural;
+
 
 
 

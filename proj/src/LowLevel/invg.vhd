@@ -2,7 +2,6 @@
 -- Author(s): conneroisu
 -- Name: proj/src/LowLevel/invg.vhd
 -- Notes:
---	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
 --	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --	conneroisu  <conneroisu@outlook.com> added-bit-inverter-not-gate-and-one-bit-complementor-that-is
 -- </header>

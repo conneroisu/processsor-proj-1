@@ -16,13 +16,13 @@ entity adderSubtractor is
         i_A      : in  std_logic_vector(N - 1 downto 0);  -- Input A
         i_B      : in  std_logic_vector(N - 1 downto 0);  -- Input B
         o_Y      : out std_logic_vector(N - 1 downto 0);  -- Output Y
-        o_Cout   : out std_logic                          -- Carry out
+        o_Cout   : out std_logic        -- Carry out
         );
 end adderSubtractor;
 architecture structural of adderSubtractor is
     component mux2t1_N is generic (N : integer := 32);
                           port (
-                              i_S  : in  std_logic;  -- Select input
+                              i_S  : in  std_logic;    -- Select input
                               i_D0 : in  std_logic_vector(N - 1 downto 0);  -- Data input 0
                               i_D1 : in  std_logic_vector(N - 1 downto 0);  -- Data input 1
                               o_O  : out std_logic_vector(N - 1 downto 0)  -- Output

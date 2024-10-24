@@ -2,7 +2,6 @@
 -- Author(s): conneroisu
 -- Name: proj/test/tb_control_unit.vhd
 -- Notes:
---	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
 --	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --	conneroisu  <conneroisu@outlook.com> fix-do-files-duplciated-comments-for-test-benches
 --	Conner Ohnesorge  <connero@iastate.edu> added-intial-implementation-of-the-test-bench-for-the-control_unit
