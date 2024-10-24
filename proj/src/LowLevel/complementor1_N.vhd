@@ -7,14 +7,14 @@
 
 library IEEE;
 use IEEE.std_logic_1164.all;
-entity comp1_N is
+entity complementor1_N is
     generic(N : integer := 32);
     port(
         i_D0 : in  std_logic_vector(N-1 downto 0);  -- Input data 0.
         o_O  : out std_logic_vector(N-1 downto 0)   -- Output data.
         );
-end comp1_N;
-architecture structural of comp1_N is
+end complementor1_N;
+architecture structural of complementor1_N is
     component invg is
         port(
             i_A : in  std_logic;        -- Input data.
