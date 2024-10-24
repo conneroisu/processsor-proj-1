@@ -2,7 +2,6 @@
 -- Author(s): conneroisu
 -- Name: proj/src/TopLevel/barrelShifter.vhd
 -- Notes:
---	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
 --	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --	awfoss  <awfoss@co2050-01.ece.iastate.edu> added-lowlevel-stuff-to-project-and-created-and-got-tb_barrelShifter-working.-Need-to-look-deeper-but-im-pretty-sure-it-works-exactly-as-intended
 --	awfoss  <awfoss@co2050-01.ece.iastate.edu> debugged-had-to-do-some-weird-declarations-to-avoid-a-static-error-I-think-not-sure-why-I-had-to-make-so-many-signals.-Could-use-some-work-to-improve-perhaps

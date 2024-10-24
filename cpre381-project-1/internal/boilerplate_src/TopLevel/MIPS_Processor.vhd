@@ -2,7 +2,6 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/internal/boilerplate_src/TopLevel/MIPS_Processor.vhd
 -- Notes:
---	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
 --	conneroisu  <conneroisu@outlook.com> added-better-spacing-to-MIPS_Processor
 --	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --	conneroisu  <conneroisu@outlook.com> even-better-file-header-program

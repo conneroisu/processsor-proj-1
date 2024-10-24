@@ -2,9 +2,7 @@
 -- Author(s): conneroisu
 -- Name: proj/src/MIPS_types.vhd
 -- Notes:
---	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
 --	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
---	connero  <88785126+conneroisu@users.noreply.github.com> Update-MIPS_types.vhd
 --	awfoss  <awfoss@co2050-01.ece.iastate.edu> debugged-had-to-do-some-weird-declarations-to-avoid-a-static-error-I-think-not-sure-why-I-had-to-make-so-many-signals.-Could-use-some-work-to-improve-perhaps
 --	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 --	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
