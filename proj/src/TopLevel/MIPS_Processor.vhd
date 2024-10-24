@@ -1,7 +1,9 @@
 -- <header>
--- Author(s): conneroisu
+-- Author(s): connero
 -- Name: proj/src/TopLevel/MIPS_Processor.vhd
 -- Notes:
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-branch-main-into-component-addersub
+--	conneroisu  <conneroisu@outlook.com> added-adder-subtractor-and-instantiated-the-program-counter-and-others
 --	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
 --	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-30-from-conneroisu-control
@@ -13,15 +15,12 @@
 --	Conner Ohnesorge  <connero@iastate.edu> formatted-MIPS_Processor
 --	Conner Ohnesorge  <connero@iastate.edu> added-register-file-component-to-the-MIPS-processor
 --	conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
-
 -- </header>
 
 library IEEE;
 use IEEE.std_logic_1164.all;
-
 library work;
 use work.MIPS_types.all;
-
 entity MIPS_Processor is
     generic(N : integer := DATA_WIDTH);
     port(iCLK      : in  std_logic;
@@ -31,7 +30,6 @@ entity MIPS_Processor is
          iInstExt  : in  std_logic_vector(N-1 downto 0);
          oALUOut   : out std_logic_vector(N-1 downto 0));  -- TODO: Hook this up to the output of the ALU. It is important for synthesis that you have this output that can effectively be impacted by all other components so they are not optimized away.
 end MIPS_Processor;
-
 architecture structure of MIPS_Processor is
     -- Required data memory signals
     signal s_DMemWr       : std_logic;  -- TODO: use this signal as the final active high data memory write enable signal
@@ -73,7 +71,6 @@ architecture structure of MIPS_Processor is
             o_d2  : out std_logic_vector(31 downto 0)
             );
     end component;
-
     component program_counter is
         port
             (
