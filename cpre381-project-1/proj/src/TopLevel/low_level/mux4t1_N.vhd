@@ -2,11 +2,11 @@
 -- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/mux4t1_N.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> remove-outdated-comment-headers-in-low_level-components
---	Conner Ohnesorge  <connero@iastate.edu> latest
+--      conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
+--      conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--      conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
+--      Conner Ohnesorge  <connero@iastate.edu> remove-outdated-comment-headers-in-low_level-components
+--      Conner Ohnesorge  <connero@iastate.edu> latest
 -- </header>
 
 library ieee;
@@ -55,6 +55,7 @@ begin
 
     end generate g_nbit_mux;
 end architecture structural;
+
 
 
 
