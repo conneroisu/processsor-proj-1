@@ -12,6 +12,84 @@ Due Oct 25th
 | Correctness: 10 points * (Fraction of HW5 test cases that work) 5 points for every instruction test program entirely working (all or nothing) 10 points for bubblesort (and mergesort if $>4$ ) matching MARS (must have implementation working reasonably well in MARS to get points) (all or nothing) 5 points for Grendel.s entirely working | 30 pts | 30 pts |
 
 
+## Project Structure 
+
+```bash
+.
+├── 381_tf.sh
+├── cpre381-toolflow.md
+├── cpre381-toolflow.pdf
+├── internal
+│   ├── boilerplate_mips
+│   │   ├── addiseq.s
+│   │   ├── fibonacci.s
+│   │   ├── grendel.s
+│   │   ├── lab3Seq.s
+│   │   └── simplebranch.s
+│   ├── boilerplate_src
+│   │   ├── MIPS_types.vhd
+│   │   ├── README.md
+│   │   └── TopLevel
+│   │       ├── mem.vhd
+│   │       └── MIPS_Processor.vhd
+│   ├── config.ini
+│   ├── format.sh
+│   ├── headers (program to add headers to files based on git)
+│   │   ├── go.mod
+│   │   ├── main.go
+│   │   └── out.md
+│   ├── Mars
+│   │   └── MARS_CPRE381.jar
+│   ├── ModelSimContainer (Questasim Simulation files)
+│   ├── snthpy (Synthesis Python files)
+│   └── testpy (Test Python files)
+├── Makefile
+├── proj
+│   ├── mips
+│   │   └── {assembly-files}
+│   ├── procProj1.cr.mti (Questasim project file)
+│   ├── procProj1.mpf (Questasim project file)
+│   ├── src
+│   │   ├── LowLevel
+│   │   │   └── {low-level-components}
+│   │   ├── MIPS_types.vhd
+│   │   ├── README.md
+│   │   └── TopLevel
+│   │       ├── barrelShifter.vhd
+│   │       ├── Control
+│   │       │   └── control_unit.vhd
+│   │       ├── Fetch
+│   │       │   ├── program_counter_dff.vhd
+│   │       │   ├── program_counter.vhd
+│   │       │   └── register_file.vhd
+│   │       ├── mem.vhd
+│   │       ├── MIPS_Processor.vhd
+│   │       └── Sign-Extend
+│   │           └── sign_extend.vhd
+│   └── test
+│       ├── tb_control_unit.do
+│       ├── tb_control_unit.vhd
+│       ├── tb_decoder_5t32.do
+│       ├── tb_decoder_5t32.vhd
+│       ├── tb_dffg.do
+│       ├── tb_dffg_n.do
+│       ├── tb_dffg_n.vhd
+│       ├── tb_dffg.vhd
+│       ├── tb_mux2t1_N.do
+│       ├── tb_mux2t1_N.vhd
+│       ├── tb_register_file.do
+│       ├── tb_register_file.vhd
+│       ├── tb_sign_extend.do
+│       └── tb_sign_extend.vhd
+├── Proj1_control_signals(1).xlsx
+├── Proj1_Fall23.pdf
+├── Proj1_report.doc
+├── Proj1_team_contract.doc
+├── pyproject.toml
+├── README.md
+└── uv.lock
+```
+
 ## SSH KEYS
 
 
