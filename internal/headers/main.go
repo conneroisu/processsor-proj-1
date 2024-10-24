@@ -124,6 +124,7 @@ type Commit struct {
 func GetCommitHistory(filename string) ([]Commit, error) {
 	cmd := exec.Command("git", "log",
 		"--date=iso8601-strict",
+		"--all",
 		"--pretty=format:{%n  \"commit\": \"%H\",%n  \"author_name\": \"%aN\", \"author_email\": \"<%aE>\",%n  \"date\": \"%ad\",%n  \"timestamp\": %at,%n  \"message\": \"%f\",%n  \"repo\": \"$repository\"%n},",
 		filename)
 

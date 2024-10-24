@@ -1,9 +1,15 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): conneroisu
 -- Name: proj/src/TopLevel/Fetch/register_file.vhd
 -- Notes:
+--	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
+--	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 --	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
+--	Conner Ohnesorge  <connero@iastate.edu> more-relevant-comment-and-cleaner-formatting-in-register_file-before
+--	conneroisu  <conneroisu@outlook.com> fix-name-of-nbitregister-component-in-register_file
+--	conneroisu  <conneroisu@outlook.com> update-do-files-and-add-tests-for-lowlevel-components
+--	conneroisu  <conneroisu@outlook.com> added-register-file-starting-point
 --	Conner Ohnesorge  <connero@iastate.edu> more-relevant-comment-and-cleaner-formatting-in-register_file-before
 --	conneroisu  <conneroisu@outlook.com> fix-name-of-nbitregister-component-in-register_file
 --	conneroisu  <conneroisu@outlook.com> update-do-files-and-add-tests-for-lowlevel-components
@@ -126,6 +132,7 @@ begin
             );
 
 end architecture structural;
+
 
 
 

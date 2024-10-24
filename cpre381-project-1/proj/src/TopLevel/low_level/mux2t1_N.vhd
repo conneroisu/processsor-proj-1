@@ -1,7 +1,9 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): conneroisu
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/mux2t1_N.vhd
 -- Notes:
+--	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
+--	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 --	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> latest
@@ -57,6 +59,7 @@ begin
 
     end generate g_nbit_mux;
 end architecture structural;
+
 
 
 
