@@ -1,8 +1,11 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): conneroisu
 -- Name: proj/src/LowLevel/complementor1_N.vhd
 -- Notes:
+--	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
+--	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --	conneroisu  <conneroisu@outlook.com> renamed-proj-src-LowLevel-1Comp_N.vhd-proj-src-LowLevel-complementor1_N.vhd
+--	conneroisu  <conneroisu@outlook.com> renamed-file-name-and-component-for-nbit1scomplementor
 -- </header>
 
 library IEEE;

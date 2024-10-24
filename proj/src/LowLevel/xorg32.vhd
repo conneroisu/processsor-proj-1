@@ -1,7 +1,9 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): conneroisu
 -- Name: proj/src/LowLevel/xorg32.vhd
 -- Notes:
+--	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
+--	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --	conneroisu  <conneroisu@outlook.com> added-xorg32-component-to-the-low-level-components-a-32-bit-xor-gate
 -- </header>
 
