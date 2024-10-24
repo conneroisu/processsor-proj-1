@@ -1,7 +1,9 @@
 -- <header>
--- Author(s): github-actions[bot]
+-- Author(s): conneroisu
 -- Name: proj/src/LowLevel/extender16t32.vhd
 -- Notes:
+--	conneroisu  <88785126+conneroisu@users.noreply.github.com> Format-and-Header
+--	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
 --	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
 --	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
 --	Conner Ohnesorge  <connero@iastate.edu> disable-formatter-and-add-extender16t32
@@ -35,6 +37,7 @@ begin
 
 
 end dataflow;
+
 
 
 
