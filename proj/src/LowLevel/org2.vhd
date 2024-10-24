@@ -2,7 +2,7 @@
 -- Author(s): connero
 -- Name: proj/src/LowLevel/org2.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-31-from-conneroisu-control
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-32-from-conneroisu-project-structure
 -- </header>
 
 library ieee;
@@ -23,6 +23,7 @@ begin
     o_f <= i_a or i_b;
 
 end architecture dataflow;
+
 
 
 

@@ -2,7 +2,7 @@
 -- Author(s): connero
 -- Name: cpre381-project-1/proj/src/TopLevel/low_level/xorg2.vhd
 -- Notes:
---	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-31-from-conneroisu-control
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-32-from-conneroisu-project-structure
 -- </header>
 
 library ieee;
@@ -23,6 +23,7 @@ begin
     o_f <= i_a xor i_b;                 -- XOR the two inputs
 
 end architecture dataflow;
+
 
 
 
