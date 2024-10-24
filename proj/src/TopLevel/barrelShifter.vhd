@@ -1,3 +1,10 @@
+-- <header>
+-- Author(s): connero
+-- Name: proj/src/TopLevel/barrelShifter.vhd
+-- Notes:
+--	connero  <88785126+conneroisu@users.noreply.github.com> Merge-pull-request-28-from-conneroisu-feature-control_unit
+-- </header>
+
 --Aidan Foss
 --CPRE 381, Fall 2024
 --ISU
