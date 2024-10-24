@@ -13,12 +13,15 @@
 --	Conner Ohnesorge  <connero@iastate.edu> formatted-MIPS_Processor
 --	Conner Ohnesorge  <connero@iastate.edu> added-register-file-component-to-the-MIPS-processor
 --	conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
+
 -- </header>
 
 library IEEE;
 use IEEE.std_logic_1164.all;
+
 library work;
 use work.MIPS_types.all;
+
 entity MIPS_Processor is
     generic(N : integer := DATA_WIDTH);
     port(iCLK      : in  std_logic;
@@ -28,6 +31,7 @@ entity MIPS_Processor is
          iInstExt  : in  std_logic_vector(N-1 downto 0);
          oALUOut   : out std_logic_vector(N-1 downto 0));  -- TODO: Hook this up to the output of the ALU. It is important for synthesis that you have this output that can effectively be impacted by all other components so they are not optimized away.
 end MIPS_Processor;
+
 architecture structure of MIPS_Processor is
     -- Required data memory signals
     signal s_DMemWr       : std_logic;  -- TODO: use this signal as the final active high data memory write enable signal
@@ -69,6 +73,16 @@ architecture structure of MIPS_Processor is
             o_d2  : out std_logic_vector(31 downto 0)
             );
     end component;
+
+    component program_counter is
+        port
+            (
+                i_CLK : in  std_logic;                      -- clock
+                i_RST : in  std_logic;                      -- reset
+                i_D   : in  std_logic_vector(31 downto 0);  -- data
+                o_Q   : out std_logic_vector(31 downto 0)   -- output
+                );
+    end component;
 -- TODO: You may add any additional signals or components your implementation 
 --       requires below this comment
 begin
@@ -85,13 +99,19 @@ begin
                  we   => iInstLd,
                  q    => s_Inst);
     DMem : mem
-        generic map(ADDR_WIDTH => ADDR_WIDTH,
-                    DATA_WIDTH => N)
-        port map(clk  => iCLK,
-                 addr => s_DMemAddr(11 downto 2),
-                 data => s_DMemData,
-                 we   => s_DMemWr,
-                 q    => s_DMemOut);
+        generic
+        map(
+            ADDR_WIDTH => 10,                               -- 1024 words
+            DATA_WIDTH => N                                 -- 32 bits
+            )
+        port
+        map(
+            clk  => iCLK,                                   -- clock
+            addr => s_DMemAddr(11 downto 2),                -- address
+            data => s_DMemData,                             -- data
+            we   => s_DMemWr,                               -- write enable
+            q    => s_DMemOut                               -- output
+            );
 -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
 -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU
 -- TODO: Implement the rest of your processor below this comment! 
