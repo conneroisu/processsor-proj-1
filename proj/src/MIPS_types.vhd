@@ -2,13 +2,13 @@
 -- Author(s): conneroisu
 -- Name: proj/src/MIPS_types.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
---	awfoss  <awfoss@co2050-01.ece.iastate.edu> debugged-had-to-do-some-weird-declarations-to-avoid-a-static-error-I-think-not-sure-why-I-had-to-make-so-many-signals.-Could-use-some-work-to-improve-perhaps
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> update-MIPS_types-in-context-of-the-register_file
---	Conner Ohnesorge  <connero@iastate.edu> update-MIPS_types-in-context-of-the-register_file
---	conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
+--      conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
+--      awfoss  <awfoss@co2050-01.ece.iastate.edu> debugged-had-to-do-some-weird-declarations-to-avoid-a-static-error-I-think-not-sure-why-I-had-to-make-so-many-signals.-Could-use-some-work-to-improve-perhaps
+--      conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--      conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
+--      Conner Ohnesorge  <connero@iastate.edu> update-MIPS_types-in-context-of-the-register_file
+--      Conner Ohnesorge  <connero@iastate.edu> update-MIPS_types-in-context-of-the-register_file
+--      conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
 -- </header>
 
 library IEEE;
