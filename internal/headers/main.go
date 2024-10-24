@@ -14,7 +14,8 @@ import (
 )
 
 var (
-	blacklist = "github-actions[bot]"
+	blacklist   = "github-actions[bot]"
+	emBlacklist = "noreply"
 )
 
 var (
@@ -167,6 +168,10 @@ func generateHeader(filename string, commitInfos []Commit) string {
 	for i, commit := range commitInfos {
 		if commit.AuthorName == blacklist {
 			logger.Debug("Blacklisted author", slog.String("author", commit.AuthorName))
+			continue
+		}
+		if strings.Contains(commit.AuthorEmail, emBlacklist) {
+			logger.Debug("Blacklisted email", slog.String("email", commit.AuthorEmail))
 			continue
 		}
 		notes.WriteString(fmt.Sprintf("--	%s  %s %s", commit.AuthorName, commit.AuthorEmail, commit.Message))
