@@ -1,13 +1,4 @@
-/home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/TopLevel/barrelShifter.vhd
-QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package MIPS_types
--- Compiling entity barrelShifter
--- Compiling architecture structure of barrelShifter
-
-} {} {}} /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd
+/home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1_N.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -24,21 +15,14 @@ QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling entity mem
 -- Compiling architecture rtl of mem
 
-} {} {}} /home/awfoss/processsor-proj-1/proj/tb_barrelShifter.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/tb_barrelShifter.vhd
+} {} {}} /home/awfoss/processsor-proj-1/proj/src/TopLevel/BarrelShifter/barrelShifter.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/TopLevel/BarrelShifter/barrelShifter.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity tb_barrelShifter
--- Compiling architecture behavior of tb_barrelShifter
-
-} {} {}} /home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg.vhd
-QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity dffg
--- Compiling architecture mixed of dffg
+-- Loading package MIPS_types
+-- Compiling entity barrelShifter
+-- Compiling architecture structure of barrelShifter
 
 } {} {}} /home/awfoss/processsor-proj-1/proj/src/LowLevel/extender16t32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/extender16t32.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
@@ -47,6 +31,14 @@ QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Loading package std_logic_1164
 -- Compiling entity extender16t32
 -- Compiling architecture dataflow of extender16t32
+
+} {} {}} /home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
 
 } {} {}} /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux2t1.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
@@ -72,22 +64,14 @@ QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling entity org2
 -- Compiling architecture dataflow of org2
 
-} {} {}} /home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd
+} {} {}} /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux32t1.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux32t1.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling package MIPS_types
--- Compiling package body MIPS_types
 -- Loading package MIPS_types
-
-} {} {}} /home/awfoss/processsor-proj-1/proj/src/LowLevel/andg2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/andg2.vhd
-QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity andg2
--- Compiling architecture dataflow of andg2
+-- Compiling entity mux32t1
+-- Compiling architecture behavior of mux32t1
 
 } {} {}} /home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg_n.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/dffg_n.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
@@ -98,13 +82,21 @@ QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling architecture structural of dffg_n
 -- Loading entity dffg
 
-} {} {}} /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux32t1.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/mux32t1.vhd
+} {} {}} /home/awfoss/processsor-proj-1/proj/src/LowLevel/andg2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/LowLevel/andg2.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+
+} {} {}} /home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/awfoss/processsor-proj-1/proj/src/MIPS_types.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package MIPS_types
+-- Compiling package body MIPS_types
 -- Loading package MIPS_types
--- Compiling entity mux32t1
--- Compiling architecture behavior of mux32t1
 
 } {} {}}
