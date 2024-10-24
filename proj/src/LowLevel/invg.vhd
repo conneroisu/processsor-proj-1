@@ -2,8 +2,8 @@
 -- Author(s): conneroisu
 -- Name: proj/src/LowLevel/invg.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
---	conneroisu  <conneroisu@outlook.com> added-bit-inverter-not-gate-and-one-bit-complementor-that-is
+--      conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
+--      conneroisu  <conneroisu@outlook.com> added-bit-inverter-not-gate-and-one-bit-complementor-that-is
 -- </header>
 
 library IEEE;

@@ -2,10 +2,10 @@
 -- Author(s): conneroisu
 -- Name: proj/src/TopLevel/mem.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
+--      conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
+--      conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--      conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
+--      conneroisu  <conneroisu@outlook.com> added-toolflow-generated-project-layout
 -- </header>
 
 -- Quartus Prime VHDL Template
@@ -57,6 +57,7 @@ begin
     q <= ram(to_integer(unsigned(addr)));
 
 end rtl;
+
 
 
 

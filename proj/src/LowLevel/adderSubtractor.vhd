@@ -2,7 +2,7 @@
 -- Author(s): conneroisu
 -- Name: proj/src/LowLevel/adderSubtractor.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> added-adder-subtractor-and-instantiated-the-program-counter-and-others
+--      conneroisu  <conneroisu@outlook.com> added-adder-subtractor-and-instantiated-the-program-counter-and-others
 -- </header>
 
 library IEEE;

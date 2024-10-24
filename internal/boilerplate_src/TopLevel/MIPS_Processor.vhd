@@ -2,12 +2,12 @@
 -- Author(s): conneroisu
 -- Name: internal/boilerplate_src/TopLevel/MIPS_Processor.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> add-better-commit-message-to-workflow-for-format-and-header-and-remove
---	Conner Ohnesorge  <connero@iastate.edu> add-better-commit-message-to-workflow-for-format-and-header-and-remove
---	Conner Ohnesorge  <connero@iastate.edu> added-toolflow
+--      conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
+--      conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--      conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
+--      Conner Ohnesorge  <connero@iastate.edu> add-better-commit-message-to-workflow-for-format-and-header-and-remove
+--      Conner Ohnesorge  <connero@iastate.edu> add-better-commit-message-to-workflow-for-format-and-header-and-remove
+--      Conner Ohnesorge  <connero@iastate.edu> added-toolflow
 -- </header>
 
 library IEEE;

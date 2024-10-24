@@ -2,9 +2,9 @@
 -- Author(s): conneroisu
 -- Name: proj/src/TopLevel/Control/control_unit.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
---	conneroisu  <conneroisu@outlook.com> fix-do-files-duplciated-comments-for-test-benches
---	Conner Ohnesorge  <connero@iastate.edu> added-starting-control-unit
+--      conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
+--      conneroisu  <conneroisu@outlook.com> fix-do-files-duplciated-comments-for-test-benches
+--      Conner Ohnesorge  <connero@iastate.edu> added-starting-control-unit
 -- </header>
 
 library IEEE;

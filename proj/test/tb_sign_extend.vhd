@@ -2,10 +2,10 @@
 -- Author(s): conneroisu
 -- Name: proj/test/tb_sign_extend.vhd
 -- Notes:
---	conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
---	conneroisu  <conneroisu@outlook.com> even-better-file-header-program
---	conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
---	Conner Ohnesorge  <connero@iastate.edu> add-sign-extender-from-daniels-work
+--      conneroisu  <conneroisu@outlook.com> manually-ran-the-header-update-script
+--      conneroisu  <conneroisu@outlook.com> even-better-file-header-program
+--      conneroisu  <conneroisu@outlook.com> fixed-and-added-back-the-git-cdocumentor-for-the-vhdl-files-to-have
+--      Conner Ohnesorge  <connero@iastate.edu> add-sign-extender-from-daniels-work
 -- </header>
 
 library IEEE;
